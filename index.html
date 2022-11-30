@@ -22,6 +22,7 @@
       .section {
         width: 100%;
         height: 100vh;
+        position: relative;
       }
       .section1 {
         /* background: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%); */
@@ -33,33 +34,12 @@
         position: relative;
       }
       .section3 {
-        background-image: linear-gradient(
-          to right,
-          #f78ca0 0%,
-          #f9748f 19%,
-          #fd868c 60%,
-          #fe9a8b 100%
-        );
       }
       .section4 {
-        background-image: linear-gradient(
-          to top,
-          #505285 0%,
-          #585e92 12%,
-          #65689f 25%,
-          #7474b0 37%,
-          #7e7ebb 50%,
-          #8389c7 62%,
-          #9795d4 75%,
-          #a2a1dc 87%,
-          #b5aee4 100%
-        );
       }
       .section5 {
-        background-image: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
       }
       .section6 {
-        background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
       }
     </style>
   </head>
@@ -173,14 +153,81 @@
           }
 
           /* 섹션2 */
-          .section2_profile {
-            height: 324px;
+          .section2_desc {
+            width: 50%;
+            height: 420px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
           }
-          .section2 {
+          .first_name {
+          }
+          .section2_desc_sub {
+            position: absolute;
+            bottom: 0px;
+            left: 17px;
+          }
+          .section2_profile_cont {
+            position: relative;
+            display: flex;
+          }
+          .section2_profile_cont::after {
+            content: "";
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            width: 400px;
+            height: 400px;
+            border-radius: 100%;
+            background: #dbddf4;
+            transform: translate(-50%, -45%);
+          }
+          .section2_profile {
+            width: 400px;
+            z-index: 2;
+          }
+          .section2_cont {
             display: flex;
             height: 100vh;
             justify-content: space-evenly;
             align-items: center;
+            width: 100%;
+          }
+          .section2 .lama {
+            position: absolute;
+            top: 30%;
+            right: 0;
+            transform: translate(0, -70%);
+            width: 153px;
+          }
+
+          .first_name {
+            font-size: 400px;
+            font-weight: 900;
+            background: linear-gradient(
+              0deg,
+              rgba(255, 255, 255, 0) 26%,
+              #fff 76%
+            );
+            color: transparent;
+            -webkit-background-clip: text;
+            /* z-index: 1; */
+            position: absolute;
+            top: -150px;
+            left: 0px;
+          }
+          .porfolio_desc {
+            font-size: 35px;
+            font-family: "NexonLv1GothicLow";
+            font-weight: 400;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+          .second_name {
+            font-size: 120px;
+            font-weight: 900;
           }
 
           /* #featureAnimation {
@@ -200,6 +247,62 @@
             border-radius: 50%;
             will-change: transform;
           } */
+
+          /* 섹션3 */
+          .section3_fixed {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-top: 1px solid #fff;
+            font-size: 50px;
+            white-space: nowrap;
+            z-index: 1;
+            /* font-weight: 100; */
+          }
+          .section3_fixed h2 {
+            font-weight: 100;
+          }
+          .section3_fixed em {
+            font-weight: 900;
+          }
+          .section3_item {
+            display: flex;
+            align-items: flex-end;
+            gap: 20px;
+          }
+          .section3_item button {
+            padding: 10px;
+            border: 1px solid #fff;
+            width: 60px;
+            cursor: pointer;
+          }
+          .section3_item button:hover {
+            transition: 0.25s;
+            background: #fff;
+            color: #000;
+          }
+          .section3_item button:not(:hover) {
+            transition: 0.25s;
+          }
+          .section3_item.i001 {
+            position: absolute;
+            top: 0px;
+            left: 129px;
+          }
+          .section3_item.i002 {
+            position: absolute;
+            top: 269px;
+            left: 1300px;
+            filter: blur(3px);
+          }
+          .section3_item h2 {
+            font-size: 32px;
+            font-weight: 900;
+          }
+          .section3_item p {
+            width: 350px;
+          }
         </style>
         <!-- 첫번째 페이지 -->
         <img class="close" src="src/assets/img/main_close.svg" alt="닫기" />
@@ -226,26 +329,71 @@
 
         <!-- 두번째 페이지 -->
         <section class="section section2">
-          <div class="section2">
+          <div class="section2_cont">
             <div class="section2_desc">
-              <h2>kim</h2>
+              <h2 class="first_name">kim</h2>
               <div class="section2_desc_sub">
-                <p>새싹을 틔울 수 있는 씨앗이 되겠습니다.</p>
-                <h2>SANGJUN</h2>
+                <p class="porfolio_desc">
+                  새싹을 틔울 수 있는 씨앗이 되겠습니다.
+                </p>
+                <h2 class="second_name">SANGJUN</h2>
               </div>
             </div>
             <!-- <p>KIMSANGJUN</p> -->
-            <img
-              class="section2_profile"
-              src="src/assets/img/section2_profile.png"
-              alt=""
-            />
+            <div class="section2_profile_cont">
+              <img
+                class="section2_profile"
+                src="src/assets/img/section2_profile.png"
+                alt=""
+              />
+            </div>
           </div>
-          <img src="lama" alt="lama" />
+          <img src="src/assets/img/section2_lama.svg" alt="lama" class="lama" />
         </section>
 
         <!-- 세번째 페이지 -->
-        <section class="section section3"></section>
+        <section class="section section3">
+          <div class="section3_fixed">
+            <h2>JAVASCRIPT <em>EFFECT</em></h2>
+          </div>
+          <div class="section3_item i001">
+            <img
+              src="src/assets/img/section3_img_001.png"
+              alt="Search Effect"
+            />
+            <div class="item_desc">
+              <h2>SEARCH<br />EFFECT</h2>
+              <p>
+                indexOf, includes, find 메서드 등을 이용해 사용자가 입력한
+                키워드와 문자열이 일치시 해당 속성만 출력해 주는 CSS 속성 검색
+                효과입니다. 좀 더 응용하여 data-set의 value값을 호출해 카테고리
+                별로 검색하는 기능까지 추가해 종류별로도 볼 수 있도록
+                하였습니다.
+              </p>
+              <button>code</button>
+              <button>view</button>
+            </div>
+          </div>
+          <div class="section3_item i002">
+            <img
+              src="src/assets/img/section3_img_001.png"
+              alt="Search Effect"
+            />
+            <div class="item_desc">
+              <h2>SEARCH<br />EFFECT</h2>
+              <p>
+                indexOf, includes, find 메서드 등을 이용해 사용자가 입력한
+                키워드와 문자열이 일치시 해당 속성만 출력해 주는 CSS 속성 검색
+                효과입니다. 좀 더 응용하여 data-set의 value값을 호출해 카테고리
+                별로 검색하는 기능까지 추가해 종류별로도 볼 수 있도록
+                하였습니다.
+              </p>
+              <button>code</button>
+              <button>view</button>
+            </div>
+          </div>
+          <canvas id="canvas"></canvas>
+        </section>
         <section class="section section4"></section>
         <section class="section section5"></section>
       </div>
@@ -268,58 +416,108 @@
 
       requestAnimationFrame(raf);
 
-      // const sections = gsap.utils.toArray(".section");
+      // 튀어오르는 라마
+      var canvas = document.getElementById("canvas");
+      var c = canvas.getContext("2d");
+      var tx = window.innerWidth;
+      var ty = window.innerHeight;
+      canvas.width = tx;
+      canvas.height = ty;
 
-      // gsap.to(sections, {
-      //   yPercent: -100 * (sections.length - 1),
-      //   ease: "power1.out",
-      //   scrollTrigger: {
-      //     trigger: ".horizontalWrap",
-      //     pin: true,
-      //     scrub: 1,
-      //     end: "+=3500",
-      //     // snap: 1 / (sections.length -1),
-      //     markers: true,
-      //   },
-      // });
+      var mousex = 0;
+      var mousey = 0;
 
-      // let dots = [],
-      //   bg = document.querySelector("#featureBackground"),
-      //   i,
-      //   dot;
+      addEventListener("mousemove", function () {
+        mousex = event.clientX;
+        mousey = event.clientY;
+      });
 
-      // // create 80 dot elements and put them in an array
-      // for (i = 0; i < 80; i++) {
-      //   dot = document.createElement("div");
-      //   dot.setAttribute("class", "dot");
-      //   bg.appendChild(dot);
-      //   dots.push(dot);
-      // }
+      var grav = 0.99;
+      c.strokeWidth = 5;
+      function randomColor() {
+        return (
+          "rgba(" +
+          Math.round(Math.random() * 250) +
+          "," +
+          Math.round(Math.random() * 250) +
+          "," +
+          Math.round(Math.random() * 250) +
+          "," +
+          Math.ceil(Math.random() * 10) / 10 +
+          ")"
+        );
+      }
 
-      // //set the initial position of all the dots, and pick a random color for each from an array of colors
-      // gsap.set(dots, {
-      //   backgroundColor: "random([#663399,#84d100,#cc9900,#0066cc,#993333])",
-      //   scale: "random(0.4, 1)",
-      //   x: 400,
-      //   y: 300,
-      // });
+      function Ball() {
+        this.color = randomColor();
+        this.radius = Math.random() * 20 + 14;
+        this.startradius = this.radius;
+        this.x = Math.random() * (tx - this.radius * 2) + this.radius;
+        this.y = Math.random() * (ty - this.radius);
+        this.dy = Math.random() * 2;
+        this.dx = Math.round((Math.random() - 0.5) * 10);
+        this.vel = Math.random() / 5;
+        this.update = function () {
+          c.beginPath();
+          c.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+          c.fillStyle = this.color;
+          c.fill();
+          c.stroke();
+        };
+      }
 
-      // // create the physics2D animation
-      // let tween = gsap.to(dots, {
-      //   duration: 2.5,
-      //   physics2D: {
-      //     velocity: "random(200, 650)",
-      //     angle: "random(250, 290)",
-      //     gravity: 500,
-      //   },
-      //   delay: "random(0, 2.5)",
-      // });
+      var bal = [];
+      for (var i = 0; i < 5; i++) {
+        bal.push(new Ball());
+      }
 
-      // GSDevTools.create({
-      //   animation: tween,
-      //   container: "#featureAnimation",
-      //   minimal: true,
-      // });
+      function animate() {
+        if (tx != window.innerWidth || ty != window.innerHeight) {
+          tx = window.innerWidth;
+          ty = window.innerHeight;
+          canvas.width = tx;
+          canvas.height = ty;
+        }
+        requestAnimationFrame(animate);
+        c.clearRect(0, 0, tx, ty);
+        for (var i = 0; i < bal.length; i++) {
+          bal[i].update();
+          bal[i].y += bal[i].dy;
+          bal[i].x += bal[i].dx;
+          if (bal[i].y + bal[i].radius >= ty) {
+            bal[i].dy = -bal[i].dy * grav;
+          } else {
+            bal[i].dy += bal[i].vel;
+          }
+          if (bal[i].x + bal[i].radius > tx || bal[i].x - bal[i].radius < 0) {
+            bal[i].dx = -bal[i].dx;
+          }
+          if (
+            mousex > bal[i].x - 20 &&
+            mousex < bal[i].x + 20 &&
+            mousey > bal[i].y - 50 &&
+            mousey < bal[i].y + 50 &&
+            bal[i].radius < 70
+          ) {
+            //bal[i].x += +1;
+            bal[i].radius += 5;
+          } else {
+            if (bal[i].radius > bal[i].startradius) {
+              bal[i].radius += -5;
+            }
+          }
+
+          //forloop end
+        }
+        //animation end
+      }
+
+      animate();
+
+      setInterval(function () {
+        bal.push(new Ball());
+        bal.splice(0, 1);
+      }, 400);
     </script>
   </body>
 </html>
