@@ -364,10 +364,10 @@
             <div class="item_desc">
               <h2>SEARCH<br />EFFECT</h2>
               <p>
-                indexOf, includes, find 메서드 등을 이용해 사용자가 입력한
-                키워드와 문자열이 일치시 해당 속성만 출력해 주는 CSS 속성 검색
-                효과입니다. 좀 더 응용하여 data-set의 value값을 호출해 카테고리
-                별로 검색하는 기능까지 추가해 종류별로도 볼 수 있도록
+                김상준바보 indexOf, includes, find 메서드 등을 이용해 사용자가
+                입력한 키워드와 문자열이 일치시 해당 속성만 출력해 주는 CSS 속성
+                검색 효과입니다. 좀 더 응용하여 data-set의 value값을 호출해
+                카테고리 별로 검색하는 기능까지 추가해 종류별로도 볼 수 있도록
                 하였습니다.
               </p>
               <button>code</button>
@@ -394,8 +394,16 @@
           </div>
           <canvas id="canvas"></canvas>
         </section>
-        <section class="section section4"></section>
-        <section class="section section5"></section>
+        <!-- <section class="section section4"></section>
+        <section class="section section5"></section> -->
+      </div>
+      <div style="display: none">
+        <img
+          id="source"
+          src="http://www.wpclipart.com/toys/balls/red_snooker_ball.png"
+          width="300"
+          height="227"
+        />
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
@@ -418,9 +426,17 @@
 
       // 튀어오르는 라마
       var canvas = document.getElementById("canvas");
-      var c = canvas.getContext("2d");
       var tx = window.innerWidth;
       var ty = window.innerHeight;
+      var c = canvas.getContext("2d");
+
+      var img = new Image();
+      img.src = "http://www.wpclipart.com/toys/balls/red_snooker_ball.png";
+      img.width = 10;
+      img.height = 10;
+      c.drawImage(img, 150, 150, 10, 10);
+      // c.fill();
+
       canvas.width = tx;
       canvas.height = ty;
 
@@ -434,22 +450,22 @@
 
       var grav = 0.99;
       c.strokeWidth = 5;
-      function randomColor() {
-        return (
-          "rgba(" +
-          Math.round(Math.random() * 250) +
-          "," +
-          Math.round(Math.random() * 250) +
-          "," +
-          Math.round(Math.random() * 250) +
-          "," +
-          Math.ceil(Math.random() * 10) / 10 +
-          ")"
-        );
-      }
+      // function randomColor() {
+      //   return (
+      //     "rgba(" +
+      //     Math.round(Math.random() * 250) +
+      //     "," +
+      //     Math.round(Math.random() * 250) +
+      //     "," +
+      //     Math.round(Math.random() * 250) +
+      //     "," +
+      //     Math.ceil(Math.random() * 10) / 10 +
+      //     ")"
+      //   );
+      // }
 
       function Ball() {
-        this.color = randomColor();
+        // this.color = randomColor();
         this.radius = Math.random() * 20 + 14;
         this.startradius = this.radius;
         this.x = Math.random() * (tx - this.radius * 2) + this.radius;
@@ -457,17 +473,20 @@
         this.dy = Math.random() * 2;
         this.dx = Math.round((Math.random() - 0.5) * 10);
         this.vel = Math.random() / 5;
+
         this.update = function () {
           c.beginPath();
           c.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
-          c.fillStyle = this.color;
+          // c.fillStyle = this.color;
+          c.drawImage(img, this.x, this.y, 10, 10);
           c.fill();
-          c.stroke();
+          // c.stroke();
+          // 새로운 이미지 객체를 만듬
         };
       }
 
       var bal = [];
-      for (var i = 0; i < 5; i++) {
+      for (var i = 0; i < 20; i++) {
         bal.push(new Ball());
       }
 
@@ -480,6 +499,7 @@
         }
         requestAnimationFrame(animate);
         c.clearRect(0, 0, tx, ty);
+
         for (var i = 0; i < bal.length; i++) {
           bal[i].update();
           bal[i].y += bal[i].dy;
