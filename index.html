@@ -11,7 +11,7 @@
         width: 100%;
         /* height: 100vh; */
         overflow: hidden;
-        background: #6d6bec;
+        background: #443cb6;
       }
       .horizontalSection {
         overscroll-behavior: none;
@@ -36,6 +36,13 @@
       .section3 {
       }
       .section4 {
+        background: #f6f6fb;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        padding: 0 60px;
       }
       .section5 {
       }
@@ -297,11 +304,80 @@
             filter: blur(3px);
           }
           .section3_item h2 {
-            font-size: 32px;
+            font-size: 47px;
             font-weight: 900;
+            line-height: 0.8;
           }
           .section3_item p {
             width: 350px;
+          }
+
+          /* 섹션 4 */
+          .section4_title_cont {
+            display: flex;
+            justify-content: space-between;
+          }
+          .section4_title_cont .desc_cont {
+            display: flex;
+          }
+          .section4_title_cont .desc_cont .title_button_cont {
+            display: flex;
+            flex-direction: column;
+          }
+          .section4_title_cont .desc_cont .title_button_cont button {
+            padding: 5px 10px;
+            border: ;
+          }
+          .section4 .lama {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 418px;
+            transform: translate(-50%, 0);
+          }
+          .section4_item {
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(45deg, #443cb6, transparent);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            color: #fff;
+            font-family: "BebasNeue";
+            background-image: url(/src/assets/img/section4_screenshot_01.jpg);
+          }
+          .section4_item::after,
+          .section4_item::before {
+            content: "";
+            position: absolute;
+          }
+          .section4_item::before {
+            background-image: url(/src/assets/img/section4_item_tle.svg);
+            /* position: absolute; */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 380px;
+            height: 382px;
+            background-repeat: no-repeat;
+          }
+          .section4_item h2 {
+            font-size: 70px;
+          }
+          .section4_item .section4_item_desc {
+            display: flex;
+            justify-content: space-between;
+          }
+          .section4_item .section4_item_desc h4 {
+            font-size: 50px;
+          }
+          .section4_item .section4_item_desc p {
+            word-break: break-all;
+            font-size: 10px;
+            opacity: 0.5;
+            width: 35%;
           }
         </style>
         <!-- 첫번째 페이지 -->
@@ -376,7 +452,7 @@
           </div>
           <div class="section3_item i002">
             <img
-              src="src/assets/img/section3_img_001.png"
+              src="src/assets/img/section3_img_002.png"
               alt="Search Effect"
             />
             <div class="item_desc">
@@ -394,8 +470,38 @@
           </div>
           <canvas id="canvas"></canvas>
         </section>
-        <!-- <section class="section section4"></section>
-        <section class="section section5"></section> -->
+
+        <!-- 네번째 페이지 -->
+        <section class="section section4">
+          <img class="lama" src="src/assets/img/section4_lama.svg" alt="" />
+          <div class="section4_title_cont">
+            <h2 class="title">GAME<em>EFFECT</em></h2>
+            <div class="desc_cont">
+              <p class="desc">
+                자바스크립트와 각종 음원들을 통하여<br />
+                게임 이펙트에 다양한 게임들을 담았습니다<br />
+                총 5가지의 게임으로 준비해보았습니다.
+              </p>
+              <div class="title_button_cont">
+                <button>VIEW</button>
+                <button>CODE</button>
+              </div>
+            </div>
+          </div>
+          <div class="section4_contents_cont">
+            <div class="section4_item">
+              <h2>01</h2>
+              <div class="section4_item_desc">
+                <h4>MATCHING</h4>
+                <p>
+                  THIS IS QUIZE EFFECT THIS IS QUIZE EFFECT THIS IS QUIZE
+                  EFFECTTHIS IS QUIZE EFFECT THIS IS QUIZE EFFECT
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section5"></section>
       </div>
       <div style="display: none">
         <img
@@ -425,20 +531,22 @@
       requestAnimationFrame(raf);
 
       // 튀어오르는 라마
+      console.log("Hello World");
+
       var canvas = document.getElementById("canvas");
+      var c = canvas.getContext("2d");
       var tx = window.innerWidth;
       var ty = window.innerHeight;
-      var c = canvas.getContext("2d");
 
       var img = new Image();
       img.src = "http://www.wpclipart.com/toys/balls/red_snooker_ball.png";
       img.width = 10;
       img.height = 10;
-      c.drawImage(img, 150, 150, 10, 10);
-      // c.fill();
 
       canvas.width = tx;
       canvas.height = ty;
+      //c.lineWidth= 5;
+      //c.globalAlpha = 0.5;
 
       var mousex = 0;
       var mousey = 0;
@@ -450,22 +558,22 @@
 
       var grav = 0.99;
       c.strokeWidth = 5;
-      // function randomColor() {
-      //   return (
-      //     "rgba(" +
-      //     Math.round(Math.random() * 250) +
-      //     "," +
-      //     Math.round(Math.random() * 250) +
-      //     "," +
-      //     Math.round(Math.random() * 250) +
-      //     "," +
-      //     Math.ceil(Math.random() * 10) / 10 +
-      //     ")"
-      //   );
-      // }
+      function randomColor() {
+        return (
+          "rgba(" +
+          Math.round(Math.random() * 250) +
+          "," +
+          Math.round(Math.random() * 250) +
+          "," +
+          Math.round(Math.random() * 250) +
+          "," +
+          Math.ceil(Math.random() * 10) / 10 +
+          ")"
+        );
+      }
 
       function Ball() {
-        // this.color = randomColor();
+        this.color = randomColor();
         this.radius = Math.random() * 20 + 14;
         this.startradius = this.radius;
         this.x = Math.random() * (tx - this.radius * 2) + this.radius;
@@ -473,20 +581,17 @@
         this.dy = Math.random() * 2;
         this.dx = Math.round((Math.random() - 0.5) * 10);
         this.vel = Math.random() / 5;
-
         this.update = function () {
           c.beginPath();
           c.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
-          // c.fillStyle = this.color;
-          c.drawImage(img, this.x, this.y, 10, 10);
+          c.fillStyle = this.color;
           c.fill();
-          // c.stroke();
-          // 새로운 이미지 객체를 만듬
+          //c.stroke();
         };
       }
 
       var bal = [];
-      for (var i = 0; i < 20; i++) {
+      for (var i = 0; i < 50; i++) {
         bal.push(new Ball());
       }
 
@@ -499,7 +604,6 @@
         }
         requestAnimationFrame(animate);
         c.clearRect(0, 0, tx, ty);
-
         for (var i = 0; i < bal.length; i++) {
           bal[i].update();
           bal[i].y += bal[i].dy;
@@ -526,10 +630,7 @@
               bal[i].radius += -5;
             }
           }
-
-          //forloop end
         }
-        //animation end
       }
 
       animate();
