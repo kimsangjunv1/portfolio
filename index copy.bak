@@ -258,6 +258,25 @@
         opacity: 0.2;
         line-height: 0.9;
       }
+
+      /* #featureAnimation {
+            background-color: #000;
+            height: 262px;
+            overflow: hidden;
+            position: relative;
+            width: 800px;
+            margin: auto;
+          }
+
+          .dot {
+            position: absolute;
+            background-color: #91e600;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            will-change: transform;
+          } */
+
       /* 섹션3 */
       .section3_fixed {
         position: absolute;
@@ -331,13 +350,7 @@
       }
 
       /* 섹션 4 */
-      .horizontal2 {
-        background: #f6f6fb;
-        flex-direction: column;
-        padding: 0 120px;
-        height: 100vh;
-        justify-content: center;
-      }
+
       .section4 .item_cont {
         display: flex;
       }
@@ -345,7 +358,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        color: #26263b;
       }
       .section4_title_cont h2 {
         font-family: "BebasNeue";
@@ -367,15 +379,25 @@
         color: #000;
         position: relative;
       }
-
+      /* .section4_title_cont .desc_cont .title_button_cont button::after,
+          .section4_title_cont .desc_cont .title_button_cont button::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            background: red;
+            width: 100%;
+            height: 20px;
+          } */
       .section4_title_cont .desc_cont .title_button_cont button:nth-child(1) {
         margin-bottom: 10px;
       }
-      .horizontal2 .lama {
+      .section4 .lama {
         position: absolute;
-        width: 418px;
         bottom: 0;
         left: 50%;
+        width: 418px;
         transform: translate(-50%, 0);
       }
       .section4_item {
@@ -445,21 +467,14 @@
         height: 100vh;
       }
 
-      /* 섹션5 */
-      .horizontal3 {
-        background: #f6f6fb;
-        flex-direction: column;
-        padding: 0 120px;
-        height: 100vh;
-        justify-content: center;
-      }
       .section5_item {
         width: 400px;
-        /* padding: 30px; */
+        padding: 30px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         position: relative;
+        
       }
     </style>
     <style>
@@ -480,64 +495,29 @@
       .section3 {
       }
       .section4 {
+        background: #f6f6fb;
         color: #000;
         display: flex;
         flex-direction: column;
+        /* align-items: center; */
         justify-content: center;
-        width: 800vw;
+        padding: 0 60px;
+        width: 1000vw;
       }
       .section5 {
-        color: #26263b;
-        width: 800vw;
-      }
-      .section5_item {
-        position: relative;
-      }
-      .section5_item > h2 {
-        text-align: center;
-        font-size: 100px;
-        font-weight: bold;
-        font-family: "GmarketSans";
-      }
-      .section5_item h2 > em {
-        color: #5856d4;
-        font-weight: 900;
-      }
-      .section5_item p {
-        text-align: center;
-        margin-bottom: 40px;
-      }
-      .section5_item button {
-        color: #26263b;
-        border: 1px solid #26263b;
-        padding: 10px 14px;
-        /* display: inline; */
-      }
-      .section5_button_cont {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-      }
-      .section5_screenshot_cont {
-        margin-bottom: 50px;
-      }
-      .section5_contents_cont {
-        height: 100vh;
-        align-items: center;
-        display: flex;
       }
       .section6 {
       }
     </style>
   </head>
   <body>
+    <!-- 첫번째 페이지 -->
     <img class="close" src="src/assets/img/main_close.svg" alt="닫기" />
     <div class="porfolio_desc_fixed">
       <p>Portfolio</p>
       <p>Kimsangjun</p>
       <p>2022.10.11</p>
     </div>
-    <!-- 첫번째 페이지 -->
     <section class="panel section section1">
       <div class="section1_desc">
         <h2>PORT</h2>
@@ -592,7 +572,6 @@
       <img src="src/assets/img/section2_lama.svg" alt="lama" class="lama" />
     </section>
 
-    <!-- 세번째 페이지 -->
     <div class="horizontal">
       <!-- 라마있어야 하는곳 -->
       <div class="section3_fixed">
@@ -679,25 +658,24 @@
         <!-- <canvas id="canvas"></canvas> -->
       </section>
     </div>
-
     <!-- 네번째&다섯번째 페이지 -->
     <div class="horizontal2">
-      <img class="lama" src="src/assets/img/section4_lama.svg" alt="" />
-      <div class="section4_title_cont">
-        <h2 class="title">GAME<em>EFFECT</em></h2>
-        <div class="desc_cont">
-          <p class="desc">
-            자바스크립트와 각종 음원들을 통하여<br />
-            게임 이펙트에 다양한 게임들을 담았습니다<br />
-            총 5가지의 게임으로 준비해보았습니다.
-          </p>
-          <div class="title_button_cont">
-            <button>VIEW</button>
-            <button>CODE</button>
+      <section class="panel2 section section4">
+        <img class="lama" src="src/assets/img/section4_lama.svg" alt="" />
+        <div class="section4_title_cont">
+          <h2 class="title">GAME<em>EFFECT</em></h2>
+          <div class="desc_cont">
+            <p class="desc">
+              자바스크립트와 각종 음원들을 통하여<br />
+              게임 이펙트에 다양한 게임들을 담았습니다<br />
+              총 5가지의 게임으로 준비해보았습니다.
+            </p>
+            <div class="title_button_cont">
+              <button>VIEW</button>
+              <button>CODE</button>
+            </div>
           </div>
         </div>
-      </div>
-      <section class="panel2 section4">
         <div class="item_cont">
           <div class="section4_contents_cont">
             <div class="section4_item">
@@ -759,10 +737,21 @@
               </div>
             </div>
           </div>
-
-          <!-- <div class="section5_contents_cont">
+          <div class="section4_contents_cont">
+            <div class="section4_item">
+              <h2>01</h2>
+              <div class="section4_item_desc">
+                <h4>MATCHING</h4>
+                <p>
+                  THIS IS QUIZE EFFECT THIS IS QUIZE EFFECT THIS IS QUIZE
+                  EFFECTTHIS IS QUIZE EFFECT THIS IS QUIZE EFFECT
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="section5_contents_cont">
             <div class="section5_item">
-              <img src="#" alt="#" />
+              img src="#" alt="#" />
               <h2>MySQL</h2>
               <p>
                 MySQL의 설치부터 각각 필요한 구문들을 정리해두었습니다!<br />
@@ -774,7 +763,7 @@
           </div>
           <div class="section5_contents_cont">
             <div class="section5_item">
-              <img src="#" alt="#" />
+              img src="#" alt="#" />
               <h2>MySQL</h2>
               <p>
                 MySQL의 설치부터 각각 필요한 구문들을 정리해두었습니다!<br />
@@ -784,137 +773,25 @@
               <button>VIEW</button>
             </div>
           </div>
-          <div class="section5_contents_cont">
-            <div class="section5_item">
-              <img src="#" alt="#" />
-              <h2>MySQL</h2>
-              <p>
-                MySQL의 설치부터 각각 필요한 구문들을 정리해두었습니다!<br />
-                terminal에서 출력된 메세지 또한 정리해보았습니다
-              </p>
-              <button>CODE</button>
-              <button>VIEW</button>
-            </div>
-          </div>
-          <div class="section5_contents_cont">
-            <div class="section5_item">
-              <img src="#" alt="#" />
-              <h2>MySQL</h2>
-              <p>
-                MySQL의 설치부터 각각 필요한 구문들을 정리해두었습니다!<br />
-                terminal에서 출력된 메세지 또한 정리해보았습니다
-              </p>
-              <button>CODE</button>
-              <button>VIEW</button>
-            </div>
-          </div>
-          <div class="section5_contents_cont">
-            <div class="section5_item">
-              <img src="#" alt="#" />
-              <h2>MySQL</h2>
-              <p>
-                MySQL의 설치부터 각각 필요한 구문들을 정리해두었습니다!<br />
-                terminal에서 출력된 메세지 또한 정리해보았습니다
-              </p>
-              <button>CODE</button>
-              <button>VIEW</button>
-            </div>
-          </div> -->
-        </div>
-      </section>
-    </div>
-    <!-- 네번째&다섯번째 페이지 -->
-    <div class="horizontal3">
-      <section class="panel3 section section5">
-        <div class="section5_contents_cont">
-          <div class="section5_item">
-            <div class="section5_screenshot_cont">
-              <img src="src/assets/img/section5_screenshot_01.svg" alt="#" />
-            </div>
-            <h2>My<em>SQL</em></h2>
-            <p>
-              MySQL의 설치부터 각각 필요한 구문들을 정리해두었습니다!<br />
-              terminal에서 출력된 메세지 또한 정리해보았습니다
-            </p>
-            <div class="section5_button_cont">
-              <button>CODE</button>
-              <button>VIEW</button>
-            </div>
-          </div>
-          <div class="section5_item">
-            <div class="section5_screenshot_cont">
-              <img src="src/assets/img/section5_screenshot_01.svg" alt="#" />
-            </div>
-            <h2>My<em>SQL</em></h2>
-            <p>
-              MySQL의 설치부터 각각 필요한 구문들을 정리해두었습니다!<br />
-              terminal에서 출력된 메세지 또한 정리해보았습니다
-            </p>
-            <div class="section5_button_cont">
-              <button>CODE</button>
-              <button>VIEW</button>
-            </div>
-          </div>
-          <div class="section5_item">
-            <div class="section5_screenshot_cont">
-              <img src="src/assets/img/section5_screenshot_01.svg" alt="#" />
-            </div>
-            <h2>My<em>SQL</em></h2>
-            <p>
-              MySQL의 설치부터 각각 필요한 구문들을 정리해두었습니다!<br />
-              terminal에서 출력된 메세지 또한 정리해보았습니다
-            </p>
-            <div class="section5_button_cont">
-              <button>CODE</button>
-              <button>VIEW</button>
-            </div>
-          </div>
-          <div class="section5_item">
-            <div class="section5_screenshot_cont">
-              <img src="src/assets/img/section5_screenshot_01.svg" alt="#" />
-            </div>
-            <h2>My<em>SQL</em></h2>
-            <p>
-              MySQL의 설치부터 각각 필요한 구문들을 정리해두었습니다!<br />
-              terminal에서 출력된 메세지 또한 정리해보았습니다
-            </p>
-            <div class="section5_button_cont">
-              <button>CODE</button>
-              <button>VIEW</button>
-            </div>
-          </div>
-          <div class="section5_item">
-            <div class="section5_screenshot_cont">
-              <img src="src/assets/img/section5_screenshot_01.svg" alt="#" />
-            </div>
-            <h2>My<em>SQL</em></h2>
-            <p>
-              MySQL의 설치부터 각각 필요한 구문들을 정리해두었습니다!<br />
-              terminal에서 출력된 메세지 또한 정리해보았습니다
-            </p>
-            <div class="section5_button_cont">
-              <button>CODE</button>
-              <button>VIEW</button>
-            </div>
           </div>
         </div>
+        <!-- <div class="section4_item">
+          <img src="#" alt="#" />
+          <h2>MySQL</h2>
+          <p>
+            MySQL의 설치부터 각각 필요한 구문들을 정리해두었습니다!<br />
+            terminal에서 출력된 메세지 또한 정리해보았습니다
+          </p>
+          <button>CODE</button>
+          <button>VIEW</button>
+        </div> -->
       </section>
     </div>
-    <!-- <div class="horizontal">
-      <section class="panel what-we-do"></section>
-      <section class="panel work-sec"></section>
-      <section class="panel about-sec"></section>
-    </div> -->
-
-    <!-- 네번째&다섯번째 페이지 -->
-    <!-- <div class="horizontal">
-      <section class="panel2 section section4">
-        <img class="lama" src="src/assets/img/section4_lama.svg" alt="" />
-      </section>
-    </div> -->
-
     <!-- 여섯번째 페이지 -->
+    <div class="horizontal3"></div>
+
     <section class="contact"></section>
+    <footer></footer>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
@@ -922,7 +799,7 @@
       gsap.registerPlugin(ScrollTrigger);
 
       const lenis = new Lenis({
-        duration: 2.2,
+        duration: 1.2,
         easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
       });
 
@@ -956,27 +833,10 @@
       let sections2 = gsap.utils.toArray(".panel2");
 
       gsap.to(sections2, {
-        xPercent: -5 * (sections.length - 1),
+        xPercent: -100 * (sections.length - 1),
         ease: "none",
         scrollTrigger: {
           trigger: ".horizontal2",
-          pin: true,
-          scrub: true,
-          // snap: 1 / (sections.length - 1),
-          end: "+=3500",
-        },
-      });
-    </script>
-    <script>
-      gsap.registerPlugin(ScrollTrigger);
-
-      let sections3 = gsap.utils.toArray(".panel3");
-
-      gsap.to(sections3, {
-        xPercent: -5 * (sections.length - 1),
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".horizontal3",
           pin: true,
           scrub: true,
           // snap: 1 / (sections.length - 1),
