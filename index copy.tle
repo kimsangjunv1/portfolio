@@ -50,7 +50,7 @@
     }
 
     .section {
-      height: 100vw;
+      height: 100vh;
       width: 100vw;
       /* background-color: steelblue; */
       position: relative;
@@ -79,21 +79,19 @@
     }
     .porfolio_desc_fixed {
       position: fixed;
-      right: 0;
-      top: 0;
-      height: 100%;
-      width: 0%;
+      right: -416px;
+      top: 48.8%;
+      transform: translate(0, -50%);
+      /* height: 28px; */
       display: flex;
       justify-content: space-between;
-      align-items: flex-end;
-      flex-direction: column;
+      rotate: 90deg;
+      width: 100vh;
+      padding: 0px 50px;
+      /* background: red; */
       z-index: 111;
       font-family: "Red Hat Display";
-      padding: 58px 0;
       font-weight: 900;
-    }
-    .porfolio_desc_fixed p {
-      transform: rotate(90deg);
     }
   </style>
 
@@ -121,26 +119,23 @@
     .section1_desc p,
     .section1_desc h2 {
       position: absolute;
-      top: 50%;
+      bottom: 0px;
       left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    .section1_desc h2 {
-      background: linear-gradient(0deg, rgba(255, 255, 255, 0) 10%, #fff 76%);
-      color: transparent;
-      -webkit-background-clip: text;
-      font-size: 25.2vw;
-      font-weight: 100;
-      z-index: 1;
-      line-height: 80%;
-    }
-    .section1_desc h2 em {
-      font-weight: 900;
+      transform: translate(-50%, 0);
     }
     .section1_desc p {
       bottom: 63%;
       font-size: 80px;
       font-weight: 900;
+    }
+
+    .section1_desc h2:nth-child(1) {
+      font-weight: 100;
+      bottom: 47%;
+      /* opacity: 0.3; */
+    }
+    .section1_desc h2:nth-child(2) {
+      bottom: 25%;
     }
     .section1_img {
       width: 100%;
@@ -154,63 +149,61 @@
     .section1_img img:nth-child(1) {
       left: 50%;
       transform: translate(-50%, 0);
-      width: 17.2vw;
     }
     .section1_img img:nth-child(2) {
       left: 40%;
       transform: translate(-60%, 0);
-      width: 18vw;
     }
     .section1_img img:nth-child(3) {
       right: 30%;
       transform: translate(70%, 0);
-      width: 26vw;
     }
     .section1_img img:nth-child(4) {
       right: 10%;
       transform: translate(70%, 0);
-      width: 8vw;
     }
     .section1_img img:nth-child(5) {
       left: 10%;
       transform: translate(70%, 0);
-      width: 10vw;
     }
     .section1_img img:nth-child(6) {
       left: 5%;
       transform: translate(70%, 0);
-      width: 6vw;
     }
     .section1_img img:nth-child(7) {
       z-index: 0;
       left: 50%;
       transform: translate(-50%, 0);
       opacity: 0.4;
-      width: 100vw;
     }
     .section1_img img:nth-child(8) {
       z-index: 0;
       left: 50%;
       transform: translate(-50%, 0);
-      width: 60vw;
     }
     .section1_img img:nth-child(9) {
       z-index: 0;
       left: 50%;
       transform: translate(-50%, 0);
-      width: 130vw;
     }
     .section1_img img:nth-child(10) {
       right: 10%;
       transform: translate(-60%, 0);
       top: -823px;
-      width: 5vw;
     }
     .section1_img img:nth-child(11) {
       left: 20%;
       transform: translate(-60%, 0);
       top: -623px;
-      width: 5vw;
+    }
+
+    .section1_desc h2 {
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0) 26%, #fff 76%);
+      color: transparent;
+      -webkit-background-clip: text;
+      font-size: 350px;
+      font-weight: 900;
+      z-index: 1;
     }
     .close {
       position: fixed;
@@ -1257,8 +1250,8 @@
     </div>
     <section class="section">
       <div class="section1_desc">
-        <h2>PORT<br /><em>FOLIO</em></h2>
-        <!-- <h2>FOLIO</h2> -->
+        <h2>PORT</h2>
+        <h2>FOLIO</h2>
       </div>
       <div class="section1_img">
         <img class="ir" src="src/assets/img/main_lama.svg" alt="라마" />
