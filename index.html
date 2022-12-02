@@ -328,8 +328,8 @@
       display: flex;
       align-items: flex-end;
       gap: 20px;
-      width: 500px;
-      height: 500px;
+      /* width: 500px;
+      height: 500px; */
     }
     .section3_item button {
       padding: 10px;
@@ -2090,7 +2090,7 @@
     // JS 이펙트 설명
     let sections = gsap.utils.toArray(".section3_item");
     gsap.to(sections, {
-      xPercent: -400 * (sections.length - 1),
+      xPercent: -100 * (sections.length - 1),
       ease: "none",
       scrollTrigger: {
         trigger: ".horizontal",
@@ -2098,7 +2098,7 @@
         pin: true,
         scrub: true,
         snap: 1 / (sections.length - 1),
-        end: "+=5000",
+        end: "+=1500",
       },
     });
 
