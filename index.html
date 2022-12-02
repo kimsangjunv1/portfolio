@@ -1165,6 +1165,82 @@
     }
   </style>
 
+  <!-- 섹션 15 -->
+  <style>
+    .section15_flex_cont {
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+    .section15_all_cont {
+      width: 90vw;
+      margin: 0 auto;
+    }
+    .section15_main_title {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .section15_main_title h2 {
+      font-size: 42px;
+      font-weight: 900;
+      color: black;
+      /* margin-bottom: 40px; */
+    }
+    .section15_list_cont ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 1px solid #00000017;
+    }
+    .section15_list_cont ul li {
+      color: #151326;
+      font-size: 14px;
+    }
+    .section15_list_cont ul li:nth-child(1) {
+      width: 7%;
+      border: 1px solid #000;
+      padding: 5px;
+    }
+    .section15_list_cont ul li:nth-child(2) {
+      text-align: left;
+      width: 20%;
+      font-size: 22px;
+      font-weight: 900;
+    }
+    .section15_list_cont ul li:nth-child(3) {
+      width: 53%;
+      text-align: left;
+    }
+    .section15_list_cont ul li:nth-child(4) {
+      width: 20%;
+      text-align: right;
+    }
+    .section15_list_cont ul li a {
+      margin-right: 5px;
+    }
+    .section15_list_cont ul li a:last-child {
+      margin-right: 0;
+    }
+    .section15_list_cont ul li a {
+      color: #151326;
+      padding: 2px 5px;
+      background: #00000012;
+    }
+    .section15_list_cont ul li p {
+      margin-bottom: 10px;
+    }
+    .section15_list_cont ul li p:last-child {
+      margin-bottom: 0;
+    }
+  </style>
+
   <body>
     <img class="close" src="src/assets/img/main_close.svg" alt="닫기" />
     <div class="porfolio_desc_fixed">
@@ -1789,80 +1865,6 @@
 
     <!-- VUE UNSPLASH : section15-->
     <section style="background: #f6f6fb" class="section">
-      <style>
-        .section15_flex_cont {
-          width: 100%;
-          height: 100%;
-          justify-content: center;
-          align-items: center;
-          display: flex;
-        }
-        .section15_all_cont {
-          width: 90vw;
-          margin: 0 auto;
-        }
-        .section15_main_title {
-          display: flex;
-          justify-content: center;
-          text-align: center;
-          margin-bottom: 40px;
-        }
-        .section15_main_title h2 {
-          font-size: 42px;
-          font-weight: 900;
-          color: black;
-          /* margin-bottom: 40px; */
-        }
-        .section15_list_cont ul {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          gap: 20px;
-          text-align: center;
-          padding: 20px 0;
-          border-bottom: 1px solid #00000017;
-        }
-        .section15_list_cont ul li {
-          color: #151326;
-          font-size: 14px;
-        }
-        .section15_list_cont ul li:nth-child(1) {
-          width: 7%;
-          border: 1px solid #000;
-          padding: 5px;
-        }
-        .section15_list_cont ul li:nth-child(2) {
-          text-align: left;
-          width: 20%;
-          font-size: 22px;
-          font-weight: 900;
-        }
-        .section15_list_cont ul li:nth-child(3) {
-          width: 53%;
-          text-align: left;
-        }
-        .section15_list_cont ul li:nth-child(4) {
-          width: 20%;
-          text-align: right;
-        }
-        .section15_list_cont ul li a {
-          margin-right: 5px;
-        }
-        .section15_list_cont ul li a:last-child {
-          margin-right: 0;
-        }
-        .section15_list_cont ul li a {
-          color: #151326;
-          padding: 2px 5px;
-          background: #00000012;
-        }
-        .section15_list_cont ul li p {
-          margin-bottom: 10px;
-        }
-        .section15_list_cont ul li p:last-child {
-          margin-bottom: 0;
-        }
-      </style>
       <div class="section15_flex_cont">
         <div class="section15_all_cont">
           <div class="section15_main_title">
@@ -1960,6 +1962,81 @@
             </ul>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- VUE UNSPLASH : section16-->
+    <section style="background: #f6f6fb" class="section">
+      <style>
+        .section16_item_cont {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          width: 100%;
+          height: 100%;
+          padding: 0 120px;
+        }
+        .section16_item_cont img {
+          width: 50%;
+        }
+        .contact_cont {
+          width: 50%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          /* align-items: center; */
+          justify-content: center;
+        }
+        .contact_cont .input_cont {
+          display: flex;
+          flex-direction: column;
+        }
+        .contact_cont .input_cont input {
+          border: 1px solid #35346145;
+          background: #e5e5ef6e;
+          color: #353461;
+          height: 50px;
+          border-bottom: 0px;
+          padding: 10px;
+        }
+        .contact_cont .input_cont textarea {
+          border: 1px solid #35346145;
+          background: #e5e5ef6e;
+          color: #353461;
+          height: 300px;
+          padding: 10px;
+        }
+        .contact_cont .input_cont button {
+          background: #353461;
+          color: #fff;
+          text-align: left;
+          height: 50px;
+          padding: 10px;
+        }
+        .contact_cont h2 {
+          font-weight: 900;
+          font-size: 50px;
+          color: #5856d4;
+        }
+      </style>
+      <div class="section16_item_cont">
+        <div class="contact_cont">
+          <h2>CONTACT_ME</h2>
+          <div class="input_cont">
+            <input type="email" alt="이메일" placeholder="E-MAIL" required />
+            <!-- <input type="contents" alt="내용" placeholder="E-MAIL" required /> -->
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="COTENTS"
+              required
+            ></textarea>
+            <button class="submit" alt="제출">SUBMIT</button>
+          </div>
+        </div>
+        <img src="src/assets/img/section16_lama.svg" alt="" />
       </div>
     </section>
   </body>
