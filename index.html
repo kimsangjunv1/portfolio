@@ -641,8 +641,34 @@
       height: 100%;
       background: linear-gradient(0deg, #15132600 0%, #151326 40%);
     }
+    .section7_main_title_cont {
+      display: flex;
+    }
+    .section7_main_title_cont h2 {
+      color: #6dd03e;
+      font-weight: 900;
+      font-size: 120px;
+      line-height: 75%;
+    }
+    .section7_main_title_cont p {
+      padding: 2px 6px;
+      background: #383550;
+      color: #6dd03f;
+      display: inline-block;
+      /* margin: 20px 0px 0px 7px; */
+      border-radius: 5px;
+      font-weight: 400;
+      height: 27px;
+    }
     .section7_blog_desc {
       text-align: right;
+    }
+    .section7_button_cont {
+      margin-top: 20px;
+    }
+    .section7_button_cont button {
+      padding: 7px 12px;
+      border: 1px solid #fff;
     }
   </style>
 
@@ -658,9 +684,9 @@
       justify-content: space-evenly;
       align-items: center;
       height: 100vh;
-      background-image: url(/src/assets/img/section7_screenshot_02.jpg);
-      background-size: cover;
+      background-image: url(/src/assets/img/section8_screenshot_01.jpg);
       background-position: center;
+      background-size: cover;
     }
     .section8_item::before,
     .section8_item::after {
@@ -672,8 +698,34 @@
       height: 100%;
       background: linear-gradient(0deg, #15132600 0%, #151326 40%);
     }
+    .section8_main_title_cont {
+      display: flex;
+    }
+    .section8_main_title_cont h2 {
+      color: #6dd03e;
+      font-weight: 900;
+      font-size: 120px;
+      line-height: 75%;
+    }
+    .section8_main_title_cont p {
+      padding: 2px 6px;
+      background: #383550;
+      color: #6dd03f;
+      display: inline-block;
+      /* margin: 20px 0px 0px 7px; */
+      border-radius: 5px;
+      font-weight: 400;
+      height: 27px;
+    }
     .section8_blog_desc {
-      text-align: lefft;
+      text-align: right;
+    }
+    .section8_button_cont {
+      margin-top: 20px;
+    }
+    .section8_button_cont button {
+      padding: 7px 12px;
+      border: 1px solid #fff;
     }
   </style>
 
@@ -992,7 +1044,8 @@
         </div>
       </section>
     </div>
-    <!-- <section style="background: #100f1c" class="panel3"></section> -->
+
+    <!-- 게임 이펙트와 도큐먼트 사이의 과정 -->
     <section
       style="
         background: linear-gradient(
@@ -1045,7 +1098,10 @@
     <section class="section">
       <div class="section7_item">
         <div class="section7_flex_cont">
-          <h2>BLOG</h2>
+          <div class="section7_main_title_cont">
+            <h2>BLOG</h2>
+            <p>PHP</p>
+          </div>
           <div class="section7_blog_desc">
             <p>
               PHP에 대한 이해도를 높이기 위한 목적으로 만들어본 사이트입니다.<br /><br />
@@ -1061,7 +1117,7 @@
               그 데이터를 브라우저에 출력하여 최종적으로 웹을 만들게 되는 일련의
               과정을 조금이나마 알게 되었습니다<br />
             </p>
-            <div class="section5_button_cont">
+            <div class="section7_button_cont">
               <button>CODE</button>
               <button>VIEW</button>
             </div>
@@ -1071,7 +1127,7 @@
     </section>
 
     <!-- PHP 꾸다 -->
-    <section style="background: darkkhaki" class="section">
+    <section class="section">
       <div class="section8_item">
         <div class="section8_flex_cont">
           <div class="section8_blog_desc">
@@ -1089,12 +1145,15 @@
               그 데이터를 브라우저에 출력하여 최종적으로 웹을 만들게 되는 일련의
               과정을 조금이나마 알게 되었습니다<br />
             </p>
-            <div class="section5_button_cont">
+            <div class="section8_button_cont">
               <button>CODE</button>
               <button>VIEW</button>
             </div>
           </div>
-          <h2>GGUDA</h2>
+          <div class="section8_main_title_cont">
+            <h2>BLOG</h2>
+            <p>PHP</p>
+          </div>
         </div>
       </div>
     </section>
