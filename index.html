@@ -639,10 +639,10 @@
     .section7_item::after {
       width: 100%;
       height: 100%;
-      background: linear-gradient(0deg, #15132600 0%, #151326 40%);
+      background: linear-gradient(0deg, #15132600 0%, #151326 60%);
     }
     .section7_main_title_cont {
-      display: flex;
+      /* display: flex; */
     }
     .section7_main_title_cont h2 {
       color: #6dd03e;
@@ -655,13 +655,14 @@
       background: #383550;
       color: #6dd03f;
       display: inline-block;
-      /* margin: 20px 0px 0px 7px; */
+      margin: 20px 0px 0px 7px;
       border-radius: 5px;
       font-weight: 400;
       height: 27px;
     }
     .section7_blog_desc {
       text-align: right;
+      width: 50%;
     }
     .section7_button_cont {
       margin-top: 20px;
@@ -672,8 +673,16 @@
     }
   </style>
 
-  <!-- 섹션 7 -->
+  <!-- 섹션 8 -->
   <style>
+    .test {
+      z-index: 1;
+      grid-column: span 2;
+      max-width: 100%;
+      -webkit-clip-path: polygon(41% 0, 100% 0, 62% 100%, 0 100%);
+      clip-path: polygon(41% 0, 100% 0, 62% 100%, 0 100%);
+    }
+
     .section8_flex_cont {
       display: flex;
       justify-content: space-between;
@@ -684,7 +693,7 @@
       justify-content: space-evenly;
       align-items: center;
       height: 100vh;
-      background-image: url(/src/assets/img/section8_screenshot_01.jpg);
+      background-image: url(/src/assets/img/section7_screenshot_02.jpg);
       background-position: center;
       background-size: cover;
     }
@@ -696,13 +705,20 @@
     .section8_item::after {
       width: 100%;
       height: 100%;
-      background: linear-gradient(0deg, #15132600 0%, #151326 40%);
+      background: linear-gradient(0deg, #15132600 0%, #151326 60%);
     }
     .section8_main_title_cont {
-      display: flex;
+      /* display: flex; */
     }
     .section8_main_title_cont h2 {
-      color: #6dd03e;
+      background: linear-gradient(
+        45deg,
+        #5856d4 26%,
+        #bb47bd 76%,
+        #8258dc 100%
+      );
+      color: transparent;
+      -webkit-background-clip: text;
       font-weight: 900;
       font-size: 120px;
       line-height: 75%;
@@ -710,15 +726,17 @@
     .section8_main_title_cont p {
       padding: 2px 6px;
       background: #383550;
-      color: #6dd03f;
+      color: #bb47bd;
       display: inline-block;
-      /* margin: 20px 0px 0px 7px; */
+      margin: 20px 0px 0px 0px;
+      float: right;
       border-radius: 5px;
       font-weight: 400;
       height: 27px;
     }
     .section8_blog_desc {
-      text-align: right;
+      text-align: left;
+      width: 50%;
     }
     .section8_button_cont {
       margin-top: 20px;
@@ -726,6 +744,67 @@
     .section8_button_cont button {
       padding: 7px 12px;
       border: 1px solid #fff;
+    }
+
+    .section8_all_cont {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 120px;
+      height: 100%;
+    }
+    .sec8_bg {
+      height: 100%;
+    }
+    .section8_desc_cont {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 120px 0;
+    }
+    .section8_logo_cont {
+      position: relative;
+      width: 50%;
+    }
+    .sec8_logo {
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      transform: translate(0, -50%);
+      z-index: 1;
+      width: 54vh;
+    }
+    .section8_main_screenshot {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .title_wrap {
+      display: flex;
+      font-size: 50px;
+      font-weight: 100;
+      margin-bottom: 20px;
+    }
+    .title_wrap .title {
+      line-height: 100%;
+    }
+    .title_wrap .title em {
+      font-weight: 900;
+    }
+    .sub_ttitle {
+      font-size: 16px;
+      background: #fff;
+      color: #000;
+      padding: 2px 4px;
+      border-radius: 5px;
+      height: 26px;
+      margin-top: 6px;
+      font-weight: 600;
+      margin-left: 10px;
     }
   </style>
 
@@ -1126,7 +1205,7 @@
       </div>
     </section>
 
-    <!-- PHP 꾸다 -->
+    <!-- PHP 꾸다 : section8 -->
     <section class="section">
       <div class="section8_item">
         <div class="section8_flex_cont">
@@ -1151,24 +1230,41 @@
             </div>
           </div>
           <div class="section8_main_title_cont">
-            <h2>BLOG</h2>
-            <p>PHP</p>
+            <h2>GGUDA</h2>
+            <p>PHP TEAM PROJECT</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- VUE 메ㅑ -->
-    <section style="background: gold" class="section">
-      <img src="#" alt="" />
-      <div>
-        <div>
-          <p>VUE API<br /><em>TMDB</em></p>
-          <p class="">MOVIE</p>
+    <!-- VUE : section9 -->
+    <section style="background: #00244dd4" class="section">
+      <!-- <img src="#" alt="" /> -->
+      <div class="section8_all_cont">
+        <div class="section8_desc_cont">
+          <div class="title_wrap">
+            <p class="title">VUE API<br /><em>MOVIE</em></p>
+            <p class="sub_ttitle">TMDB</p>
+          </div>
+          <p>USEEFFECT와 USESTATE</p>
         </div>
-        <div>
-          <img src="src/assets/img/section8_logo.png" alt="" />
+        <div class="section8_logo_cont">
+          <img
+            class="sec8_logo"
+            src="src/assets/img/section9_logo.png"
+            alt=""
+          />
+          <img
+            class="sec8_bg test"
+            src="src/assets/img/section9_logo_bg.jpg"
+            alt=""
+          />
         </div>
+        <img
+          class="section8_main_screenshot"
+          src="src/assets/img/section9_screenshot_01.png"
+          alt=""
+        />
       </div>
     </section>
     <section style="background: honeydew" class="section"></section>
