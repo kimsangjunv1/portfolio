@@ -70,6 +70,29 @@
       -webkit-clip-path: polygon(0 0, 62% 0, 100% 100%, 41% 100%);
       clip-path: polygon(0 0, 62% 0, 100% 100%, 41% 100%);
     }
+    .close {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+      width: 71px;
+    }
+    .porfolio_desc_fixed {
+      position: fixed;
+      right: -416px;
+      top: 48.8%;
+      transform: translate(0, -50%);
+      /* height: 28px; */
+      display: flex;
+      justify-content: space-between;
+      rotate: 90deg;
+      width: 100vh;
+      padding: 0px 50px;
+      /* background: red; */
+      z-index: 111;
+      font-family: "Red Hat Display";
+      font-weight: 900;
+    }
   </style>
 
   <!-- 섹션 1 -->
@@ -1143,6 +1166,12 @@
   </style>
 
   <body>
+    <img class="close" src="src/assets/img/main_close.svg" alt="닫기" />
+    <div class="porfolio_desc_fixed">
+      <p>Portfolio</p>
+      <p>Kimsangjun</p>
+      <p>2022.10.11</p>
+    </div>
     <section class="section">
       <div class="section1_desc">
         <h2>PORT</h2>
