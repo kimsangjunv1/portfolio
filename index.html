@@ -546,7 +546,7 @@
   <style>
     .horizontal3 .lama {
       position: absolute;
-      width: 418px;
+      width: 300px;
       bottom: 0;
       left: 50%;
       transform: translate(-50%, 0);
@@ -559,7 +559,124 @@
       transform: translate(-50%, 0);
       text-align: center;
     }
+
+    .section6_item {
+      position: relative;
+      margin-right: 100px;
+    }
+    .section6_item::before {
+      content: "";
+    }
+
+    .section6_item::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(125deg, #151326, #1513267d);
+    }
+    .section6_item_desc {
+      position: absolute;
+      height: 100%;
+      /* width: 100%; */
+      padding: 30px;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+    }
+    .section6_item::before,
+    .section6_item::after {
+      content: "";
+      position: absolute;
+    }
+    .section6_item::before {
+      top: 10px;
+      left: 50%;
+      width: 50px;
+      height: 2px;
+      background: #ffffff8a;
+      transform: translate(-50%, 0);
+      z-index: 1;
+    }
+    .section6_item_desc h4 {
+      font-size: 42px;
+      font-family: "GmarketSans";
+      font-weight: 600;
+      line-height: 100%;
+    }
+    .section6_item_desc p {
+      border-top: 2px solid #fff;
+      padding-top: 10px;
+    }
   </style>
+
+  <!-- 섹션 7 -->
+  <style>
+    .section7_flex_cont {
+      display: flex;
+      justify-content: space-between;
+      z-index: 1;
+    }
+    .section7_item {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 100vh;
+      background-image: url(/src/assets/img/section7_screenshot_01.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+    .section7_item::before,
+    .section7_item::after {
+      content: "";
+      position: absolute;
+    }
+    .section7_item::after {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, #15132600 0%, #151326 40%);
+    }
+    .section7_blog_desc {
+      text-align: right;
+    }
+  </style>
+
+  <!-- 섹션 7 -->
+  <style>
+    .section8_flex_cont {
+      display: flex;
+      justify-content: space-between;
+      z-index: 1;
+    }
+    .section8_item {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 100vh;
+      background-image: url(/src/assets/img/section7_screenshot_02.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    .section8_item::before,
+    .section8_item::after {
+      content: "";
+      position: absolute;
+    }
+    .section8_item::after {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, #15132600 0%, #151326 40%);
+    }
+    .section8_blog_desc {
+      text-align: lefft;
+    }
+  </style>
+
   <body>
     <section class="section">
       <div class="section1_desc">
@@ -714,7 +831,7 @@
     <!-- 게임 이펙트 -->
     <div class="horizontal2 custom_color">
       <!-- 라마있어야 하는곳 -->
-      <img class="lama" src="src/assets/img/section4_lama.svg" alt="" />
+      <img class="ir lama" src="src/assets/img/section4_lama.svg" alt="" />
       <div class="section4_fixed">
         <h2 class="title">GAME<em>EFFECT</em></h2>
         <div class="desc_cont">
@@ -890,9 +1007,9 @@
     <!-- 각종 도큐먼트 -->
     <div class="horizontal3 custom_color_dark">
       <!-- 라마있어야 하는곳 -->
-      <img class="lama" src="src/assets/img/section6_lama.svg" alt="" />
+      <img class="ir lama" src="src/assets/img/section6_lama.svg" alt="" />
       <div class="section6_fixed">
-        <h2 class="title">사이트 유형</em></h2>
+        <h2 class="title">사이트 유형</h2>
         <div class="section5_button_cont">
           <button>CODE</button>
           <button>VIEW</button>
@@ -900,96 +1017,101 @@
       </div>
       <section class="panel3 custom_02 custom_flex">
         <div class="section6_item">
-          <!-- <img src="src/assets/img/section4_screenshot_01.jpg" alt="" /> -->
-          <h2>01</h2>
           <div class="section6_item_desc">
-            <h4>MATCHING</h4>
-            <p>
-              THIS IS QUIZE EFFECT THIS IS QUIZE EFFECT THIS IS QUIZE EFFECTTHIS
-              IS QUIZE EFFECT THIS IS QUIZE EFFECT
-            </p>
+            <h4>눈<br />오는<br />날</h4>
+            <p>KIMSANGJUN</p>
           </div>
+          <img src="src/assets/img/section8_screenshot_01.png" alt="" />
         </div>
         <div class="section6_item">
-          <!-- <img src="src/assets/img/section4_screenshot_01.jpg" alt="" /> -->
-          <h2>01</h2>
           <div class="section6_item_desc">
-            <h4>MATCHING</h4>
-            <p>
-              THIS IS QUIZE EFFECT THIS IS QUIZE EFFECT THIS IS QUIZE EFFECTTHIS
-              IS QUIZE EFFECT THIS IS QUIZE EFFECT
-            </p>
+            <h4>눈<br />오는<br />날</h4>
+            <p>KIMSANGJUN</p>
           </div>
+          <img src="src/assets/img/section8_screenshot_01.png" alt="" />
         </div>
         <div class="section6_item">
-          <!-- <img src="src/assets/img/section4_screenshot_01.jpg" alt="" /> -->
-          <h2>01</h2>
           <div class="section6_item_desc">
-            <h4>MATCHING</h4>
-            <p>
-              THIS IS QUIZE EFFECT THIS IS QUIZE EFFECT THIS IS QUIZE EFFECTTHIS
-              IS QUIZE EFFECT THIS IS QUIZE EFFECT
-            </p>
+            <h4>눈<br />오는<br />날</h4>
+            <p>KIMSANGJUN</p>
           </div>
-        </div>
-        <div class="section6_item">
-          <!-- <img src="src/assets/img/section4_screenshot_01.jpg" alt="" /> -->
-          <h2>01</h2>
-          <div class="section6_item_desc">
-            <h4>MATCHING</h4>
-            <p>
-              THIS IS QUIZE EFFECT THIS IS QUIZE EFFECT THIS IS QUIZE EFFECTTHIS
-              IS QUIZE EFFECT THIS IS QUIZE EFFECT
-            </p>
-          </div>
+          <img src="src/assets/img/section8_screenshot_01.png" alt="" />
         </div>
       </section>
       <!-- <section style="background: #100f1c" class="panel3"></section> -->
     </div>
 
+    <!-- PHP 블로그 -->
     <section class="section">
-      <style>
-        .section7_flex_cont{
-          display: flex;
-          justify-content: space-between;
-        }
-        .section7_item{
-          display: flex;
-          justify-content: space-evenly;
-          align-items: center;
-          height: 100vh;
-        }
-        .section7_blog_desc{
-          text-align: right;
-        }
-      </style>
       <div class="section7_item">
         <div class="section7_flex_cont">
-        <h2>BLOG</h2>
+          <h2>BLOG</h2>
           <div class="section7_blog_desc">
             <p>
-              PHP에 대한 이해도를 높이기 위한 목적으로 만들어본 사이트입니다.<br><br>
-    
-              회원가입 / 글쓰기 / 수정 / 삭제 / 댓글<br>
-              위와 같은 활동이 가능하며<br>
-              프로필 사진을 넣을 수 있도록 작업하였습니다.<br>
-              
-              처음 PHP를 접하게 되면서 만든 블로그 컨셉의 사이트입니다.<br>
-              자바스크립트 이후 MYSQL를 배우게 되었는데 처음으로 배운 데이터베이스였으며 데이터를 외부에 저장하고<br><br>
-              
-              그 데이터를 브라우저에 출력하여 최종적으로 웹을 만들게 되는 일련의 과정을 조금이나마 알게 되었습니다<br>
+              PHP에 대한 이해도를 높이기 위한 목적으로 만들어본 사이트입니다.<br /><br />
+
+              회원가입 / 글쓰기 / 수정 / 삭제 / 댓글<br />
+              위와 같은 활동이 가능하며<br />
+              프로필 사진을 넣을 수 있도록 작업하였습니다.<br />
+
+              처음 PHP를 접하게 되면서 만든 블로그 컨셉의 사이트입니다.<br />
+              자바스크립트 이후 MYSQL를 배우게 되었는데 처음으로 배운
+              데이터베이스였으며 데이터를 외부에 저장하고<br /><br />
+
+              그 데이터를 브라우저에 출력하여 최종적으로 웹을 만들게 되는 일련의
+              과정을 조금이나마 알게 되었습니다<br />
             </p>
             <div class="section5_button_cont">
               <button>CODE</button>
               <button>VIEW</button>
             </div>
           </div>
-
         </div>
       </div>
     </section>
-    <section style="background: darkkhaki" class="section"></section>
-    <section style="background: gold" class="section"></section>
+
+    <!-- PHP 꾸다 -->
+    <section style="background: darkkhaki" class="section">
+      <div class="section8_item">
+        <div class="section8_flex_cont">
+          <div class="section8_blog_desc">
+            <p>
+              PHP에 대한 이해도를 높이기 위한 목적으로 만들어본 사이트입니다.<br /><br />
+
+              회원가입 / 글쓰기 / 수정 / 삭제 / 댓글<br />
+              위와 같은 활동이 가능하며<br />
+              프로필 사진을 넣을 수 있도록 작업하였습니다.<br />
+
+              처음 PHP를 접하게 되면서 만든 블로그 컨셉의 사이트입니다.<br />
+              자바스크립트 이후 MYSQL를 배우게 되었는데 처음으로 배운
+              데이터베이스였으며 데이터를 외부에 저장하고<br /><br />
+
+              그 데이터를 브라우저에 출력하여 최종적으로 웹을 만들게 되는 일련의
+              과정을 조금이나마 알게 되었습니다<br />
+            </p>
+            <div class="section5_button_cont">
+              <button>CODE</button>
+              <button>VIEW</button>
+            </div>
+          </div>
+          <h2>GGUDA</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- VUE 메ㅑ -->
+    <section style="background: gold" class="section">
+      <img src="#" alt="" />
+      <div>
+        <div>
+          <p>VUE API<br /><em>TMDB</em></p>
+          <p class="">MOVIE</p>
+        </div>
+        <div>
+          <img src="src/assets/img/section8_logo.png" alt="" />
+        </div>
+      </div>
+    </section>
     <section style="background: honeydew" class="section"></section>
     <section style="background: blueviolet" class="section"></section>
     <section style="background: palegoldenrod" class="section"></section>
@@ -1003,26 +1125,24 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
   <script>
-    // gsap.registerPlugin(ScrollTrigger);
+    const lenis = new Lenis({
+      duration: 2.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      direction: "vertical", // vertical, horizontal
+      gestureDirection: "vertical", // vertical, horizontal, both
+      smooth: true,
+      mouseMultiplier: 1,
+      smoothTouch: false,
+      touchMultiplier: 2,
+      infinite: false,
+    });
 
-    // const lenis = new Lenis({
-    //   duration: 2.2,
-    //   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    //   direction: "vertical", // vertical, horizontal
-    //   gestureDirection: "vertical", // vertical, horizontal, both
-    //   smooth: true,
-    //   mouseMultiplier: 1,
-    //   smoothTouch: false,
-    //   touchMultiplier: 2,
-    //   infinite: false,
-    // });
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
 
-    // function raf(time) {
-    //   lenis.raf(time);
-    //   requestAnimationFrame(raf);
-    // }
-
-    // requestAnimationFrame(raf);
+    requestAnimationFrame(raf);
   </script>
   <script>
     gsap.registerPlugin(ScrollTrigger);
@@ -1030,13 +1150,13 @@
     // JS 이펙트 설명
     let sections = gsap.utils.toArray(".section3_item");
     gsap.to(sections, {
-      xPercent: -100 * (sections.length - 1),
+      xPercent: -400 * (sections.length - 1),
       ease: "none",
       scrollTrigger: {
         trigger: ".horizontal",
         pin: true,
         scrub: true,
-        // snap: 1 / (sections.length - 1),
+        snap: 1 / (sections.length - 1),
         end: "+=3500",
       },
     });
@@ -1051,7 +1171,7 @@
         trigger: ".horizontal2",
         pin: true,
         scrub: true,
-        // snap: 1 / (sections2.length - 1),
+        snap: 1 / (sections2.length - 1),
         end: "+=13500",
       },
     });
@@ -1059,13 +1179,13 @@
     //
     let sections3 = gsap.utils.toArray(".section6_item");
     gsap.to(sections3, {
-      xPercent: -100 * (sections3.length - 1),
+      xPercent: -300 * (sections3.length - 1),
       ease: "none",
       scrollTrigger: {
         trigger: ".horizontal3",
         pin: true,
         scrub: true,
-        // snap: 1 / (sections3.length - 1),
+        snap: 1 / (sections3.length - 1),
         end: "+=3500",
       },
     });
