@@ -1254,17 +1254,37 @@
         <h2>FOLIO</h2>
       </div>
       <div class="section1_img">
-        <img src="src/assets/img/main_lama.svg" alt="" />
-        <img src="src/assets/img/main_dust_char_01.svg" alt="" />
-        <img src="src/assets/img/main_dust_char_02.png" alt="" />
-        <img src="src/assets/img/main_dust_01.png" alt="" />
-        <img src="src/assets/img/main_dust_02.svg" alt="" />
-        <img src="src/assets/img/main_dust_03.png" alt="" />
-        <img src="src/assets/img/main_lama_back_02.png" alt="" />
-        <img src="src/assets/img/main_lama_back_01.png" alt="" />
-        <img src="src/assets/img/main_lama_back_00.png" alt="" />
-        <img src="src/assets/img/main_dust_04.svg" alt="" />
-        <img src="src/assets/img/main_dust_05.svg" alt="" />
+        <img class="ir" src="src/assets/img/main_lama.svg" alt="라마" />
+        <img
+          class="ir"
+          src="src/assets/img/main_dust_char_01.svg"
+          alt="먼지 캐릭터 1"
+        />
+        <img
+          class="ir"
+          src="src/assets/img/main_dust_char_02.png"
+          alt="먼지 캐릭터 2"
+        />
+        <img class="ir" src="src/assets/img/main_dust_01.png" alt="먼지 1" />
+        <img class="ir" src="src/assets/img/main_dust_02.svg" alt="먼지 2" />
+        <img class="ir" src="src/assets/img/main_dust_03.png" alt="먼지 3" />
+        <img
+          class="ir"
+          src="src/assets/img/main_lama_back_02.png"
+          alt="메인 뒷배경 1"
+        />
+        <img
+          class="ir"
+          src="src/assets/img/main_lama_back_01.png"
+          alt="메인 뒷배경 2"
+        />
+        <img
+          class="ir"
+          src="src/assets/img/main_lama_back_00.png"
+          alt="메인 뒷배경 3"
+        />
+        <img class="ir" src="src/assets/img/main_dust_04.svg" alt="먼지 4" />
+        <img class="ir" src="src/assets/img/main_dust_05.svg" alt="먼지 5" />
       </div>
     </section>
 
@@ -1288,7 +1308,7 @@
         <!-- <p>KIMSANGJUN</p> -->
         <div class="section2_profile_cont">
           <img
-            class="section2_profile"
+            class="section2_profile ir"
             src="src/assets/img/section2_profile.png"
             alt=""
           />
@@ -1975,6 +1995,7 @@
           width: 100%;
           height: 100%;
           padding: 0 120px;
+          gap: 20px;
         }
         .section16_item_cont img {
           width: 50%;
@@ -2073,6 +2094,7 @@
       ease: "none",
       scrollTrigger: {
         trigger: ".horizontal",
+        markers: true,
         pin: true,
         scrub: true,
         snap: 1 / (sections.length - 1),
@@ -2088,8 +2110,9 @@
       // duration: 122.5,
       scrollTrigger: {
         trigger: ".horizontal2",
+        markers: true,
         pin: true,
-        scrub: true,
+        scrub: 1,
         snap: 1 / (sections2.length - 1),
         end: "+=5000",
       },
@@ -2102,10 +2125,11 @@
       ease: "none",
       scrollTrigger: {
         trigger: ".horizontal3",
+        markers: true,
         pin: true,
         scrub: true,
         snap: 1 / (sections3.length - 1),
-        end: "+=20000",
+        end: "+=1500",
       },
     });
   </script>
