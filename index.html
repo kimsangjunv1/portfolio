@@ -26,6 +26,9 @@
     .custom_color {
       background: #f6f6fb;
     }
+    .custom_color_dark {
+      background: #100f1c;
+    }
 
     .horizontal3,
     .horizontal2,
@@ -352,7 +355,7 @@
     }
     .section4_fixed {
       position: absolute;
-      top: 12vw;
+      top: 30px;
       left: 50%;
       transform: translate(-50%, 0);
       font-size: 16px;
@@ -473,6 +476,7 @@
       font-size: 10px;
     }
   </style>
+
   <!-- 섹션 5 -->
   <style>
     .section5_item {
@@ -535,6 +539,25 @@
       color: transparent;
       -webkit-background-clip: text;
       cursor: pointer;
+    }
+  </style>
+
+  <!-- 섹션 6 -->
+  <style>
+    .horizontal3 .lama {
+      position: absolute;
+      width: 418px;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    .section6_fixed {
+      position: absolute;
+      width: 418px;
+      top: 50px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      text-align: center;
     }
   </style>
   <body>
@@ -851,15 +874,6 @@
           </div>
         </div>
       </section>
-      <!-- <section style="background: #f6f6fb" class="panel2">
-        <div class="section5_item">
-          <div class="section5_button_cont">
-            <button>CODE</button>
-            <button>VIEW</button>
-          </div>
-        </div>
-      </section> -->
-      <!-- <section style="background: darkcyan" class="panel2"></section> -->
     </div>
     <!-- <section style="background: #100f1c" class="panel3"></section> -->
     <section
@@ -874,7 +888,7 @@
     ></section>
 
     <!-- 각종 도큐먼트 -->
-    <div class="horizontal3">
+    <div class="horizontal3 custom_color_dark">
       <!-- 라마있어야 하는곳 -->
       <img class="lama" src="src/assets/img/section6_lama.svg" alt="" />
       <div class="section6_fixed">
@@ -899,7 +913,8 @@
             </p>
           </div>
         </div>
-      <section style="background: #100f1c" class="panel3"></section>
+      </section>
+      <!-- <section style="background: #100f1c" class="panel3"></section> -->
     </div>
 
     <section style="background: wheat" class="section"></section>
@@ -923,6 +938,13 @@
     const lenis = new Lenis({
       duration: 2.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      direction: "vertical", // vertical, horizontal
+      gestureDirection: "vertical", // vertical, horizontal, both
+      smooth: true,
+      mouseMultiplier: 1,
+      smoothTouch: false,
+      touchMultiplier: 2,
+      infinite: false,
     });
 
     function raf(time) {
