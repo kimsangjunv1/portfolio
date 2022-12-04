@@ -125,14 +125,22 @@
         font-size: 1.5vw;
         font-weight: 900;
       }
-      #header p {
+      #header a {
         border-right: 1px solid #3434402f;
         margin-right: 0.8vw;
         padding-right: 0.8vw;
         color: #34344086;
         font-size: 1.3vw;
+        transition: 0.25s;
+        cursor: pointer;
       }
-      #header p:last-child {
+      #header a:hover {
+        color: #fe3672;
+      }
+      #header a:not(:hover) {
+        transition: 0.25s;
+      }
+      #header a:last-child {
         margin-right: 0;
         border-right: none;
       }
@@ -1401,12 +1409,12 @@
     <header id="header">
       <!-- <div class="header_inner"> -->
       <h2>KIMSANGJUN</h2>
-      <p>JS EFFECT</p>
-      <p>GAME EFFECT</p>
-      <p>REFER BOOK</p>
-      <p>SITE TYPE</p>
-      <p>PHP SITE</p>
-      <p>VUE/REACT SITE</p>
+      <a href="#">JS EFFECT</a>
+      <a href="#">GAME EFFECT</a>
+      <a href="#">REFER BOOK</a>
+      <a href="#">SITE TYPE</a>
+      <a href="#">PHP SITE</a>
+      <a href="#">VUE/REACT SITE</a>
       <!-- </div> -->
     </header>
     <!-- <img class="close" src="src/assets/img/main_close.svg" alt="닫기" /> -->
