@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="src/assets/scss/assets/css/style.min.css" />
-
     <!-- 메인 -->
     <style>
       body {
@@ -1416,6 +1415,17 @@
       <a href="#">PHP SITE</a>
       <a href="#">VUE/REACT SITE</a>
       <!-- </div> -->
+
+      <!-- progress-bar 영역 Start -->
+      <div class="progress-box container">
+        <div class="progress-container">
+          <div class="progress-bar" id="indicator">
+            <p class="test_gage"></p>
+          </div>
+          <!--<a href="#" class="page-top">TOP</a>-->
+        </div>
+      </div>
+      <!-- progress-bar 영역 End -->
     </header>
     <!-- <img class="close" src="src/assets/img/main_close.svg" alt="닫기" /> -->
     <div class="porfolio_desc_fixed">
@@ -1853,16 +1863,29 @@
           </div>
         </div>
       </section>
+      <section style="opacity: 0" class="panel2 custom_flex">
+        <div class="section5_item">
+          <div class="section5_screenshot_cont">
+            <img src="src/assets/img/section5_screenshot_01.svg" alt="#" />
+          </div>
+          <h2>My<em>SQL</em></h2>
+          <p>
+            MySQL의 설치부터 각각 필요한 구문들을 정리해두었습니다!<br />
+            terminal에서 출력된 메세지 또한 정리해보았습니다
+          </p>
+          <div class="section5_button_cont">
+            <button>CODE</button>
+            <button>VIEW</button>
+          </div>
+        </div>
+      </section>
     </div>
 
     <!-- 게임 이펙트와 도큐먼트 사이의 과정 -->
     <section
       style="
-        background: linear-gradient(
-          360deg,
-          rgb(16 15 28) 0%,
-          rgb(246, 246, 251) 100%
-        );
+        background: rgb(16 15 28);
+        border-radius: 37% 26% 10% 10% / 8% 10% 0% 0%;
       "
       class="section"
     ></section>
@@ -2335,6 +2358,7 @@
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
   <script>
     const lenis = new Lenis({
       duration: 2,
@@ -2390,7 +2414,7 @@
     });
 
     //
-    let sections3 = gsap.utils.toArray(".section6_item");
+    let sections3 = gsap.utils.toArray(".panel3");
     gsap.to(sections3, {
       xPercent: -300 * (sections3.length - 1),
       ease: "none",
