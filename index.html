@@ -94,8 +94,9 @@
         flex-direction: column;
         z-index: 111;
         font-family: "Red Hat Display";
-        padding: 114px 0;
+        padding: 7.2vw 0;
         font-weight: 900;
+        font-size: 1.2vw;
       }
       .porfolio_desc_fixed p {
         transform: rotate(90deg);
@@ -454,16 +455,10 @@
         width: 418px;
         top: 100%;
         left: 100%;
-        /* transform: translate(-50%, 0); */
-        /* margin: 0; */
       }
       .section4_fixed {
         position: sticky;
         top: 100px;
-        /* left: 50%; */
-        /* transform: translate(-50%, -50%); */
-        /* font-size: 16px; */
-        z-index: -1;
         display: flex;
         width: 100%;
         justify-content: space-between;
@@ -528,6 +523,15 @@
         width: 5.5vw;
         height: 3.5vw;
         font-size: 1.5vw;
+        transition: 0.25s;
+        cursor: pointer;
+      }
+      .section4_button_cont button:hover {
+        background: #343440;
+        color: #fff;
+      }
+      .section4_button_cont button:hover {
+        transition: 0.25s;
       }
       .section4_item {
         width: 81.3vw;
@@ -564,15 +568,15 @@
         filter: drop-shadow(0px 59px 40px #82869c70);
         color: #82869c70;
       }
-      .section4_icon_layout::before {
+      .section4_item::before {
         content: "";
         background-image: url(/src/assets/img/section4_icon_music.svg);
         position: absolute;
-        top: -50px;
+        top: 50%;
         right: 0;
-        transform: rotate(16deg);
-        width: 150px;
-        height: 150px;
+        transform: translate(0, -50%);
+        width: 21.2vw;
+        height: 32.2vw;
         background-repeat: no-repeat;
         background-size: cover;
         z-index: 1;
@@ -586,7 +590,7 @@
         width: 81.3vw;
         height: 46.3vw;
         background: #82869c;
-        padding-bottom: 3vw;
+        padding-bottom: 7vw;
         display: flex;
         /* flex-direction: column; */
         justify-content: space-between;
@@ -618,15 +622,15 @@
         filter: drop-shadow(0px 59px 40px #82869c70);
         color: #82869c70;
       }
-      .section4_rev_icon_layout::before {
+      .section4_rev_item::before {
         content: "";
         background-image: url(/src/assets/img/section4_icon_music.svg);
         position: absolute;
-        top: 79px;
-        left: 50%;
-        transform: translate(-50%, -50%) rotate(16deg);
-        width: 150px;
-        height: 150px;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+        width: 21.2vw;
+        height: 32.2vw;
         background-repeat: no-repeat;
         background-size: cover;
         z-index: 1;
@@ -645,7 +649,7 @@
     <style>
       .section5_fixed {
         position: fixed;
-        top: 12vw;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, 0);
       }
@@ -656,7 +660,7 @@
       }
       .section5_fixed em {
         font-weight: 900;
-        color: #fe3672;
+        color: #6236fe;
       }
       .section5_item {
         color: #26263b;
@@ -687,6 +691,15 @@
         width: 7vw;
         height: 4vw;
         font-size: 1.4vw;
+        transition: 0.25s;
+        cursor: pointer;
+      }
+      .section5_item button:hover {
+        background: #26263b;
+        color: #fff;
+      }
+      .section5_item button:not(:hover) {
+        transition: 0.25s;
       }
       .section5_button_cont {
         display: flex;
@@ -1399,7 +1412,7 @@
     <!-- <img class="close" src="src/assets/img/main_close.svg" alt="닫기" /> -->
     <div class="porfolio_desc_fixed">
       <p>Portfolio</p>
-      <p>Kimsangjun</p>
+      <p>Sangjun</p>
       <p>2022.10.11</p>
     </div>
     <section class="section">
@@ -1736,7 +1749,7 @@
       <div class="section5_fixed">
         <h2>REFERENCE <em>BOOK</em></h2>
       </div>
-      <section class="panel2 custom_flex">
+      <section style="opacity: 0" class="panel2 custom_flex">
         <div class="section5_item">
           <div class="section5_screenshot_cont">
             <img src="src/assets/img/section5_screenshot_01.svg" alt="#" />
@@ -1771,7 +1784,7 @@
       <section class="panel2 custom_flex">
         <div class="section5_item">
           <div class="section5_screenshot_cont">
-            <img src="src/assets/img/section5_screenshot_01.svg" alt="#" />
+            <img src="src/assets/img/section5_screenshot_02.svg" alt="#" />
           </div>
           <h2>My<em>SQL</em></h2>
           <p>
@@ -1787,7 +1800,7 @@
       <section class="panel2 custom_flex">
         <div class="section5_item">
           <div class="section5_screenshot_cont">
-            <img src="src/assets/img/section5_screenshot_01.svg" alt="#" />
+            <img src="src/assets/img/section5_screenshot_03.svg" alt="#" />
           </div>
           <h2>My<em>SQL</em></h2>
           <p>
@@ -1803,7 +1816,7 @@
       <section class="panel2 custom_flex">
         <div class="section5_item">
           <div class="section5_screenshot_cont">
-            <img src="src/assets/img/section5_screenshot_01.svg" alt="#" />
+            <img src="src/assets/img/section5_screenshot_04.svg" alt="#" />
           </div>
           <h2>My<em>SQL</em></h2>
           <p>
@@ -1819,7 +1832,7 @@
       <section class="panel2 custom_flex">
         <div class="section5_item">
           <div class="section5_screenshot_cont">
-            <img src="src/assets/img/section5_screenshot_01.svg" alt="#" />
+            <img src="src/assets/img/section5_screenshot_05.svg" alt="#" />
           </div>
           <h2>My<em>SQL</em></h2>
           <p>
@@ -2364,7 +2377,7 @@
         pin: true,
         scrub: 1,
         // snap: 1 / (sections2.length - 1),
-        end: "+=15000",
+        end: "+=11000",
       },
     });
 
