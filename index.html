@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>PORTFOLIO</title>
     <link rel="stylesheet" href="src/assets/scss/assets/css/style.min.css" />
     <!-- 메인 -->
     <style>
@@ -676,28 +676,46 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
       .section5_item > h2 {
         text-align: center;
-        font-size: 9vw;
+        font-size: 5vw;
         font-weight: bold;
         font-family: "GmarketSans";
       }
-      .section5_item h2 > em {
+      .panel2 .section5_item h2 > em {
         color: #5856d4;
         font-weight: 900;
+        position: relative;
+      }
+      .panel2 .section5_item h2 > em::before {
+        position: absolute;
+        content: "";
+        top: -10px;
+        right: -10px;
+        background: #5856d4;
+        width: 9px;
+        height: 20px;
+        border-radius: 100px;
+        transform: rotate(45deg);
+      }
+      .panel2 .section5_item:nth-child(2) h2 > em::before {
+        background: red;
       }
       .section5_item p {
         text-align: center;
         margin-bottom: 40px;
-        font-size: 1.5vw;
+        font-size: 1.1vw;
       }
       .section5_item button {
         color: #26263b;
         border: 1px solid #26263b;
-        width: 7vw;
-        height: 4vw;
-        font-size: 1.4vw;
+        width: 6vw;
+        height: 3vw;
+        font-size: 1.1vw;
         transition: 0.25s;
         cursor: pointer;
       }
@@ -717,7 +735,7 @@
         margin-bottom: 50px;
       }
       .section5_screenshot_cont img {
-        width: 35vw;
+        width: 22vw;
       }
       .section5_contents_cont {
         height: 100vh;
@@ -757,16 +775,30 @@
       }
       .section6_fixed {
         position: absolute;
-        width: 418px;
-        top: 50px;
+        /* width: 11.5vw; */
+        top: 11.5vw;
         left: 50%;
         transform: translate(-50%, 0);
         text-align: center;
+        color: #fff;
+      }
+
+      .section6_button_cont {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .section6_button_cont button {
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 10px;
       }
 
       .section6_item {
         position: relative;
-        margin-right: 100px;
+        margin-right: 7.2vw;
+        color: #fff;
       }
       .section6_item::before {
         content: "";
@@ -834,6 +866,7 @@
         background-image: url(/src/assets/img/section7_screenshot_01.jpg);
         background-position: center;
         background-size: cover;
+        color: #fff;
       }
       .section7_item::before,
       .section7_item::after {
@@ -843,7 +876,7 @@
       .section7_item::after {
         width: 100%;
         height: 100%;
-        background: linear-gradient(0deg, #15132600 0%, #151326 60%);
+        background: linear-gradient(0deg, #15132600 0%, #100f1c 60%);
       }
       .section7_main_title_cont {
         /* display: flex; */
@@ -874,6 +907,7 @@
       .section7_button_cont button {
         padding: 7px 12px;
         border: 1px solid #fff;
+        color: #fff;
       }
     </style>
 
@@ -892,6 +926,7 @@
         background-image: url(/src/assets/img/section7_screenshot_02.jpg);
         background-position: center;
         background-size: cover;
+        color: #fff;
       }
       .section8_item::before,
       .section8_item::after {
@@ -901,7 +936,7 @@
       .section8_item::after {
         width: 100%;
         height: 100%;
-        background: linear-gradient(0deg, #15132600 0%, #151326 60%);
+        background: linear-gradient(0deg, #15132600 0%, #100f1c 60%);
       }
       .section8_main_title_cont {
         /* display: flex; */
@@ -940,6 +975,7 @@
       .section8_button_cont button {
         padding: 7px 12px;
         border: 1px solid #fff;
+        color: #fff;
       }
     </style>
 
@@ -1804,7 +1840,7 @@
           <div class="section5_screenshot_cont">
             <img src="src/assets/img/section5_screenshot_02.svg" alt="#" />
           </div>
-          <h2>My<em>SQL</em></h2>
+          <h2>SVG<em>ANIMATION</em></h2>
           <p>
             MySQL의 설치부터 각각 필요한 구문들을 정리해두었습니다!<br />
             terminal에서 출력된 메세지 또한 정리해보았습니다
@@ -1820,7 +1856,7 @@
           <div class="section5_screenshot_cont">
             <img src="src/assets/img/section5_screenshot_03.svg" alt="#" />
           </div>
-          <h2>My<em>SQL</em></h2>
+          <h2>CSS<em>DOCS</em></h2>
           <p>
             MySQL의 설치부터 각각 필요한 구문들을 정리해두었습니다!<br />
             terminal에서 출력된 메세지 또한 정리해보았습니다
@@ -1836,7 +1872,7 @@
           <div class="section5_screenshot_cont">
             <img src="src/assets/img/section5_screenshot_04.svg" alt="#" />
           </div>
-          <h2>My<em>SQL</em></h2>
+          <h2>JAVA<em>SCRIPT</em></h2>
           <p>
             MySQL의 설치부터 각각 필요한 구문들을 정리해두었습니다!<br />
             terminal에서 출력된 메세지 또한 정리해보았습니다
@@ -1852,7 +1888,7 @@
           <div class="section5_screenshot_cont">
             <img src="src/assets/img/section5_screenshot_05.svg" alt="#" />
           </div>
-          <h2>My<em>SQL</em></h2>
+          <h2>HTML<em>DOCS</em></h2>
           <p>
             MySQL의 설치부터 각각 필요한 구문들을 정리해두었습니다!<br />
             terminal에서 출력된 메세지 또한 정리해보았습니다
@@ -1896,7 +1932,7 @@
       <img class="ir lama" src="src/assets/img/section6_lama.svg" alt="" />
       <div class="section6_fixed">
         <h2 class="title">사이트 유형</h2>
-        <div class="section5_button_cont">
+        <div class="section6_button_cont">
           <button>CODE</button>
           <button>VIEW</button>
         </div>
@@ -2360,24 +2396,24 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 
   <script>
-    const lenis = new Lenis({
-      duration: 2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      direction: "vertical", // vertical, horizontal
-      gestureDirection: "vertical", // vertical, horizontal, both
-      smooth: true,
-      mouseMultiplier: 1,
-      smoothTouch: false,
-      touchMultiplier: 2,
-      infinite: false,
-    });
+    // const lenis = new Lenis({
+    //   duration: 2,
+    //   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    //   direction: "vertical", // vertical, horizontal
+    //   gestureDirection: "vertical", // vertical, horizontal, both
+    //   smooth: true,
+    //   mouseMultiplier: 1,
+    //   smoothTouch: false,
+    //   touchMultiplier: 2,
+    //   infinite: false,
+    // });
 
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
+    // function raf(time) {
+    //   lenis.raf(time);
+    //   requestAnimationFrame(raf);
+    // }
 
-    requestAnimationFrame(raf);
+    // requestAnimationFrame(raf);
   </script>
   <script>
     gsap.registerPlugin(ScrollTrigger);
@@ -2414,7 +2450,7 @@
     });
 
     //
-    let sections3 = gsap.utils.toArray(".panel3");
+    let sections3 = gsap.utils.toArray(".section6_item");
     gsap.to(sections3, {
       xPercent: -300 * (sections3.length - 1),
       ease: "none",
