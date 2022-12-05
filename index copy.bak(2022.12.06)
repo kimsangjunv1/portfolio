@@ -32,7 +32,7 @@
         justify-content: space-between;
       }
       .custom_color {
-        background: #ededf4;
+        background: #f6f6fb;
       }
       .custom_color_dark {
         background: #100f1c;
@@ -421,7 +421,7 @@
       }
       .section3_item button {
         padding: 10px;
-        border: 1px solid #fff;
+        border: 1px solid #343440;
         background: #ededf5c9;
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
@@ -1712,9 +1712,9 @@
           />
         </defs>
         <g class="parallax">
-          <use xlink:href="#gentle-wave" x="50" y="0" fill="#ededf4" />
-          <use xlink:href="#gentle-wave" x="50" y="3" fill="#ededf4d1" />
-          <use xlink:href="#gentle-wave" x="50" y="6" fill="#ededf4a3" />
+          <use xlink:href="#gentle-wave" x="50" y="0" fill="#f6f6fb" />
+          <use xlink:href="#gentle-wave" x="50" y="3" fill="#f6f6fbd1" />
+          <use xlink:href="#gentle-wave" x="50" y="6" fill="#f6f6fba3" />
         </g>
       </svg>
 
@@ -1802,7 +1802,7 @@
         width: 100%;
       }
     </style>
-    <section class="section point custom_color">
+    <section class="custom_color">
       <!-- <img class="ir lamas" src="src/assets/img/section4_lama.svg" alt="" /> -->
       <div class="section4_fixed">
         <h2 class="title">GAME <em>EFFECT</em></h2>
@@ -1889,7 +1889,7 @@
     </section>
 
     <!-- DOCS -->
-    <div class="horizontal2 custom_color">
+    <div class="horizontal2">
       <div class="section5_fixed">
         <h2>REFERENCE <em>BOOK</em></h2>
       </div>
@@ -2081,7 +2081,7 @@
         outline: none;
       }
     </style>
-    <section class="section custom_color">
+    <section class="section">
       <div class="section5p5_fixed">
         <h2>SITE <em>TYPE</em></h2>
       </div>
@@ -2643,9 +2643,8 @@
   <script>
     ScrollTrigger.create({
       // 어디에 닿으면 반응할건지
-      trigger: ".editorial_two",
+      trigger: ".section",
       scrub: 1,
-      start: "top top",
       // 어디다가 적용할건지
       animation: gsap.fromTo(
         "#header",
@@ -2677,41 +2676,6 @@
         }
       ),
     });
-    // ScrollTrigger.create({
-    //   // 어디에 닿으면 반응할건지
-    //   trigger: ".editorial_two",
-    //   scrub: 1,
-    //   // 어디다가 적용할건지
-    //   animation: gsap.fromTo(
-    //     "#header",
-    //     {
-    //       color: "#fff",
-    //       background: "linear-gradient(#5046ac, #5046ac00)",
-    //     },
-    //     {
-    //       color: "#353541",
-    //       background: "linear-gradient(#f6f6fb, #f6f6fb00)",
-    //     }
-    //   ),
-    //   animation: gsap.fromTo(
-    //     "#header a",
-    //     {
-    //       color: "#fff",
-    //     },
-    //     {
-    //       color: "#353541",
-    //     }
-    //   ),
-    //   animation: gsap.fromTo(
-    //     ".porfolio_desc_fixed p",
-    //     {
-    //       color: "#fff",
-    //     },
-    //     {
-    //       color: "#353541",
-    //     }
-    //   ),
-    // });
     ScrollTrigger.create({
       // 어디에 닿으면 반응할건지
       trigger: ".horizontal3",
