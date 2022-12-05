@@ -82,7 +82,6 @@
         background: linear-gradient(180deg, #ededf500,#ededf5);
       } */
 
-
       .polygon {
         z-index: 1;
         grid-column: span 2;
@@ -356,11 +355,11 @@
 
       .first_name {
         font-size: 21.8vw;
-    font-weight: 900;
-    color: #fe3672;
-    z-index: 12;
-    line-height: 0.8;
-    text-align: left;
+        font-weight: 900;
+        color: #fe3672;
+        z-index: 12;
+        line-height: 0.8;
+        text-align: left;
       }
       .porfolio_desc {
         font-size: 2.5vw;
@@ -446,13 +445,13 @@
       }
       .section3_item.i003 {
         position: absolute;
-    bottom: 6vw;
-    left: 235vw;
+        bottom: 6vw;
+        left: 235vw;
       }
       .section3_item.i004 {
         position: absolute;
-    top: 7vw;
-    left: 278vw;
+        top: 7vw;
+        left: 278vw;
       }
       .section3_item.i005 {
         position: absolute;
@@ -461,8 +460,8 @@
       }
       .section3_item.i006 {
         position: absolute;
-    bottom: 4vw;
-    left: 327vw;
+        bottom: 4vw;
+        left: 327vw;
       }
       .section3_item h2 {
         font-size: 3vw;
@@ -680,9 +679,9 @@
     <style>
       .section5_fixed {
         position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
       .section5_fixed h2 {
         font-weight: 100;
@@ -734,7 +733,7 @@
         margin-bottom: 40px;
         font-size: 1.1vw;
       }
-      .section5_item button {
+      .section5_item a {
         color: #26263b;
         border: 1px solid #26263b;
         width: 6vw;
@@ -742,12 +741,15 @@
         font-size: 1.1vw;
         transition: 0.25s;
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
-      .section5_item button:hover {
+      .section5_item a:hover {
         background: #26263b;
         color: #fff;
       }
-      .section5_item button:not(:hover) {
+      .section5_item a:not(:hover) {
         transition: 0.25s;
       }
       .section5_button_cont {
@@ -790,6 +792,23 @@
 
     <!-- 섹션 6 -->
     <style>
+      .section5p5_fixed {
+        position: sticky;
+        top: 50%;
+        text-align: center;
+        /* left: 50%; */
+        /* transform: translate(-50%, -50%); */
+      }
+      .section5p5_fixed h2 {
+        font-weight: 100;
+        font-size: 7.5vw;
+        white-space: nowrap;
+        color: #000;
+      }
+      .section5p5_fixed em {
+        font-weight: 900;
+        color: #fe3665;
+      }
       .horizontal3 .lama {
         position: absolute;
         width: 300px;
@@ -1839,8 +1858,8 @@
             terminal에서 출력된 메세지 또한 정리해보았습니다
           </p>
           <div class="section5_button_cont">
-            <button>CODE</button>
-            <button>VIEW</button>
+            <a href="www.naver.com">CODE</a>
+            <a href="www.naver.com">VIEW</a>
           </div>
         </div>
       </section>
@@ -1855,8 +1874,8 @@
             terminal에서 출력된 메세지 또한 정리해보았습니다
           </p>
           <div class="section5_button_cont">
-            <button>CODE</button>
-            <button>VIEW</button>
+            <a href="www.naver.com">CODE</a>
+            <a href="www.naver.com">VIEW</a>
           </div>
         </div>
       </section>
@@ -1871,8 +1890,8 @@
             terminal에서 출력된 메세지 또한 정리해보았습니다
           </p>
           <div class="section5_button_cont">
-            <button>CODE</button>
-            <button>VIEW</button>
+            <a href="www.naver.com">CODE</a>
+            <a href="www.naver.com">VIEW</a>
           </div>
         </div>
       </section>
@@ -1887,8 +1906,8 @@
             terminal에서 출력된 메세지 또한 정리해보았습니다
           </p>
           <div class="section5_button_cont">
-            <button>CODE</button>
-            <button>VIEW</button>
+            <a href="www.naver.com">CODE</a>
+            <a href="www.naver.com">VIEW</a>
           </div>
         </div>
       </section>
@@ -1903,8 +1922,8 @@
             terminal에서 출력된 메세지 또한 정리해보았습니다
           </p>
           <div class="section5_button_cont">
-            <button>CODE</button>
-            <button>VIEW</button>
+            <a href="www.naver.com">CODE</a>
+            <a href="www.naver.com">VIEW</a>
           </div>
         </div>
       </section>
@@ -1919,8 +1938,8 @@
             terminal에서 출력된 메세지 또한 정리해보았습니다
           </p>
           <div class="section5_button_cont">
-            <button>CODE</button>
-            <button>VIEW</button>
+            <a href="www.naver.com">CODE</a>
+            <a href="www.naver.com">VIEW</a>
           </div>
         </div>
       </section>
@@ -1935,21 +1954,121 @@
             terminal에서 출력된 메세지 또한 정리해보았습니다
           </p>
           <div class="section5_button_cont">
-            <button>CODE</button>
-            <button>VIEW</button>
+            <a href="www.naver.com">CODE</a>
+            <a href="www.naver.com">VIEW</a>
           </div>
         </div>
       </section>
     </div>
 
     <!-- 게임 이펙트와 도큐먼트 사이의 과정 -->
-    <section
-      style="
-        background: rgb(16 15 28);
-        border-radius: 37% 26% 10% 10% / 8% 10% 0% 0%;
-      "
-      class="section"
-    ></section>
+    <style>
+      .parallax > use {
+        animation: move-forever 12s linear infinite;
+      }
+      .parallax > use:nth-child(1) {
+        animation-delay: -2s;
+      }
+      .parallax > use:nth-child(2) {
+        animation-delay: -2s;
+        animation-duration: 5s;
+      }
+      .parallax > use:nth-child(3) {
+        animation-delay: -4s;
+        animation-duration: 3s;
+      }
+
+      @keyframes move-forever {
+        0% {
+          transform: translate(-90px, 0%);
+        }
+        100% {
+          transform: translate(85px, 0%);
+        }
+      }
+      .editorial {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 10em;
+        max-height: 100vh;
+        margin: 0;
+      }
+
+      .content {
+        font-family: "Lato", sans-serif;
+        text-align: center;
+        background-color: #2d55aa;
+        text-align: center;
+        min-height: 75vh;
+        margin: -0.1em 0 0 0;
+        padding: 1em;
+        color: #eee;
+        font-size: 2em;
+        font-weight: 300;
+      }
+
+      .content {
+        font-size: 1em;
+      }
+
+      .content h1 {
+        margin-top: -1.3em;
+        font-weight: 100;
+        font-size: 5em;
+        user-select: none;
+        cursor: default;
+      }
+
+      /*prevent many large-by-comparison ripples by shrinking the height*/
+      @media (max-width: 50em) {
+        .content h1 {
+          font-size: 12vmax;
+        }
+
+        .editorial {
+          height: 17vw;
+        }
+      }
+      h1 {
+        outline: none;
+      }
+    </style>
+    <section class="section">
+      <div class="section5p5_fixed">
+        <h2>SITE <em>TYPE</em></h2>
+      </div>
+      <svg
+        class="editorial"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+      >
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    v44h-352z"
+          />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="50" y="0" fill="#100f1c" />
+          <use xlink:href="#gentle-wave" x="50" y="3" fill="#100f1ccf" />
+          <use xlink:href="#gentle-wave" x="50" y="6" fill="#100f1cad" />
+        </g>
+      </svg>
+
+      <link
+        href="https://fonts.googleapis.com/css?family=Lato:100"
+        rel="stylesheet"
+      />
+    </section>
 
     <!-- 각종 도큐먼트 -->
     <div class="horizontal3 custom_color_dark">
