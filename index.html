@@ -336,7 +336,7 @@
         width: 36vw;
         height: 36vw;
         border-radius: 100%;
-        background: linear-gradient(125deg, #343440, #34344000 80%);
+        background: linear-gradient(125deg, #ffffff, #ffffff00 80%);
         transform: translate(-50%, -45%);
         z-index: -1;
       }
@@ -422,12 +422,13 @@
       .section3_item button {
         padding: 10px;
         border: 1px solid #fff;
-        background: #ededf5c9;
+        background: #ffffff;
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
         width: 60px;
         cursor: pointer;
         font-size: 1vw;
+        color: #000;
       }
       .section3_item button:hover {
         transition: 0.25s;
@@ -570,10 +571,10 @@
         transition: 0.25s;
       }
       .section4_item {
-        width: 81.3vw;
-        height: 46.3vw;
+        width: 76.3vw;
+        height: 35.3vw;
         background: #82869c;
-        padding-bottom: 3vw;
+        /* padding-bottom: 3vw; */
         display: flex;
         /* flex-direction: column; */
         justify-content: space-between;
@@ -623,10 +624,10 @@
 
       /* 리버스 */
       .section4_rev_item {
-        width: 81.3vw;
-        height: 46.3vw;
+        width: 76.3vw;
+        height: 35.3vw;
         background: #82869c;
-        padding-bottom: 7vw;
+        /* padding-bottom: 7vw; */
         display: flex;
         /* flex-direction: column; */
         justify-content: space-between;
@@ -1526,11 +1527,66 @@
       <p>Sangjun</p>
       <p>2022.10.11</p>
     </div>
+    <style>
+      #bubblezSVG {
+        position: fixed;
+        height: 100%;
+        width: 110%;
+        top: 0;
+        left: -5%;
+        overflow: visible;
+        z-index: -1;
+      }
+
+      #top {
+        z-index: 2;
+        pointer-events: none;
+      }
+
+      svg {
+        font-size: 35px;
+        fill: #313639;
+      }
+
+      #textSVG {
+        position: fixed;
+        width: 110%;
+        top: 40vh;
+        left: -5%;
+      }
+    </style>
     <section class="section">
       <div class="section1_desc">
         <h2>PORT<br /><em>FOLIO</em></h2>
         <!-- <h2>FOLIO</h2> -->
       </div>
+      <!-- <svg
+        id="bubblezSVG"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="xMidYMid slice"
+      >
+        <mask id="maskBubblez"></mask>
+        <image
+          mask="url(#maskBubblez)"
+          preserveAspectRatio="xMidYMid slice"
+          href="https://assets.codepen.io/756881/mesh-gradient+%283%29.png"
+          height="150"
+          width="100"
+        />
+      </svg>
+
+      <svg id="textSVG" viewBox="0 0 1000 200">
+        <path
+          fill="none"
+          id="curve"
+          d="M0,100S269.931,186.612,520,100C770.069,13.388,1000,100,1000,100"
+        />
+        <text x="-50" font-size="45">
+          <textPath id="text" xlink:href="#curve" startOffset="1200">
+            Wobbly text and gradient bubbles....
+          </textPath>
+        </text>
+      </svg> -->
       <div class="section1_img">
         <img class="ir" src="src/assets/img/main_lama.svg" alt="라마" />
         <img
@@ -1539,6 +1595,7 @@
           alt="먼지 캐릭터 1"
         />
         <img
+          data-depth="-60"
           class="ir"
           src="src/assets/img/main_dust_char_02.svg"
           alt="먼지 캐릭터 2"
@@ -1729,13 +1786,13 @@
     <style>
       .section4_item h2 {
         font-family: "BebasNeue";
-        font-size: 10.2vw;
+        font-size: 8.2vw;
         z-index: 3;
         line-height: 0.9;
       }
       .section4_rev_item h2 {
         font-family: "BebasNeue";
-        font-size: 10.2vw;
+        font-size: 8.2vw;
         z-index: 3;
         line-height: 0.9;
       }
@@ -1819,7 +1876,7 @@
         </div>
       </div>
 
-      <div>
+      <div class="section4_cont">
         <div class="section4_icon_layout one">
           <div class="section4_item">
             <div class="section4_left"></div>
@@ -2619,7 +2676,8 @@
         pin: true,
         scrub: true,
         // snap: 1 / (sections.length - 1),
-        end: "+=12500",
+        end: "+=10500",
+        // end: () => "+=" + document.querySelector(".horizontal"),
       },
     });
 
@@ -2641,23 +2699,30 @@
   </script>
   <!-- 상단바 -->
   <script>
+    // 상단
     ScrollTrigger.create({
       // 어디에 닿으면 반응할건지
-      trigger: ".editorial_two",
+      trigger: ".section",
       scrub: 1,
-      start: "top top",
       // 어디다가 적용할건지
       animation: gsap.fromTo(
         "#header",
         {
           color: "#fff",
-          background: "linear-gradient(#5046ac, #5046ac00)",
+          background: "linear-gradient(180deg, #5046ac, #5046ac00)",
         },
         {
           color: "#fff",
-          background: "linear-gradient(#5046ac, #5046ac00)",
+          background: "linear-gradient(180deg, #5046ac, #5046ac00)",
         }
       ),
+    });
+
+    ScrollTrigger.create({
+      // 어디에 닿으면 반응할건지
+      trigger: ".editorial_two",
+      scrub: 1,
+      // 어디다가 적용할건지
       animation: gsap.fromTo(
         "#header a",
         {
@@ -2667,6 +2732,13 @@
           color: "#fff",
         }
       ),
+    });
+
+    ScrollTrigger.create({
+      // 어디에 닿으면 반응할건지
+      trigger: ".editorial_two",
+      scrub: 1,
+      // 어디다가 적용할건지
       animation: gsap.fromTo(
         ".porfolio_desc_fixed p",
         {
@@ -2674,6 +2746,57 @@
         },
         {
           color: "#fff",
+        }
+      ),
+    });
+
+    // 중간
+    ScrollTrigger.create({
+      // 어디에 닿으면 반응할건지
+      trigger: ".editorial_two",
+      scrub: 1,
+      // 어디다가 적용할건지
+      animation: gsap.fromTo(
+        "#header",
+        {
+          color: "#000",
+          background: "linear-gradient(180deg, #5046ac, #5046ac00)",
+        },
+        {
+          color: "#000",
+          background: "linear-gradient(180deg, #ededf4, #ededf400)",
+        }
+      ),
+    });
+
+    ScrollTrigger.create({
+      // 어디에 닿으면 반응할건지
+      trigger: ".editorial_two",
+      scrub: 1,
+      // 어디다가 적용할건지
+      animation: gsap.fromTo(
+        "#header a",
+        {
+          color: "#000",
+        },
+        {
+          color: "#000",
+        }
+      ),
+    });
+
+    ScrollTrigger.create({
+      // 어디에 닿으면 반응할건지
+      trigger: ".editorial_two",
+      scrub: 1,
+      // 어디다가 적용할건지
+      animation: gsap.fromTo(
+        ".porfolio_desc_fixed p",
+        {
+          color: "#000",
+        },
+        {
+          color: "#000",
         }
       ),
     });
@@ -2811,6 +2934,57 @@
       ),
     });
   </script>
+  <script>
+    ScrollTrigger.create({
+      trigger: ".section4_fixed",
+      scrub: 1,
+      animation: gsap.fromTo(
+        ".section4_fixed",
+        {
+          scale: (1.3, 1.3),
+          opacity: 0,
+          transformOrigin: "900px 18px",
+          transform: "translate(0,50px)",
+        },
+        {
+          scale: 1,
+          opacity: 1,
+          transformOrigin: "50% 0%",
+          transform: "translate3d(0,-25px,0)",
+        }
+      ),
+    });
+
+    let proxy = { skew: 0 },
+      skewSetter = gsap.quickSetter(".section4_cont>div", "skewY", "deg"), // fast
+      skewSetter2 = gsap.quickSetter(
+        ".section4_rev_icon_layout",
+        "skewY",
+        "deg"
+      ), // fast
+      clamp = gsap.utils.clamp(-10, 10);
+
+    ScrollTrigger.create({
+      onUpdate: (self) => {
+        let skew = clamp(self.getVelocity() / -300);
+
+        if (Math.abs(skew) > Math.abs(proxy.skew)) {
+          proxy.skew = skew;
+          gsap.to(proxy, {
+            skew: 0,
+            duration: 0.8,
+            ease: "power3",
+            overwrite: true,
+            onUpdate: () => skewSetter(proxy.skew),
+          });
+        }
+      },
+    });
+
+    // make the right edge "stick" to the scroll bar. force3D: true improves performance
+    gsap.set(".skewElem", { transformOrigin: "right center", force3D: true });
+  </script>
+  <script></script>
   <!-- 확인용 -->
   <script>
     // ScrollTrigger.create({
