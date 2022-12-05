@@ -294,6 +294,27 @@
         z-index: 1000;
         width: 71px;
       }
+
+      @-webkit-keyframes updown1 {
+        0% {
+          -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+        }
+        100% {
+          -webkit-transform: translateY(-9px);
+          transform: translateY(-9px);
+        }
+      }
+      @keyframes updown1 {
+        0% {
+          -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+        }
+        100% {
+          -webkit-transform: translateY(-9px);
+          transform: translateY(-9px);
+        }
+      }
     </style>
 
     <!-- 섹션 2 -->
@@ -1528,6 +1549,7 @@
       <p>Sangjun</p>
       <p>2022.10.11</p>
     </div>
+
     <style>
       #bubblezSVG {
         position: fixed;
@@ -1589,38 +1611,58 @@
         </text>
       </svg> -->
       <div class="section1_img">
-        <img class="ir" src="src/assets/img/main_lama.svg" alt="라마" />
+        <img class="ir dust_01" src="src/assets/img/main_lama.svg" alt="라마" />
         <img
-          class="ir"
+          class="ir dust_02"
           src="src/assets/img/main_dust_char_01.svg"
           alt="먼지 캐릭터 1"
         />
         <img
           data-depth="-60"
-          class="ir"
+          class="ir dust_03"
           src="src/assets/img/main_dust_char_02.svg"
           alt="먼지 캐릭터 2"
         />
-        <img class="ir" src="src/assets/img/main_dust_01.png" alt="먼지 1" />
-        <img class="ir" src="src/assets/img/main_dust_02.svg" alt="먼지 2" />
-        <img class="ir" src="src/assets/img/main_dust_03.png" alt="먼지 3" />
         <img
-          class="ir"
+          class="ir dust_09"
+          src="src/assets/img/main_dust_01.png"
+          alt="먼지 1"
+        />
+        <img
+          class="ir dust_10"
+          src="src/assets/img/main_dust_02.svg"
+          alt="먼지 2"
+        />
+        <img
+          class="ir dust_11"
+          src="src/assets/img/main_dust_03.png"
+          alt="먼지 3"
+        />
+        <img
+          class="ir dust_04"
           src="src/assets/img/main_lama_back_02.svg"
           alt="메인 뒷배경 1"
         />
         <img
-          class="ir"
+          class="ir dust_05"
           src="src/assets/img/main_lama_back_01.svg"
           alt="메인 뒷배경 2"
         />
         <img
-          class="ir"
+          class="ir dust_06"
           src="src/assets/img/main_lama_back_00.png"
           alt="메인 뒷배경 3"
         />
-        <img class="ir" src="src/assets/img/main_dust_04.svg" alt="먼지 4" />
-        <img class="ir" src="src/assets/img/main_dust_05.svg" alt="먼지 5" />
+        <img
+          class="ir dust_07"
+          src="src/assets/img/main_dust_04.svg"
+          alt="먼지 4"
+        />
+        <img
+          class="ir dust_08"
+          src="src/assets/img/main_dust_05.svg"
+          alt="먼지 5"
+        />
       </div>
     </section>
 
@@ -3001,39 +3043,137 @@
     // make the right edge "stick" to the scroll bar. force3D: true improves performance
     gsap.set(".skewElem", { transformOrigin: "right center", force3D: true });
   </script>
+
+  <!-- 메인 먼지 -->
   <script>
-    // // gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.create({
+      // 어디에 닿으면 반응할건지
+      trigger: ".section2_cont",
+      scrub: 1,
+      // 어디다가 적용할건지
+      animation: gsap.fromTo(
+        ".dust_02",
+        {
+          transform: "translate(-60%,0) rotate(0deg)",
+        },
+        {
+          transform: "translate(-500%,-120%) scale(2.0) rotate(200deg)",
+          filter: "blur(3px)",
+        }
+      ),
+    });
+    ScrollTrigger.create({
+      // 어디에 닿으면 반응할건지
+      trigger: ".section2_cont",
+      scrub: 1,
+      // 어디다가 적용할건지
+      animation: gsap.fromTo(
+        ".dust_03",
+        {
+          transform: "translate(70%,0) rotate(0deg)",
+        },
+        {
+          transform: "translate(300%,-50%) scale(1.5) rotate(200deg)",
+          filter: "blur(3px)",
+        }
+      ),
+    });
+    ScrollTrigger.create({
+      // 어디에 닿으면 반응할건지
+      trigger: ".section2_cont",
+      scrub: 1,
+      // 어디다가 적용할건지
+      animation: gsap.fromTo(
+        ".dust_07",
+        {
+          transform: "translate(70%,0) rotate(0deg)",
+        },
+        {
+          transform: "translate(300%,-50%) scale(1.5) rotate(200deg)",
+          filter: "blur(3px)",
+        }
+      ),
+    });
+    ScrollTrigger.create({
+      // 어디에 닿으면 반응할건지
+      trigger: ".section2_cont",
+      scrub: 1,
+      // 어디다가 적용할건지
+      animation: gsap.fromTo(
+        ".dust_08",
+        {
+          transform: "translate(-60%,0) rotate(0deg)",
+        },
+        {
+          transform: "translate(-500%,-120%) scale(2.0) rotate(200deg)",
+          filter: "blur(3px)",
+        }
+      ),
+    });
+    ScrollTrigger.create({
+      // 어디에 닿으면 반응할건지
+      trigger: ".section2_cont",
+      scrub: 1,
+      // 어디다가 적용할건지
+      animation: gsap.fromTo(
+        ".dust_09",
+        {
+          transform: "translate(70%,0) rotate(0deg)",
+        },
+        {
+          transform: "translate(300%,-50%) scale(1.5) rotate(200deg)",
+          filter: "blur(3px)",
+        }
+      ),
+    });
+    ScrollTrigger.create({
+      // 어디에 닿으면 반응할건지
+      trigger: ".section2_cont",
+      scrub: 1,
+      // 어디다가 적용할건지
+      animation: gsap.fromTo(
+        ".dust_10",
+        {
+          transform: "translate(-60%,0) rotate(0deg)",
+        },
+        {
+          transform: "translate(-500%,-120%) scale(2.0) rotate(200deg)",
+          filter: "blur(3px)",
+        }
+      ),
+    });
+    ScrollTrigger.create({
+      // 어디에 닿으면 반응할건지
+      trigger: ".section2_cont",
+      scrub: 1,
+      // 어디다가 적용할건지
+      animation: gsap.fromTo(
+        ".dust_11",
+        {
+          transform: "translate(-60%,0) rotate(0deg)",
+        },
+        {
+          transform: "translate(-500%,-120%) scale(2.0) rotate(200deg)",
+          filter: "blur(3px)",
+        }
+      ),
+    });
 
-    // let getRatio = (el) =>
-    //   window.innerHeight / (window.innerHeight + el.offsetHeight);
-
-    // gsap.utils.toArray("section").forEach((section, i) => {
-    //   section.bg = section.querySelector(".section9_main_screenshot");
-
-    //   // Give the backgrounds some random images
-    //   // section.bg.style.backgroundImage = `url(https://picsum.photos/1600/800?random=${i})`;
-
-    //   // the first image (i === 0) should be handled differently because it should start at the very top.
-    //   // use function-based values in order to keep things responsive
-    //   gsap.fromTo(
-    //     section.bg,
+    // ScrollTrigger.create({
+    //   // 어디에 닿으면 반응할건지
+    //   trigger: ".section2_cont",
+    //   scrub: 1,
+    //   // 어디다가 적용할건지
+    //   animation: gsap.fromTo(
+    //     ".dust_04 ",
     //     {
-    //       backgroundPosition: () =>
-    //         i ? `50% ${-window.innerHeight * getRatio(section)}px` : "50% 0px",
+    //       transform: "translate(-50%, 0) scale(0.2)",
     //     },
     //     {
-    //       backgroundPosition: () =>
-    //         `50% ${window.innerHeight * (1 - getRatio(section))}px`,
-    //       ease: "none",
-    //       scrollTrigger: {
-    //         trigger: section,
-    //         start: () => (i ? "top bottom" : "top top"),
-    //         end: "bottom top",
-    //         scrub: true,
-    //         invalidateOnRefresh: true, // to make it responsive
-    //       },
+    //       transform: "translate(-50%, 0) scale(10)",
+    //       filter: "blur(3px)",
     //     }
-    //   );
+    //   ),
     // });
   </script>
   <!-- 확인용 -->
