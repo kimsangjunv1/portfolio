@@ -694,6 +694,7 @@
         font-weight: 100;
         font-size: 7.5vw;
         white-space: nowrap;
+        color: #000;
       }
       .section5_fixed em {
         font-weight: 900;
@@ -2696,6 +2697,22 @@
         end: "+=11000",
       },
     });
+
+    // 게임 이펙트
+    // let sections3 = gsap.utils.toArray(".panel3");
+    // gsap.to(sections3, {
+    //   yPercent: -100 * (sections3.length - 1),
+    //   ease: "none",
+    //   // duration: 122.5,
+    //   scrollTrigger: {
+    //     trigger: ".horizontal3",
+    //     markers: true,
+    //     pin: true,
+    //     scrub: 1,
+    //     // snap: 1 / (sections2.length - 1),
+    //     end: "+=11000",
+    //   },
+    // });
   </script>
   <!-- 상단바 -->
   <script>
@@ -2984,7 +3001,41 @@
     // make the right edge "stick" to the scroll bar. force3D: true improves performance
     gsap.set(".skewElem", { transformOrigin: "right center", force3D: true });
   </script>
-  <script></script>
+  <script>
+    // // gsap.registerPlugin(ScrollTrigger);
+
+    // let getRatio = (el) =>
+    //   window.innerHeight / (window.innerHeight + el.offsetHeight);
+
+    // gsap.utils.toArray("section").forEach((section, i) => {
+    //   section.bg = section.querySelector(".section9_main_screenshot");
+
+    //   // Give the backgrounds some random images
+    //   // section.bg.style.backgroundImage = `url(https://picsum.photos/1600/800?random=${i})`;
+
+    //   // the first image (i === 0) should be handled differently because it should start at the very top.
+    //   // use function-based values in order to keep things responsive
+    //   gsap.fromTo(
+    //     section.bg,
+    //     {
+    //       backgroundPosition: () =>
+    //         i ? `50% ${-window.innerHeight * getRatio(section)}px` : "50% 0px",
+    //     },
+    //     {
+    //       backgroundPosition: () =>
+    //         `50% ${window.innerHeight * (1 - getRatio(section))}px`,
+    //       ease: "none",
+    //       scrollTrigger: {
+    //         trigger: section,
+    //         start: () => (i ? "top bottom" : "top top"),
+    //         end: "bottom top",
+    //         scrub: true,
+    //         invalidateOnRefresh: true, // to make it responsive
+    //       },
+    //     }
+    //   );
+    // });
+  </script>
   <!-- 확인용 -->
   <script>
     // ScrollTrigger.create({
