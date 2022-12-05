@@ -174,10 +174,11 @@
       }
       .section1_desc h2 {
         background: linear-gradient(
-          0deg,
-          #34344000 3%,
-          #ffffff 50%,
-          #ffffff 100%
+          360deg,
+          transparent 4%,
+          #46ffca 40%,
+          #99ff46 56%,
+          #ffb646 100%
         );
         color: transparent;
         -webkit-background-clip: text;
@@ -263,7 +264,7 @@
         z-index: 0;
         left: 50%;
         transform: translate(-50%, 0);
-        width: 130vw;
+        width: 70vw;
       }
       .section1_img img:nth-child(10) {
         right: 10%;
@@ -372,10 +373,21 @@
       .first_name {
         font-size: 21.8vw;
         font-weight: 900;
-        color: #46ffca;
+        /* color: #46ffca; */
         z-index: 12;
         line-height: 0.8;
         text-align: left;
+        font-weight: 900;
+        color: #46ffca;
+        background: linear-gradient(
+          45deg,
+          #46ffca 26%,
+          #99ff46 56%,
+          #ffb646 100%
+        );
+        color: transparent;
+        -webkit-background-clip: text;
+        font-weight: 900;
       }
       .porfolio_desc {
         font-size: 2.5vw;
@@ -424,12 +436,21 @@
       }
       .section3_fixed em {
         font-weight: 900;
-        color: #46ffca;
+        background: linear-gradient(
+          45deg,
+          #46ffca 26%,
+          #99ff46 56%,
+          #ffb646 100%
+        );
+        color: transparent;
+        -webkit-background-clip: text;
+        font-weight: 900;
       }
       .section3_item {
         display: flex;
         align-items: flex-end;
         gap: 20px;
+        filter: blur(5px);
         /* width: 500px;
       height: 500px; */
       }
@@ -525,9 +546,9 @@
       .section4_fixed .title em {
         background: linear-gradient(
           45deg,
-          #5856d4 26%,
-          #bb47bd 76%,
-          #8258dc 100%
+          #4e4bff 26%,
+          #ff4ac8 76%,
+          #8349ff 100%
         );
         color: transparent;
         -webkit-background-clip: text;
@@ -588,7 +609,7 @@
         width: 76.3vw;
         height: 35.3vw;
         background: #82869c;
-        /* padding-bottom: 3vw; */
+        padding-bottom: 3vw;
         display: flex;
         /* flex-direction: column; */
         justify-content: space-between;
@@ -641,7 +662,7 @@
         width: 76.3vw;
         height: 35.3vw;
         background: #82869c;
-        /* padding-bottom: 7vw; */
+        padding-bottom: 6vw;
         display: flex;
         /* flex-direction: column; */
         justify-content: space-between;
@@ -1842,7 +1863,7 @@
       .section4_item_desc p {
         width: 60%;
         opacity: 0.7;
-        font-size: 1.5vw;
+        font-size: 1vw;
       }
       .section4_rev_item_desc h4 {
         /* width: 20%; */
@@ -1851,7 +1872,7 @@
       .section4_rev_item_desc p {
         width: 60%;
         opacity: 0.7;
-        font-size: 1.5vw;
+        font-size: 1vw;
       }
       .section4_left {
         width: 50%;
@@ -2002,7 +2023,7 @@
           </div>
         </div>
       </section>
-      <section class="panel2 custom_flex">
+      <section class="panel2 custom_flex start">
         <div class="section5_item">
           <div class="section5_screenshot_cont">
             <img src="src/assets/img/section5_screenshot_01.svg" alt="#" />
@@ -2082,7 +2103,7 @@
           </div>
         </div>
       </section>
-      <section style="opacity: 0" class="panel2 custom_flex">
+      <section style="opacity: 0" class="panel2 custom_flex end">
         <div class="section5_item">
           <div class="section5_screenshot_cont">
             <img src="src/assets/img/section5_screenshot_01.svg" alt="#" />
@@ -2679,24 +2700,24 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 
   <script>
-    // const lenis = new Lenis({
-    //   duration: 2,
-    //   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    //   direction: "vertical", // vertical, horizontal
-    //   gestureDirection: "vertical", // vertical, horizontal, both
-    //   smooth: true,
-    //   mouseMultiplier: 1,
-    //   smoothTouch: false,
-    //   touchMultiplier: 2,
-    //   infinite: false,
-    // });
+    const lenis = new Lenis({
+      duration: 2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      direction: "vertical", // vertical, horizontal
+      gestureDirection: "vertical", // vertical, horizontal, both
+      smooth: true,
+      // mouseMultiplier: 1,
+      // smoothTouch: false,
+      // touchMultiplier: 2,
+      // infinite: false,
+    });
 
-    // function raf(time) {
-    //   lenis.raf(time);
-    //   requestAnimationFrame(raf);
-    // }
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
 
-    // requestAnimationFrame(raf);
+    requestAnimationFrame(raf);
   </script>
   <script>
     gsap.registerPlugin(ScrollTrigger);
@@ -3051,7 +3072,7 @@
           transform: "translate(-50%,0) rotate(0deg)",
         },
         {
-          transform: "translate(-60%,1020%) scale(2.0) rotate(200deg)",
+          transform: "translate(-60%,1020%) scale(3.0) rotate(200deg)",
           // filter: "blur(3px)",
         }
       ),
@@ -3067,8 +3088,8 @@
           transform: "translate(-60%,0) rotate(0deg)",
         },
         {
-          transform: "translate(-500%,-120%) scale(2.0) rotate(200deg)",
-          filter: "blur(3px)",
+          transform: "translate(-500%,-120%) scale(4.0) rotate(200deg)",
+          filter: "blur(6px)",
         }
       ),
     });
@@ -3084,7 +3105,7 @@
         },
         {
           transform: "translate(300%,-200%) scale(1.5) rotate(200deg)",
-          filter: "blur(3px)",
+          filter: "blur(5px)",
         }
       ),
     });
@@ -3214,12 +3235,14 @@
           opacity: 0,
           transformOrigin: "1300px 18px",
           transform: "translate(0,50px)",
+          filter: "blur(15px)",
         },
         {
           scale: 1,
           opacity: 1,
           transformOrigin: "50% 0%",
           transform: "translate3d(0,-30px,0)",
+          filter: "blur(0px)",
         }
       ),
     });
@@ -3233,14 +3256,108 @@
           opacity: 0,
           transformOrigin: "900px 18px",
           transform: "translate(0,50px)",
+          filter: "blur(7px)",
         },
         {
           scale: 1,
           opacity: 1,
           transformOrigin: "50% 0%",
           transform: "translate3d(0,-25px,0)",
+          filter: "blur(0px)",
         }
       ),
+    });
+    ScrollTrigger.create({
+      trigger: ".section2_cont",
+      scrub: 1,
+      animation: gsap.fromTo(
+        ".n3",
+        {
+          scale: (1.3, 1.3),
+          opacity: 0,
+          transformOrigin: "500px 18px",
+          transform: "translate(0,50px)",
+          filter: "blur(2px)",
+        },
+        {
+          scale: 1,
+          opacity: 1,
+          transformOrigin: "50% 0%",
+          transform: "translate3d(0,-25px,0)",
+          filter: "blur(0px)",
+        }
+      ),
+    });
+  </script>
+
+  <!-- 섹션 3 -->
+  <script>
+    ScrollTrigger.create({
+      trigger: ".section3_fixed",
+      scrub: 1,
+      animation: gsap.fromTo(
+        ".section3_fixed",
+        {
+          scale: (1.3, 1.3),
+          opacity: 0,
+          transformOrigin: "900px 18px",
+          transform: "translate(-50%, -50%)",
+        },
+        {
+          scale: 1,
+          opacity: 1,
+          transformOrigin: "50% 0%",
+          transform: "translate(-50%, -50%) translate3d(0,-25px,0)",
+        }
+      ),
+    });
+  </script>
+
+  <!-- 섹션 5 -->
+  <script>
+    ScrollTrigger.create({
+      trigger: ".section5_fixed",
+      scrub: 1,
+      animation: gsap.fromTo(
+        ".section5_fixed",
+        {
+          scale: (1.3, 1.3),
+          opacity: 0,
+          transformOrigin: "900px 18px",
+          transform: "translate(-50%, -50%)",
+        },
+        {
+          scale: 1,
+          opacity: 1,
+          transformOrigin: "50% 0%",
+          transform: "translate(-50%, -50%) translate3d(0,-25px,0)",
+        }
+      ),
+    });
+  </script>
+
+  <!-- 섹션 5.5 -->
+  <script>
+    ScrollTrigger.create({
+      trigger: ".section5p5_fixed",
+      scrub: 1,
+      animation: gsap.fromTo(
+        ".section5p5_fixed",
+        {
+          opacity: 1,
+        },
+        {
+          opacity: 0,
+        }
+      ),
+    });
+
+    ScrollTrigger.create({
+      trigger: ".section3_item.i006",
+      scrub: 0.1,
+      animation: gsap.to(".section3_item.i001", {
+        filter: "blur(0px)",
+      }),
     });
   </script>
 
