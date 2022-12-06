@@ -570,11 +570,12 @@ ScrollTrigger.create({
   ),
 });
 
+// 섹션 3_i001 ~ i006
 ScrollTrigger.create({
   scrub: 1,
   animation: gsap.from(".i001", {
     // transform: "translatex(-50%)",
-    x: "0%",
+    x: "150%",
   }),
   animation: gsap.to(".i001", {
     // transform: "translatex(-450%)",
@@ -585,11 +586,11 @@ ScrollTrigger.create({
   scrub: 1,
   animation: gsap.from(".i001 .item_desc", {
     // transform: "translatex(-50%)",
-    x: "50%",
+    x: "200%",
   }),
   animation: gsap.to(".i001 .item_desc", {
     // transform: "translatex(-450%)",
-    x: "-700%",
+    x: "-1000%",
   }),
 });
 ScrollTrigger.create({
@@ -599,8 +600,19 @@ ScrollTrigger.create({
     x: "0%",
   }),
   animation: gsap.to(".i002", {
-    // transform: "translatex(-250%)",
-    x: "-450%",
+    // transform: "translatex(-450%)",
+    x: "-200%",
+  }),
+});
+ScrollTrigger.create({
+  scrub: 1,
+  animation: gsap.from(".i002 .item_desc", {
+    // transform: "translatex(-50%)",
+    x: "0%",
+  }),
+  animation: gsap.to(".i002 .item_desc", {
+    // transform: "translatex(-450%)",
+    x: "-300%",
   }),
 });
 

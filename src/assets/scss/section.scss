@@ -293,6 +293,7 @@
     width: 32vw;
     font-size: 1vw;
     margin: 10px 0px 30px 0px;
+    color: #ffffffc2;
   }
   img {
     width: 30vw;
@@ -336,11 +337,29 @@
 }
 .section3_item {
   .item_desc {
-    background: #2a2274b8;
+    background: linear-gradient(
+      45deg,
+      rgb(42 34 116),
+      rgba(42, 34, 116, 0.7215686275)
+    );
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     padding: 20px;
     transform: translate(-122px, 137px);
+    /* box-shadow: 0px 50px 120px -20px rgba(0,0,0,.3294117647); */
+    border: 1px solid rgba(255, 255, 255, 0.1882352941);
+    position: relative;
+    &::after {
+      position: absolute;
+      top: 20px;
+      right: 26px;
+      content: "";
+      width: 5px;
+      height: 20px;
+      background: #fff;
+      border-radius: 100px;
+      transform: rotate(45deg);
+    }
   }
 }
 .section3_item_bottom2 {
