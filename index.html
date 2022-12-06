@@ -450,7 +450,8 @@
         display: flex;
         align-items: flex-end;
         gap: 20px;
-        filter: blur(5px);
+        scale: 0.5;
+        /* filter: blur(5px); */
         /* width: 500px;
       height: 500px; */
       }
@@ -2332,7 +2333,7 @@
     </section>
 
     <!-- VUE MOVIE : section9 -->
-    <section style="background: #00244dd4" class="section">
+    <section style="background: #00244dd4" class="section vr1">
       <!-- <img src="#" alt="" /> -->
       <div class="section9_all_cont">
         <div class="section9_desc_cont">
@@ -2363,7 +2364,7 @@
     </section>
 
     <!-- VUE UNSPLASH : section10-->
-    <section style="background: #d93860d6" class="section">
+    <section style="background: #d93860d6" class="section vr2">
       <!-- <img src="#" alt="" /> -->
       <div class="section10_all_cont">
         <div class="section10_desc_cont">
@@ -2394,7 +2395,7 @@
     </section>
 
     <!-- VUE UNSPLASH : section11-->
-    <section style="background: #31826ed3" class="section">
+    <section style="background: #31826ed3" class="section vr3">
       <!-- <img src="#" alt="" /> -->
       <div class="section11_all_cont">
         <div class="section11_desc_cont">
@@ -2425,7 +2426,7 @@
     </section>
 
     <!-- VUE UNSPLASH : section12-->
-    <section style="background: #d98638da" class="section">
+    <section style="background: #d98638da" class="section vr4">
       <!-- <img src="#" alt="" /> -->
       <div class="section12_all_cont">
         <div class="section12_desc_cont">
@@ -2456,7 +2457,7 @@
     </section>
 
     <!-- VUE UNSPLASH : section13-->
-    <section style="background: #3ec4d0cd" class="section">
+    <section style="background: #3ec4d0cd" class="section vr5">
       <!-- <img src="#" alt="" /> -->
       <div class="section13_all_cont">
         <div class="section13_desc_cont">
@@ -2487,7 +2488,7 @@
     </section>
 
     <!-- VUE UNSPLASH : section14-->
-    <section style="background: #4d38d9dc" class="section">
+    <section style="background: #4d38d9dc" class="section vr6">
       <!-- <img src="#" alt="" /> -->
       <div class="section14_all_cont">
         <div class="section14_desc_cont">
@@ -2518,7 +2519,7 @@
     </section>
 
     <!-- VUE UNSPLASH : section15-->
-    <section style="background: #f6f6fb" class="section">
+    <section style="background: #f6f6fb" class="section vr7">
       <div class="section15_flex_cont">
         <div class="section15_all_cont">
           <div class="section15_main_title">
@@ -2620,7 +2621,7 @@
     </section>
 
     <!-- VUE UNSPLASH : section16-->
-    <section style="background: #f6f6fb" class="section">
+    <section style="background: #f6f6fb" class="section vr8">
       <style>
         .section16_item_cont {
           display: flex;
@@ -2700,24 +2701,24 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 
   <script>
-    const lenis = new Lenis({
-      duration: 2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      direction: "vertical", // vertical, horizontal
-      gestureDirection: "vertical", // vertical, horizontal, both
-      smooth: true,
-      // mouseMultiplier: 1,
-      // smoothTouch: false,
-      // touchMultiplier: 2,
-      // infinite: false,
-    });
+    // const lenis = new Lenis({
+    //   duration: 2,
+    //   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    //   direction: "vertical", // vertical, horizontal
+    //   gestureDirection: "vertical", // vertical, horizontal, both
+    //   smooth: true,
+    //   // mouseMultiplier: 1,
+    //   // smoothTouch: false,
+    //   // touchMultiplier: 2,
+    //   // infinite: false,
+    // });
 
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
+    // function raf(time) {
+    //   lenis.raf(time);
+    //   requestAnimationFrame(raf);
+    // }
 
-    requestAnimationFrame(raf);
+    // requestAnimationFrame(raf);
   </script>
   <script>
     gsap.registerPlugin(ScrollTrigger);
@@ -3353,11 +3354,56 @@
     });
 
     ScrollTrigger.create({
-      trigger: ".section3_item.i006",
+      trigger: "editorial_two",
       scrub: 0.1,
-      animation: gsap.to(".section3_item.i001", {
-        filter: "blur(0px)",
+      animation: gsap.to(".section3_item", {
+        duration: 10,
+        scale: 1.5,
+        // rotate: "20deg",
+        // transform: "translate(-50%, -50%) translate3d(0,-25px,0)",
+        // transformOrigin: "50% 0%",
       }),
+    });
+  </script>
+
+  <script>
+    ScrollTrigger.create({
+      trigger: ".vr2",
+      scrub: 1,
+      animation: gsap.fromTo(
+        ".sec8_logo",
+        {
+          x: "0%",
+          y: "0%",
+          // scale: 1,
+        },
+        {
+          x: "50%",
+          y: "10%",
+          ease: Linear.easeNone,
+          scale: 1.2,
+        }
+      ),
+    });
+    ScrollTrigger.create({
+      trigger: ".vr2",
+      scrub: 1,
+      animation: gsap.fromTo(
+        ".sec8_bg",
+        {
+          // x: "0%",
+          y: "0%",
+          backgroundSize: 0,
+          // scale: 1,
+        },
+        {
+          // x: "50%",
+          y: "-10%",
+          ease: Linear.easeNone,
+          scale: 1.2,
+          objectFit: none,
+        }
+      ),
     });
   </script>
 
