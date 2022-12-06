@@ -1684,6 +1684,61 @@
         margin-bottom: 0;
       }
     </style>
+
+    <!-- 섹션 16 -->
+    <style>
+      .section16_item_cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        height: 100%;
+        padding: 0 120px;
+        gap: 20px;
+      }
+      .section16_item_cont img {
+        width: 50%;
+      }
+      .contact_cont {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+      }
+      .contact_cont .input_cont {
+        display: flex;
+        flex-direction: column;
+      }
+      .contact_cont .input_cont input {
+        border: 1px solid #35346145;
+        background: #e5e5ef6e;
+        color: #353461;
+        height: 50px;
+        border-bottom: 0px;
+        padding: 10px;
+      }
+      .contact_cont .input_cont textarea {
+        border: 1px solid #35346145;
+        background: #e5e5ef6e;
+        color: #353461;
+        height: 300px;
+        padding: 10px;
+      }
+      .contact_cont .input_cont button {
+        background: #353461;
+        color: #fff;
+        text-align: left;
+        height: 50px;
+        padding: 10px;
+      }
+      .contact_cont h2 {
+        font-weight: 900;
+        font-size: 50px;
+        color: #5856d4;
+      }
+    </style>
   </head>
 
   <body>
@@ -1697,17 +1752,6 @@
       <a href="#">PHP SITE</a>
       <a href="#">VUE/REACT SITE</a>
       <!-- </div> -->
-
-      <!-- progress-bar 영역 Start -->
-      <div class="progress-box container">
-        <div class="progress-container">
-          <div class="progress-bar" id="indicator">
-            <p class="test_gage"></p>
-          </div>
-          <!--<a href="#" class="page-top">TOP</a>-->
-        </div>
-      </div>
-      <!-- progress-bar 영역 End -->
     </header>
     <!-- <img class="close" src="src/assets/img/main_close.svg" alt="닫기" /> -->
     <div class="porfolio_desc_fixed">
@@ -2148,7 +2192,6 @@
     </div>
 
     <!-- 게임 이펙트와 도큐먼트 사이의 과정 -->
-    <style></style>
     <section class="section custom_color">
       <div class="section5p5_fixed">
         <h2>SITE <em>TYPE</em></h2>
@@ -2575,59 +2618,6 @@
 
     <!-- VUE UNSPLASH : section16-->
     <section style="background: #f6f6fb" class="section vr8">
-      <style>
-        .section16_item_cont {
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-end;
-          width: 100%;
-          height: 100%;
-          padding: 0 120px;
-          gap: 20px;
-        }
-        .section16_item_cont img {
-          width: 50%;
-        }
-        .contact_cont {
-          width: 50%;
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          /* align-items: center; */
-          justify-content: center;
-        }
-        .contact_cont .input_cont {
-          display: flex;
-          flex-direction: column;
-        }
-        .contact_cont .input_cont input {
-          border: 1px solid #35346145;
-          background: #e5e5ef6e;
-          color: #353461;
-          height: 50px;
-          border-bottom: 0px;
-          padding: 10px;
-        }
-        .contact_cont .input_cont textarea {
-          border: 1px solid #35346145;
-          background: #e5e5ef6e;
-          color: #353461;
-          height: 300px;
-          padding: 10px;
-        }
-        .contact_cont .input_cont button {
-          background: #353461;
-          color: #fff;
-          text-align: left;
-          height: 50px;
-          padding: 10px;
-        }
-        .contact_cont h2 {
-          font-weight: 900;
-          font-size: 50px;
-          color: #5856d4;
-        }
-      </style>
       <div class="section16_item_cont">
         <div class="contact_cont">
           <h2>CONTACT_ME</h2>
@@ -2649,10 +2639,12 @@
       </div>
     </section>
   </body>
+
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 
+  <!-- 레니즈 스크롤 -->
   <script>
     // const lenis = new Lenis({
     //   duration: 2,
@@ -2673,6 +2665,8 @@
 
     // requestAnimationFrame(raf);
   </script>
+
+  <!-- 가로 스크롤 모음 -->
   <script>
     gsap.registerPlugin(ScrollTrigger);
 
@@ -2708,6 +2702,7 @@
       },
     });
   </script>
+
   <!-- 상단바 -->
   <script>
     // 상단
@@ -2944,57 +2939,6 @@
         }
       ),
     });
-  </script>
-
-  <script>
-    ScrollTrigger.create({
-      trigger: ".section4_fixed",
-      scrub: 1,
-      animation: gsap.fromTo(
-        ".section4_fixed",
-        {
-          scale: (1.3, 1.3),
-          opacity: 0,
-          transformOrigin: "900px 18px",
-          transform: "translate(0,50px)",
-        },
-        {
-          scale: 1,
-          opacity: 1,
-          transformOrigin: "50% 0%",
-          transform: "translate3d(0,-25px,0)",
-        }
-      ),
-    });
-
-    let proxy = { skew: 0 },
-      skewSetter = gsap.quickSetter(".section4_cont>div", "skewY", "deg"), // fast
-      skewSetter2 = gsap.quickSetter(
-        ".section4_rev_icon_layout",
-        "skewY",
-        "deg"
-      ), // fast
-      clamp = gsap.utils.clamp(-10, 10);
-
-    ScrollTrigger.create({
-      onUpdate: (self) => {
-        let skew = clamp(self.getVelocity() / -300);
-
-        if (Math.abs(skew) > Math.abs(proxy.skew)) {
-          proxy.skew = skew;
-          gsap.to(proxy, {
-            skew: 0,
-            duration: 0.8,
-            ease: "power3",
-            overwrite: true,
-            onUpdate: () => skewSetter(proxy.skew),
-          });
-        }
-      },
-    });
-
-    // make the right edge "stick" to the scroll bar. force3D: true improves performance
-    gsap.set(".skewElem", { transformOrigin: "right center", force3D: true });
   </script>
 
   <!-- 메인 먼지 -->
@@ -3313,6 +3257,58 @@
     });
   </script>
 
+  <!-- 섹션 4 -->
+  <script>
+    ScrollTrigger.create({
+      trigger: ".section4_fixed",
+      scrub: 1,
+      animation: gsap.fromTo(
+        ".section4_fixed",
+        {
+          scale: (1.3, 1.3),
+          opacity: 0,
+          transformOrigin: "900px 18px",
+          transform: "translate(0,50px)",
+        },
+        {
+          scale: 1,
+          opacity: 1,
+          transformOrigin: "50% 0%",
+          transform: "translate3d(0,-25px,0)",
+        }
+      ),
+    });
+
+    let proxy = { skew: 0 },
+      skewSetter = gsap.quickSetter(".section4_cont>div", "skewY", "deg"), // fast
+      skewSetter2 = gsap.quickSetter(
+        ".section4_rev_icon_layout",
+        "skewY",
+        "deg"
+      ), // fast
+      clamp = gsap.utils.clamp(-10, 10);
+
+    ScrollTrigger.create({
+      onUpdate: (self) => {
+        let skew = clamp(self.getVelocity() / -300);
+
+        if (Math.abs(skew) > Math.abs(proxy.skew)) {
+          proxy.skew = skew;
+          gsap.to(proxy, {
+            skew: 0,
+            duration: 0.8,
+            ease: "power3",
+            overwrite: true,
+            onUpdate: () => skewSetter(proxy.skew),
+          });
+        }
+      },
+    });
+
+    // make the right edge "stick" to the scroll bar. force3D: true improves performance
+    gsap.set(".skewElem", { transformOrigin: "right center", force3D: true });
+  </script>
+
   <!-- 섹션 5 -->
   <script>
     ScrollTrigger.create({
@@ -3364,6 +3360,7 @@
       }),
     });
   </script>
+
   <!-- VUE_API MOVIE -->
   <script>
     ScrollTrigger.create({
@@ -3406,7 +3403,7 @@
     });
   </script>
 
-  <!-- VUE_API MOVIE -->
+  <!-- VUE_API TMDB -->
   <script>
     ScrollTrigger.create({
       trigger: ".vr2",
@@ -3448,7 +3445,7 @@
     });
   </script>
 
-  <!-- VUE_API MOVIE -->
+  <!-- VUE_API SITE -->
   <script>
     ScrollTrigger.create({
       trigger: ".vr3",
