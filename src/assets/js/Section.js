@@ -508,6 +508,21 @@ ScrollTrigger.create({
     }
   ),
 });
+ScrollTrigger.create({
+  scrub: 1,
+  animation: gsap.from(".section4_fixed", {
+    scale: (1.3, 1.3),
+    opacity: 0,
+    transformOrigin: "900px 18px",
+    transform: "translate(0,50px)",
+  }),
+  animation: gsap.to(".section4_fixed", {
+    scale: 1,
+    opacity: 1,
+    transformOrigin: "50% 0%",
+    transform: "translate3d(0,-25px,0)",
+  }),
+});
 
 let proxy = { skew: 0 },
   skewSetter = gsap.quickSetter(".section4_cont>div", "skewY", "deg"), // fast
