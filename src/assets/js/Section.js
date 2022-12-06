@@ -762,3 +762,39 @@ ScrollTrigger.create({
     }
   ),
 });
+const slides = document.querySelectorAll(".t_vr");
+
+function initParallax() {
+  slides.forEach((slide, i) => {
+    let imageWrappers = slide.querySelectorAll(".t_vr > div");
+
+    gsap.fromTo(
+      imageWrappers,
+      {
+        y: "-30vh",
+      },
+      {
+        y: "30vh",
+        scrollTrigger: {
+          trigger: slide,
+          scrub: true,
+          start: "top bottom", // position of trigger meets the scroller position
+          //   snap: {
+          //     snapTo: 0.5, // 0.5 'cause the scroll animation range is 200vh for parallax effect
+          //     duration: 1,
+          //     ease: "power4.inOut",
+          //   },
+        },
+        ease: "none",
+      }
+    );
+  });
+}
+
+function init() {
+  initParallax();
+}
+
+window.onload = () => {
+  init();
+};
