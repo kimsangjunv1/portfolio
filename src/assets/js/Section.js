@@ -308,6 +308,25 @@ ScrollTrigger.create({
     }
   ),
 });
+ScrollTrigger.create({
+  trigger: ".section2_cont",
+  scrub: 1,
+  animation: gsap.fromTo(
+    ".section2_profile_cont",
+    {
+      scale: (1.3, 1.3),
+      transformOrigin: "500px 18px",
+      transform: "translate(0,50px)",
+      //   filter: "blur(2px)",
+    },
+    {
+      scale: 1,
+      transformOrigin: "50% 0%",
+      transform: "translate3d(0,-25px,0)",
+      //   filter: "blur(0px)",
+    }
+  ),
+});
 
 // 섹션 3_bottom
 ScrollTrigger.create({
@@ -489,26 +508,46 @@ ScrollTrigger.create({
 // });
 
 //   섹션 4
+// ScrollTrigger.create({
+//   trigger: ".section4_fixed",
+//   scrub: 1,
+//   animation: gsap.fromTo(
+//     ".section4_fixed",
+//     {
+//       scale: (1.3, 1.3),
+//       opacity: 0,
+//       transformOrigin: "900px 18px",
+//       transform: "translate(0,50px)",
+//     },
+//     {
+//       scale: 1,
+//       opacity: 1,
+//       transformOrigin: "50% 0%",
+//       transform: "translate3d(0,-25px,0)",
+//     }
+//   ),
+// });
+// ScrollTrigger.create({
+//   trigger: ".section4_fixed",
+//   scrub: 1,
+//   animation: gsap.fromTo(
+//     ".section4_fixed",
+//     {
+//       scale: (1.3, 1.3),
+//       opacity: 0,
+//       transformOrigin: "900px 18px",
+//       transform: "translate(-50%, -50%)",
+//     },
+//     {
+//       scale: 1,
+//       opacity: 1,
+//       transformOrigin: "50% 0%",
+//       transform: "translate3d(0,-25px,0)",
+//     }
+//   ),
+// });
 ScrollTrigger.create({
   trigger: ".section4_fixed",
-  scrub: 1,
-  animation: gsap.fromTo(
-    ".section4_fixed",
-    {
-      scale: (1.3, 1.3),
-      opacity: 0,
-      transformOrigin: "900px 18px",
-      transform: "translate(0,50px)",
-    },
-    {
-      scale: 1,
-      opacity: 1,
-      transformOrigin: "50% 0%",
-      transform: "translate3d(0,-25px,0)",
-    }
-  ),
-});
-ScrollTrigger.create({
   scrub: 1,
   animation: gsap.from(".section4_fixed", {
     scale: (1.3, 1.3),
@@ -571,19 +610,19 @@ ScrollTrigger.create({
 });
 
 //   섹션 5.5
-ScrollTrigger.create({
-  trigger: ".section5p5_fixed",
-  scrub: 1,
-  animation: gsap.fromTo(
-    ".section5p5_fixed",
-    {
-      opacity: 1,
-    },
-    {
-      opacity: 0,
-    }
-  ),
-});
+// ScrollTrigger.create({
+//   trigger: ".section5p5_fixed",
+//   scrub: 1,
+//   animation: gsap.fromTo(
+//     ".section5p5_fixed",
+//     {
+//       opacity: 1,
+//     },
+//     {
+//       opacity: 0,
+//     }
+//   ),
+// });
 
 // 섹션 3_i001 ~ i006
 ScrollTrigger.create({
