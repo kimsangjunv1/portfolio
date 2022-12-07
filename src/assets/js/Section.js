@@ -129,22 +129,22 @@ ScrollTrigger.create({
     }
   ),
 });
-ScrollTrigger.create({
-  // 어디에 닿으면 반응할건지
-  trigger: ".section2_cont",
-  scrub: 1,
-  // 어디다가 적용할건지
-  animation: gsap.fromTo(
-    ".section1_desc h2",
-    {
-      height: "27.2vw",
-    },
-    {
-      height: "0vw",
-      // filter: "blur(3px)",
-    }
-  ),
-});
+// ScrollTrigger.create({
+//   // 어디에 닿으면 반응할건지
+//   trigger: ".section2_cont",
+//   scrub: 1,
+//   // 어디다가 적용할건지
+//   animation: gsap.fromTo(
+//     ".section1_desc h2",
+//     {
+//       height: "27.2vw",
+//     },
+//     {
+//       height: "0vw",
+//       // filter: "blur(3px)",
+//     }
+//   ),
+// });
 
 //   섹션 2
 ScrollTrigger.create({
@@ -639,7 +639,7 @@ ScrollTrigger.create({
   scrub: 1,
   animation: gsap.from(".i001 .item_desc", {
     // transform: "translatex(-50%)",
-    x: "200%",
+    x: "150%",
   }),
   animation: gsap.to(".i001 .item_desc", {
     // transform: "translatex(-450%)",
@@ -650,7 +650,7 @@ ScrollTrigger.create({
   scrub: 1,
   animation: gsap.from(".i002", {
     // transform: "translatex(-50%)",
-    x: "0%",
+    x: "50%",
   }),
   animation: gsap.to(".i002", {
     // transform: "translatex(-450%)",
@@ -661,11 +661,33 @@ ScrollTrigger.create({
   scrub: 1,
   animation: gsap.from(".i002 .item_desc", {
     // transform: "translatex(-50%)",
-    x: "0%",
+    x: "150%",
   }),
   animation: gsap.to(".i002 .item_desc", {
     // transform: "translatex(-450%)",
-    x: "-300%",
+    x: "-1000%",
+  }),
+});
+ScrollTrigger.create({
+  scrub: 1,
+  animation: gsap.from(".i003", {
+    // transform: "translatex(-50%)",
+    x: "120%",
+  }),
+  animation: gsap.to(".i003", {
+    // transform: "translatex(-450%)",
+    x: "-450%",
+  }),
+});
+ScrollTrigger.create({
+  scrub: 1,
+  animation: gsap.from(".i003 .item_desc", {
+    // transform: "translatex(-50%)",
+    x: "150%",
+  }),
+  animation: gsap.to(".i003 .item_desc", {
+    // transform: "translatex(-450%)",
+    x: "-500%",
   }),
 });
 
@@ -678,13 +700,13 @@ ScrollTrigger.create({
     {
       x: "-40%",
       y: "-40%",
-      // scale: 1,
+      scale: 0.8,
     },
     {
       x: "30%",
       y: "10%",
       ease: Linear.easeNone,
-      scale: 1.2,
+      scale: 1.6,
     }
   ),
 });

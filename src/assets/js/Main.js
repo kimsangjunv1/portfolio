@@ -19,26 +19,7 @@
 
 // requestAnimationFrame(raf);
 
-// const tl = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: "#section2",
-//     pin: true,
-//     scrub: 0.3,
-//     start: "top top",
-//     end: "+=300%",
-//   },
-// });
-// tl.to(".section1_img img", {
-//   x: 100,
-//   y: 100,
-//   duration: 2,
-//   skew: 1000,
-//   rotation: 30,
-// });
-
 //   가로 스크롤 모음
-
-gsap.registerPlugin(ScrollTrigger);
 
 // JS 이펙트 설명
 let sections = gsap.utils.toArray(".section3_item");
