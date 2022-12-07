@@ -19,8 +19,13 @@ gsap.to(".dust_03", {
 });
 gsap.to(".dust_04", {
   scrollTrigger: ".dust_04",
-  transform: "translate(70%, 0)",
-  duration: 1.7,
+  transform: "translate(-50%, 0)",
+  duration: 1.2,
+});
+gsap.to(".dust_05", {
+  scrollTrigger: ".dust_05",
+  transform: "translate(-50%, 0)",
+  duration: 1.2,
 });
 gsap.to(".section1_desc h2", {
   scrollTrigger: ".section1_desc h2",
