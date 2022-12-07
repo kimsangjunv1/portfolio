@@ -1,3 +1,20 @@
+// 오프닝 애니메이션
+gsap.to(".dust_01", {
+  scrollTrigger: ".dust_01",
+  transform: "translate(-50%,0%)",
+  duration: 0.5,
+});
+gsap.to(".dust_02", {
+  scrollTrigger: ".dust_02",
+  transform: "translate(-50%,0%) rotate(0deg)",
+  duration: 2,
+});
+gsap.to(".dust_03", {
+  scrollTrigger: ".dust_03",
+  transform: "translate(70%,0%) rotate(0deg)",
+  duration: 1.2,
+});
+
 // 메인 먼지
 ScrollTrigger.create({
   // 어디에 닿으면 반응할건지
@@ -7,14 +24,16 @@ ScrollTrigger.create({
   animation: gsap.fromTo(
     ".dust_01",
     {
-      transform: "translate(-50%,0) rotate(0deg)",
+      transform: "translate(-50%,0%) rotate(0deg)",
     },
     {
-      transform: "translate(-60%,1020%) scale(3.0) rotate(200deg)",
+      //   transform: "translate(200%,-20%) scale(3.0) rotate(23deg)",
+      transform: "translate(-50%,1020%) scale(3.0) rotate(200deg)",
       // filter: "blur(3px)",
     }
   ),
 });
+
 ScrollTrigger.create({
   // 어디에 닿으면 반응할건지
   trigger: ".section2_cont",
@@ -586,7 +605,7 @@ ScrollTrigger.create({
 });
 
 // make the right edge "stick" to the scroll bar. force3D: true improves performance
-gsap.set(".skewElem", { transformOrigin: "right center", force3D: true });
+// gsap.set(".skewElem", { transformOrigin: "right center", force3D: true });
 
 //   섹션 5
 ScrollTrigger.create({
@@ -609,19 +628,16 @@ ScrollTrigger.create({
   ),
 });
 
-//   섹션 5.5
+// 섹션 5.5
 // ScrollTrigger.create({
-//   trigger: ".section5p5_fixed",
+//   // trigger: ".section5p5_fixed",
 //   scrub: 1,
-//   animation: gsap.fromTo(
-//     ".section5p5_fixed",
-//     {
-//       opacity: 1,
-//     },
-//     {
-//       opacity: 0,
-//     }
-//   ),
+//   animation: gsap.from(".section5p5_fixed", {
+//     opacity: 1,
+//   }),
+//   animation: gsap.to(".section5p5_fixed", {
+//     opacity: 0,
+//   }),
 // });
 
 // 섹션 3_i001 ~ i006
@@ -670,18 +686,6 @@ ScrollTrigger.create({
   }),
 });
 
-// ScrollTrigger.create({
-//   trigger: "editorial_two",
-//   scrub: 0.1,
-//   animation: gsap.to(".section3_item", {
-//     duration: 10,
-//     scale: 1.5,
-//     // rotate: "20deg",
-//     // transform: "translate(-50%, -50%) translate3d(0,-25px,0)",
-//     // transformOrigin: "50% 0%",
-//   }),
-// });
-
 //   VUE_API MOVIE
 ScrollTrigger.create({
   trigger: ".vr1",
@@ -701,8 +705,24 @@ ScrollTrigger.create({
     }
   ),
 });
+
+// ScrollTrigger.create({
+//   trigger: ".vr1",
+//   scrub: 1,
+//   animation: gsap.from(".sec8_logo", {
+//     x: "-40%",
+//     y: "-40%",
+//   }),
+//   animation: gsap.to(".sec8_logo", {
+//     x: "30%",
+//     y: "10%",
+//     ease: Linear.easeNone,
+//     scale: 1.2,
+//   }),
+// });
+
 ScrollTrigger.create({
-  trigger: ".vr1",
+  trigger: ".t_vr",
   scrub: 1,
   animation: gsap.fromTo(
     ".sec8_bg",
@@ -801,39 +821,39 @@ ScrollTrigger.create({
     }
   ),
 });
-const slides = document.querySelectorAll(".t_vr");
+// const slides = document.querySelectorAll(".t_vr");
 
-function initParallax() {
-  slides.forEach((slide, i) => {
-    let imageWrappers = slide.querySelectorAll(".t_vr > div");
+// function initParallax() {
+//   slides.forEach((slide, i) => {
+//     let imageWrappers = slide.querySelectorAll(".t_vr > div");
 
-    gsap.fromTo(
-      imageWrappers,
-      {
-        y: "-30vh",
-      },
-      {
-        y: "30vh",
-        scrollTrigger: {
-          trigger: slide,
-          scrub: true,
-          start: "top bottom", // position of trigger meets the scroller position
-          //   snap: {
-          //     snapTo: 0.5, // 0.5 'cause the scroll animation range is 200vh for parallax effect
-          //     duration: 1,
-          //     ease: "power4.inOut",
-          //   },
-        },
-        ease: "none",
-      }
-    );
-  });
-}
+//     gsap.fromTo(
+//       imageWrappers,
+//       {
+//         y: "-30vh",
+//       },
+//       {
+//         y: "30vh",
+//         scrollTrigger: {
+//           trigger: slide,
+//           scrub: true,
+//           start: "top bottom", // position of trigger meets the scroller position
+//           //   snap: {
+//           //     snapTo: 0.5, // 0.5 'cause the scroll animation range is 200vh for parallax effect
+//           //     duration: 1,
+//           //     ease: "power4.inOut",
+//           //   },
+//         },
+//         ease: "none",
+//       }
+//     );
+//   });
+// }
 
-function init() {
-  initParallax();
-}
+// function init() {
+//   initParallax();
+// }
 
-window.onload = () => {
-  init();
-};
+// window.onload = () => {
+//   init();
+// };

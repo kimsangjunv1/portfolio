@@ -6,6 +6,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PORTFOLIO</title>
     <link rel="stylesheet" href="src/assets/scss/assets/css/style.min.css" />
+    <style>
+      .bglinear {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(90deg, #000 50%, #fff 50%);
+        position: fixed;
+        flex-shrink: 0;
+        overflow: hidden;
+        z-index: -1;
+        transition: all 0.1s ease;
+        prespective: 1px;
+      }
+      .bglinear span {
+        color: transparent;
+        font-size: 122px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 2px #858585;
+        backface-visibility: none;
+      }
+
+      .page1 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: transparent;
+        z-index: 1;
+      }
+      .page1 .h1 {
+        color: white;
+        font-size: 48px;
+      }
+      .page1 .h2 {
+        color: black;
+        font-size: 48px;
+      }
+      .page1 a {
+        font-size: 24px;
+        position: absolute;
+        left: 50%;
+        top: 0%;
+        transform: translate(-50%, 0%);
+        background: gainsboro;
+        padding: 10px 15px;
+        margin-top: 10px;
+        border-radius: 3px;
+        text-decoration: none;
+        color: black;
+      }
+      .page2 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: transparent;
+        position: relative;
+      }
+      .page2 .h3 {
+        color: #000;
+        font-size: 48px;
+      }
+      .page2 .h4 {
+        font-size: 48px;
+        color: #fff;
+      }
+      .page2 a {
+        font-size: 24px;
+        position: absolute;
+        left: 50%;
+        top: 85%;
+        transform: translate(-50%, 0%);
+        background: gainsboro;
+        padding: 10px 15px;
+        margin-top: 10px;
+        border-radius: 3px;
+        text-decoration: none;
+        color: black;
+      }
+      .color_bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      /* .t_vr {
+        position: relative;
+      }
+      .t_vr > div {
+        z-index: 1;
+      }
+      .t_vr::before,
+      .t_vr::after {
+        content: "";
+        position: absolute;
+      }
+      .t_vr::after {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 0, 0, 0.515);
+      } */
+    </style>
   </head>
 
   <body>
@@ -475,10 +585,10 @@
     </div>
 
     <!-- 게임 이펙트와 도큐먼트 사이의 과정 -->
-    <section class="section custom_color">
-      <div class="section5p5_fixed">
+    <section class="section custom_color pin2">
+      <!-- <div class="section5p5_fixed">
         <h2>SITE <em>TYPE</em></h2>
-      </div>
+      </div> -->
       <svg
         class="editorial"
         xmlns="http://www.w3.org/2000/svg"
@@ -634,6 +744,7 @@
             alt=""
           />
         </div>
+        <div style="background: #00244dd4" class="color_bg"></div>
         <img
           class="section9_main_screenshot"
           src="src/assets/img/section9_screenshot_01.png"

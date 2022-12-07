@@ -1,23 +1,40 @@
 // 레니즈 스크롤
 
-const lenis = new Lenis({
-  duration: 2,
-  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-  direction: "vertical", // vertical, horizontal
-  gestureDirection: "vertical", // vertical, horizontal, both
-  smooth: true,
-  // mouseMultiplier: 1,
-  // smoothTouch: false,
-  // touchMultiplier: 2,
-  // infinite: false,
-});
+// const lenis = new Lenis({
+//   duration: 2,
+//   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+//   direction: "vertical", // vertical, horizontal
+//   gestureDirection: "vertical", // vertical, horizontal, both
+//   smooth: true,
+//   // mouseMultiplier: 1,
+//   // smoothTouch: false,
+//   // touchMultiplier: 2,
+//   // infinite: false,
+// });
 
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
+// function raf(time) {
+//   lenis.raf(time);
+//   requestAnimationFrame(raf);
+// }
 
-requestAnimationFrame(raf);
+// requestAnimationFrame(raf);
+
+// const tl = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: "#section2",
+//     pin: true,
+//     scrub: 0.3,
+//     start: "top top",
+//     end: "+=300%",
+//   },
+// });
+// tl.to(".section1_img img", {
+//   x: 100,
+//   y: 100,
+//   duration: 2,
+//   skew: 1000,
+//   rotation: 30,
+// });
 
 //   가로 스크롤 모음
 
