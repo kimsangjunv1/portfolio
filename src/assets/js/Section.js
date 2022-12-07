@@ -25,7 +25,7 @@ ScrollTrigger.create({
   animation: gsap.fromTo(
     ".dust_02",
     {
-      transform: "translate(-60%,0) rotate(0deg)",
+      transform: "translate(-50%,0) rotate(0deg)",
     },
     {
       transform: "translate(-500%,-120%) scale(4.0) rotate(200deg)",
@@ -610,21 +610,21 @@ ScrollTrigger.create({
     }
   ),
 });
-ScrollTrigger.create({
-  scrub: 1,
-  animation: gsap.from(".s5_2", {
-    // transform: "translatex(-50%)",
-    x: "50%",
-    opacity: 0,
-    // filter: "blur(5px)",
-  }),
-  animation: gsap.to(".s5_3", {
-    // transform: "translatex(-450%)",
-    x: "-400%",
-    opacity: 1,
-    // filter: "blur(0px)",
-  }),
-});
+// ScrollTrigger.create({
+//   scrub: 1,
+//   animation: gsap.from(".s5_2", {
+//     // transform: "translatex(-50%)",
+//     x: "50%",
+//     opacity: 0,
+//     // filter: "blur(5px)",
+//   }),
+//   animation: gsap.to(".s5_3", {
+//     // transform: "translatex(-450%)",
+//     x: "-400%",
+//     opacity: 1,
+//     // filter: "blur(0px)",
+//   }),
+// });
 ScrollTrigger.create({
   scrub: 1,
   animation: gsap.from(".section3_item_bottom", {
@@ -669,6 +669,7 @@ ScrollTrigger.create({
     x: "-1000%",
   }),
 });
+
 ScrollTrigger.create({
   scrub: 1,
   animation: gsap.from(".i002", {
@@ -691,6 +692,7 @@ ScrollTrigger.create({
     x: "-1000%",
   }),
 });
+
 ScrollTrigger.create({
   scrub: 1,
   animation: gsap.from(".i003", {
@@ -714,7 +716,77 @@ ScrollTrigger.create({
   }),
 });
 
-//   VUE_API MOVIE
+ScrollTrigger.create({
+  scrub: 1,
+  animation: gsap.from(".i004", {
+    // transform: "translatex(-50%)",
+    x: "200%",
+  }),
+  animation: gsap.to(".i004", {
+    // transform: "translatex(-450%)",
+    x: "-450%",
+  }),
+});
+ScrollTrigger.create({
+  scrub: 1,
+  animation: gsap.from(".i004 .item_desc", {
+    // transform: "translatex(-50%)",
+    x: "100%",
+  }),
+  animation: gsap.to(".i004 .item_desc", {
+    // transform: "translatex(-450%)",
+    x: "-700%",
+  }),
+});
+
+ScrollTrigger.create({
+  scrub: 1,
+  animation: gsap.from(".i005", {
+    // transform: "translatex(-50%)",
+    x: "200%",
+  }),
+  animation: gsap.to(".i005", {
+    // transform: "translatex(-450%)",
+    x: "-400%",
+  }),
+});
+ScrollTrigger.create({
+  scrub: 1,
+  animation: gsap.from(".i005 .item_desc", {
+    // transform: "translatex(-50%)",
+    x: "250%",
+  }),
+  animation: gsap.to(".i005 .item_desc", {
+    // transform: "translatex(-450%)",
+    x: "-1000%",
+  }),
+});
+
+ScrollTrigger.create({
+  scrub: 1,
+  animation: gsap.from(".i006", {
+    // transform: "translatex(-50%)",
+    x: "250%",
+  }),
+  animation: gsap.to(".i006", {
+    // transform: "translatex(-450%)",
+    x: "-250%",
+  }),
+});
+ScrollTrigger.create({
+  scrub: 1,
+  animation: gsap.from(".i006 .item_desc", {
+    // transform: "translatex(-50%)",
+    x: "150%",
+  }),
+  animation: gsap.to(".i006 .item_desc", {
+    // transform: "translatex(-450%)",
+    x: "-300%",
+  }),
+});
+
+// 1 / 1
+// VUE_API MOVIE
 ScrollTrigger.create({
   trigger: ".vr1",
   scrub: 1,
@@ -733,22 +805,6 @@ ScrollTrigger.create({
     }
   ),
 });
-
-// ScrollTrigger.create({
-//   trigger: ".vr1",
-//   scrub: 1,
-//   animation: gsap.from(".sec8_logo", {
-//     x: "-40%",
-//     y: "-40%",
-//   }),
-//   animation: gsap.to(".sec8_logo", {
-//     x: "30%",
-//     y: "10%",
-//     ease: Linear.easeNone,
-//     scale: 1.2,
-//   }),
-// });
-
 ScrollTrigger.create({
   trigger: ".t_vr",
   scrub: 1,
@@ -770,7 +826,7 @@ ScrollTrigger.create({
   ),
 });
 
-//   VUE_API TMDB
+// VUE_API TMDB
 ScrollTrigger.create({
   trigger: ".vr2",
   scrub: 1,
@@ -810,7 +866,7 @@ ScrollTrigger.create({
   ),
 });
 
-//   VUE_API SITE
+// VUE_API SITE
 ScrollTrigger.create({
   trigger: ".vr3",
   scrub: 1,
@@ -849,6 +905,128 @@ ScrollTrigger.create({
     }
   ),
 });
+
+// 2 / 1
+// VUE_API MOVIE
+ScrollTrigger.create({
+  trigger: ".vr4",
+  scrub: 1,
+  animation: gsap.fromTo(
+    ".sec12_logo",
+    {
+      x: "40%",
+      y: "0%",
+      scale: 0.8,
+    },
+    {
+      x: "-30%",
+      y: "0%",
+      ease: Linear.easeNone,
+      scale: 1.6,
+    }
+  ),
+});
+ScrollTrigger.create({
+  trigger: ".vr4",
+  scrub: 1,
+  animation: gsap.fromTo(
+    ".sec12_bg",
+    {
+      x: "0%",
+      y: "0%",
+      backgroundSize: 0,
+      // scale: 1,
+    },
+    {
+      x: "20%",
+      y: "0%",
+      ease: Linear.easeNone,
+      scale: 1.2,
+      // objectFit: none,
+    }
+  ),
+});
+
+// VUE_API TMDB
+ScrollTrigger.create({
+  trigger: ".vr5",
+  scrub: 1,
+  animation: gsap.fromTo(
+    ".sec13_logo",
+    {
+      x: "-40%",
+      y: "-50%",
+      // scale: 1,
+    },
+    {
+      x: "30%",
+      y: "-50%",
+      ease: Linear.easeNone,
+      scale: 1.2,
+    }
+  ),
+});
+ScrollTrigger.create({
+  trigger: ".vr5",
+  scrub: 1,
+  animation: gsap.fromTo(
+    ".sec13_bg",
+    {
+      x: "50%",
+      y: "0%",
+      backgroundSize: 0,
+      // scale: 1,
+    },
+    {
+      x: "20%",
+      y: "0%",
+      ease: Linear.easeNone,
+      scale: 1.2,
+      // objectFit: none,
+    }
+  ),
+});
+
+// VUE_API SITE
+ScrollTrigger.create({
+  trigger: ".vr6",
+  scrub: 1,
+  animation: gsap.fromTo(
+    ".sec14_logo",
+    {
+      x: "40%",
+      y: "0%",
+      scale: 0.8,
+    },
+    {
+      x: "-30%",
+      y: "0%",
+      ease: Linear.easeNone,
+      scale: 1.6,
+    }
+  ),
+});
+ScrollTrigger.create({
+  trigger: ".vr6",
+  scrub: 1,
+  animation: gsap.fromTo(
+    ".sec14_bg",
+    {
+      x: "0%",
+      y: "0%",
+      backgroundSize: 0,
+      // scale: 1,
+    },
+    {
+      x: "20%",
+      y: "0%",
+      ease: Linear.easeNone,
+      scale: 1.2,
+      // objectFit: none,
+    }
+  ),
+});
+
 const slides = document.querySelectorAll(".t_vr");
 
 function initParallax() {

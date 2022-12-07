@@ -31,31 +31,31 @@ gsap.to(".dust_05", {
 });
 gsap.to(".dust_07", {
   scrollTrigger: ".dust_01",
-  transform: "translate(70%, 0) rotate(0deg)",
+  transform: "translate(70%, 0)",
   // scale: 1,
   duration: 1.6,
 });
 gsap.to(".dust_08", {
   scrollTrigger: ".dust_01",
-  transform: "translate(-60%, 0) rotate(0deg)",
+  transform: "translate(-60%, 0)",
   // scale: 1,
   duration: 1.6,
 });
 gsap.to(".dust_09", {
   scrollTrigger: ".dust_01",
-  transform: "translate(70%, 0) rotate(0deg)",
+  transform: "translate(70%, 0)",
   // scale: 1,
   duration: 1.6,
 });
 gsap.to(".dust_10", {
   scrollTrigger: ".dust_01",
-  transform: "translate(-60%, 0) rotate(0deg)",
+  transform: "translate(-60%, 0)",
   // scale: 1,
   duration: 1.6,
 });
 gsap.to(".dust_11", {
   scrollTrigger: ".dust_01",
-  transform: "translate(-60%, 0) rotate(0deg)",
+  transform: "translate(-60%, 0)",
   // scale: 1,
   duration: 1.6,
 });
