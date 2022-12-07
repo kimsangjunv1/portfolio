@@ -1,20 +1,3 @@
-// 오프닝 애니메이션
-gsap.to(".dust_01", {
-  scrollTrigger: ".dust_01",
-  transform: "translate(-50%,0%)",
-  duration: 0.5,
-});
-gsap.to(".dust_02", {
-  scrollTrigger: ".dust_02",
-  transform: "translate(-50%,0%) rotate(0deg)",
-  duration: 2,
-});
-gsap.to(".dust_03", {
-  scrollTrigger: ".dust_03",
-  transform: "translate(70%,0%) rotate(0deg)",
-  duration: 1.2,
-});
-
 // 메인 먼지
 ScrollTrigger.create({
   // 어디에 닿으면 반응할건지
@@ -821,39 +804,34 @@ ScrollTrigger.create({
     }
   ),
 });
-// const slides = document.querySelectorAll(".t_vr");
+const slides = document.querySelectorAll(".t_vr");
 
-// function initParallax() {
-//   slides.forEach((slide, i) => {
-//     let imageWrappers = slide.querySelectorAll(".t_vr > div");
+function initParallax() {
+  slides.forEach((slide, i) => {
+    let imageWrappers = slide.querySelectorAll(".t_vr > div");
 
-//     gsap.fromTo(
-//       imageWrappers,
-//       {
-//         y: "-30vh",
-//       },
-//       {
-//         y: "30vh",
-//         scrollTrigger: {
-//           trigger: slide,
-//           scrub: true,
-//           start: "top bottom", // position of trigger meets the scroller position
-//           //   snap: {
-//           //     snapTo: 0.5, // 0.5 'cause the scroll animation range is 200vh for parallax effect
-//           //     duration: 1,
-//           //     ease: "power4.inOut",
-//           //   },
-//         },
-//         ease: "none",
-//       }
-//     );
-//   });
-// }
+    gsap.fromTo(
+      imageWrappers,
+      {
+        y: "-30vh",
+      },
+      {
+        y: "30vh",
+        scrollTrigger: {
+          trigger: slide,
+          scrub: true,
+          start: "top bottom", // position of trigger meets the scroller position
+        },
+        ease: "none",
+      }
+    );
+  });
+}
 
-// function init() {
-//   initParallax();
-// }
+function init() {
+  initParallax();
+}
 
-// window.onload = () => {
-//   init();
-// };
+window.onload = () => {
+  init();
+};
