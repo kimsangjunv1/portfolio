@@ -517,8 +517,6 @@
   }
   &::before {
     content: "";
-    position: absolute;
-    content: "";
     background-image: url(/src/assets/img/section4_icon_music.svg);
     position: absolute;
     top: 50%;
@@ -573,8 +571,6 @@
     height: 100%;
   }
   &::before {
-    content: "";
-    position: absolute;
     content: "";
     background-image: url(/src/assets/img/section4_icon_card.svg);
     position: absolute;
@@ -1132,6 +1128,7 @@ h1 {
 .section10_logo_cont {
   position: relative;
   width: 50%;
+  z-index: 1;
 }
 .sec10_logo {
   position: absolute;
@@ -1170,6 +1167,7 @@ h1 {
 .section11_logo_cont {
   position: relative;
   width: 50%;
+  z-index: 1;
 }
 .sec11_logo {
   position: absolute;
@@ -1208,6 +1206,7 @@ h1 {
 .section12_logo_cont {
   position: relative;
   width: 50%;
+  z-index: 1;
 }
 .sec12_logo {
   position: absolute;
@@ -1246,6 +1245,7 @@ h1 {
 .section13_logo_cont {
   position: relative;
   width: 50%;
+  z-index: 1;
 }
 .sec13_logo {
   position: absolute;
@@ -1284,6 +1284,7 @@ h1 {
 .section14_logo_cont {
   position: relative;
   width: 50%;
+  z-index: 1;
 }
 .sec14_logo {
   position: absolute;
