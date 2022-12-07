@@ -66,3 +66,19 @@ gsap.to(".section1_desc h2", {
   height: "27.2vw",
   duration: 1.0,
 });
+
+// 섹션 3_bottom
+// let sections2 = gsap.utils.toArray(".panel2");
+// gsap.to(sections2, {
+//   xPercent: -100 * (sections2.length - 1),
+//   ease: "none",
+//   // duration: 122.5,
+//   scrollTrigger: {
+//     trigger: ".horizontal2",
+//     markers: true,
+//     pin: true,
+//     scrub: 1,
+//     // snap: 1 / (sections2.length - 1),
+//     end: "+=11000",
+//   },
+// });
