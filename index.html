@@ -469,7 +469,7 @@
     <!-- DOCS -->
     <div class="horizontal2 custom_color">
       <style>
-        .lama_top,
+        /* .lama_top,
         .lama_bottom {
           position: absolute;
           width: 5.5vw;
@@ -484,7 +484,7 @@
           bottom: 0;
           left: 40%;
           width: 11.5vw;
-        }
+        } */
       </style>
       <!-- <img
         src="src/assets/img/section5_lama.svg"
@@ -1437,6 +1437,7 @@
   <script type="text/javascript" src="src/assets/js/Main.js"></script>
   <script type="text/javascript" src="src/assets/js/Section.js"></script>
 
+  <!-- 모션패스 -->
   <script>
     var animation;
 
@@ -1448,7 +1449,7 @@
     animation = gsap.to("#motionSVG", {
       scrollTrigger: {
         trigger: "#motionPath",
-        start: "top 40%",
+        start: "top 50%",
         // end: '+=5000px',
         scrub: 3,
         markers: true,
