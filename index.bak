@@ -637,9 +637,9 @@
           />
         </defs>
         <g class="parallax">
-          <use xlink:href="#gentle-wave" x="50" y="0" fill="#15152d" />
-          <use xlink:href="#gentle-wave" x="50" y="3" fill="#15152dcf" />
-          <use xlink:href="#gentle-wave" x="50" y="6" fill="#15152dad" />
+          <use xlink:href="#gentle-wave" x="50" y="0" fill="#100f1c" />
+          <use xlink:href="#gentle-wave" x="50" y="3" fill="#100f1ccf" />
+          <use xlink:href="#gentle-wave" x="50" y="6" fill="#100f1cad" />
         </g>
       </svg>
 
@@ -650,320 +650,41 @@
     </section>
 
     <!-- 각종 도큐먼트 -->
-    <style>
-      /* .ball_sticky {
-        position: sticky;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-      } */
-      .light {
-        width: 70%;
-        height: 20vw;
-        background: #715f9d;
-        border-radius: 100%;
-        filter: blur(30px);
-        top: -126px;
-        left: 50%;
-        transform: translatex(-50%);
-        position: absolute;
-      }
-      .light_on_top {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-      }
-      .ball {
-        width: 2px;
-        height: 2px;
-        background: #fff;
-        box-shadow: 0px 0px 25px 5px rgba(255, 255, 255, 0.189);
-        position: absolute;
-        border-radius: 100%;
-      }
-      .ball_1 {
-        top: 20vw;
-        left: 20vw;
-        width: 6px;
-        height: 6px;
-      }
-      .ball_2 {
-        top: 40vw;
-        left: 64vw;
-        width: 5px;
-        height: 5px;
-      }
-      .ball_3 {
-        top: 36vw;
-        left: 43vw;
-        width: 10px;
-        height: 10px;
-      }
-      .ball_4 {
-        top: 49vw;
-        left: 95vw;
-        width: 4px;
-        height: 4px;
-      }
-      .ball_5 {
-        top: 29vw;
-        left: 57vw;
-        width: 7px;
-        height: 7px;
-      }
-      .ball_6 {
-        top: 39vw;
-        left: 26vw;
-        width: 12px;
-        height: 12px;
-      }
-      .ball_7 {
-        top: 18vw;
-        left: 28vw;
-        width: 9px;
-        height: 9px;
-      }
-      .ball_8 {
-        top: 2vw;
-        left: 87vw;
-        width: 14px;
-        height: 14px;
-      }
-      .ball_9 {
-        top: 59vw;
-        left: 47vw;
-        width: 4px;
-        height: 4px;
-      }
-      .ball_10 {
-        top: 27vw;
-        left: 74vw;
-        width: 16px;
-        height: 16px;
-        filter: blur(5px);
-      }
-      .ball_11 {
-        top: 10vw;
-        left: 94vw;
-        width: 8px;
-        height: 8px;
-      }
-      .ball_12 {
-        top: 73vw;
-        left: 20vw;
-      }
-      .ball_13 {
-        top: 82vw;
-        left: 62vw;
-        width: 50px;
-        height: 50px;
-        filter: blur(10px);
-        opacity: 0.5;
-      }
-      .ball_14 {
-        top: 92vw;
-        left: 28vw;
-      }
-      .lama_fur {
-        position: absolute;
-        top: 20vw;
-        left: 80vw;
-      }
-
-      .screenshot {
-        position: absolute;
-        width: 22vw;
-      }
-      .s5p5_1 {
-        top: 20vw;
-        left: 60vw;
-        z-index: 2;
-      }
-      .s5p5_2 {
-        top: 40vw;
-        left: 70vw;
-        z-index: 1;
-        filter: blur(5px);
-      }
-      .s5p5_3 {
-        top: 60vw;
-        left: 50vw;
-        z-index: 0;
-        filter: blur(10px);
-      }
-    </style>
-
-    <!-- 사이트 및 PHP 소개 -->
-    <section class="section custom_color_dark point2">
-      <div>
-        <div class="light ir">light</div>
-        <div class="ball ball_1 ir">ball</div>
-        <div class="ball ball_2 ir">ball</div>
-        <div class="ball ball_3 ir">ball</div>
-        <div class="ball ball_4 ir">ball</div>
-        <div class="ball ball_5 ir">ball</div>
-        <div class="ball ball_6 ir">ball</div>
-        <div class="ball ball_7 ir">ball</div>
-        <div class="ball ball_8 ir">ball</div>
-        <div class="ball ball_9 ir">ball</div>
-        <div class="ball ball_10 ir">ball</div>
-        <div class="ball ball_11 ir">ball</div>
-        <div class="ball ball_12 ir">ball</div>
-        <div class="ball ball_13 ir">ball</div>
-        <div class="ball ball_14 ir">ball</div>
-        <img
-          class="light_on_top"
-          src="src/assets/img/section5p5_light.svg"
-          alt=""
-        />
-        <!-- <img
-          class="lama_fur"
-          src="src/assets/img/section5p5_lama.svg"
-          alt="라마 털"
-        /> -->
-
-        <div class="site_type">
-          <img
-            class="screenshot s5p5_1"
-            src="src/assets/img/section5p5_screenshot_01.jpg"
-            alt=""
-          />
-          <img
-            class="screenshot s5p5_2"
-            src="src/assets/img/section5p5_screenshot_02.jpg"
-            alt=""
-          />
-          <img
-            class="screenshot s5p5_3"
-            src="src/assets/img/section5p5_screenshot_03.jpg"
-            alt=""
-          />
-        </div>
-        <div class="site_type">
-          <img
-            class="screenshot s5p5_1"
-            src="src/assets/img/section5p5_screenshot_01.jpg"
-            alt=""
-          />
-          <img
-            class="screenshot s5p5_2"
-            src="src/assets/img/section5p5_screenshot_02.jpg"
-            alt=""
-          />
-          <img
-            class="screenshot s5p5_3"
-            src="src/assets/img/section5p5_screenshot_03.jpg"
-            alt=""
-          />
+    <div class="horizontal3 custom_color_dark">
+      <!-- 라마있어야 하는곳 -->
+      <img class="ir lama" src="src/assets/img/section6_lama.svg" alt="" />
+      <div class="section6_fixed">
+        <h2 class="title">사이트 유형</h2>
+        <div class="section6_button_cont">
+          <button>CODE</button>
+          <button>VIEW</button>
         </div>
       </div>
-      <svg
-        id="linesvg"
-        version="1.1"
-        id="Layer_1"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        x="0px"
-        y="0px"
-        viewBox="0 0 869 3002"
-        xml:space="preserve"
-      >
-        <style type="text/css">
-          .st0 {
-            fill: none;
-            stroke: rgb(48, 12, 131);
-            stroke-width: 10;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-            stroke-miterlimit: 10;
-          }
-        </style>
-        <path
-          id="motionPath"
-          class="st0"
-          d="M155.395,383.31 C152.773,390.548 92.401,646.162 250.215,727.041 453.479,831.213 837.828,715.458 832.33,924.268 824.005,1240.395 26.085,944.451 30.123,1317.517 34.101,1685.45 819.93,1372.493 819.868,1686.506 819.796,2049.677 68.323,1628.195 71.284,1969.142 74.361,2323.553 817.573,1921.959 820.01,2277.148 822.275,2607.39 99.194,2534.908 99.194,2534.908 "
-        />
-        <g id="motionSVG">
-          <svg
-            id="tractor"
-            width="132"
-            height="146"
-            viewBox="0 0 132 146"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M98.5439 49.7915C112.374 32.5878 113.47 32.364 109.597 29.0471"
-              stroke="#68677A"
-              stroke-width="7"
-              stroke-linecap="round"
-            />
-            <path
-              d="M71.1814 5.39111C81.8539 3.77989 48.5392 29.2659 59.5379 35.7102"
-              stroke="#68677A"
-              stroke-width="7"
-              stroke-linecap="round"
-            />
-            <path
-              d="M102.539 91.9551C124.382 88.7743 125.337 89.3563 124.76 84.2901"
-              stroke="#68677A"
-              stroke-width="7"
-              stroke-linecap="round"
-            />
-            <rect
-              width="105"
-              height="92"
-              rx="46"
-              transform="matrix(-0.0837961 0.996483 0.996483 0.0837961 13.5615 28.2759)"
-              fill="#F4F4F4"
-              stroke="#F4F4F4"
-              stroke-width="17"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-dasharray="1 15"
-            />
-            <rect
-              width="97.3032"
-              height="92"
-              rx="46"
-              transform="matrix(-0.0837961 0.996483 0.996483 0.0837961 13.5625 35.8911)"
-              fill="white"
-              stroke="white"
-              stroke-width="17"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-dasharray="1 15"
-            />
-            <path
-              d="M67.3047 67.9517C68.9651 67.5547 68.718 64.5234 67.2136 64.5498"
-              stroke="#202033"
-              stroke-width="3"
-              stroke-linecap="round"
-            />
-            <path
-              d="M65.0459 57.7563C66.2927 55.7993 65.7927 52.2993 64.5413 51.358"
-              stroke="#202033"
-              stroke-width="3"
-              stroke-linecap="round"
-            />
-            <path
-              d="M63.0459 78.7563C64.2927 76.7993 63.7927 73.2993 62.5413 72.358"
-              stroke="#202033"
-              stroke-width="3"
-              stroke-linecap="round"
-            />
-            <path
-              d="M92.0818 89.5073C82.5818 106.507 78.0818 98.5073 70.6826 113.725"
-              stroke="#202033"
-              stroke-width="7"
-              stroke-linecap="round"
-            />
-          </svg>
-        </g>
-      </svg>
-    </section>
+      <section class="panel3 custom_02 custom_flex">
+        <div class="section6_item">
+          <div class="section6_item_desc">
+            <h4>눈<br />오는<br />날</h4>
+            <p>KIMSANGJUN</p>
+          </div>
+          <img src="src/assets/img/section8_screenshot_01.png" alt="" />
+        </div>
+        <div class="section6_item">
+          <div class="section6_item_desc">
+            <h4>눈<br />오는<br />날</h4>
+            <p>KIMSANGJUN</p>
+          </div>
+          <img src="src/assets/img/section8_screenshot_01.png" alt="" />
+        </div>
+        <div class="section6_item">
+          <div class="section6_item_desc">
+            <h4>눈<br />오는<br />날</h4>
+            <p>KIMSANGJUN</p>
+          </div>
+          <img src="src/assets/img/section8_screenshot_01.png" alt="" />
+        </div>
+      </section>
+      <!-- <section style="background: #100f1c" class="panel3"></section> -->
+    </div>
 
     <!-- PHP 블로그 -->
     <section class="section">
@@ -1399,43 +1120,8 @@
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/MotionPathPlugin.min.js"></script>
 
   <script type="text/javascript" src="src/assets/js/Animation.js"></script>
   <script type="text/javascript" src="src/assets/js/Main.js"></script>
   <script type="text/javascript" src="src/assets/js/Section.js"></script>
-
-  <script>
-    var animation;
-
-    gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
-
-    gsap.set("#motionSVG", { scale: 0.7, autoAlpha: 1 });
-    gsap.set("#tractor", { transformOrigin: "50% 50%" });
-
-    animation = gsap.to("#motionSVG", {
-      scrollTrigger: {
-        trigger: "#motionPath",
-        start: "top 20%",
-        // end: '+=5000px',
-        scrub: 3,
-        markers: true,
-        // onUpdate: (self) => {
-        //   gsap.to("#tractor", {
-        //     rotation: () => (self.direction === 1 ? 0 : -180),
-        //     overwrite: "auto",
-        //   });
-        // },
-      },
-      duration: 10,
-      ease: "none",
-      immediateRender: true,
-      motionPath: {
-        path: "#motionPath",
-        align: "#motionPath",
-        alignOrigin: [0.5, 0.5],
-        autoRotate: 210,
-      },
-    });
-  </script>
 </html>

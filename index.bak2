@@ -778,24 +778,71 @@
       }
       .s5p5_1 {
         top: 20vw;
-        left: 60vw;
+        left: 20vw;
         z-index: 2;
       }
       .s5p5_2 {
         top: 40vw;
-        left: 70vw;
+        left: 30vw;
         z-index: 1;
         filter: blur(5px);
       }
       .s5p5_3 {
         top: 60vw;
-        left: 50vw;
+        left: 10vw;
         z-index: 0;
         filter: blur(10px);
       }
     </style>
+    <!-- <section class="section custom_color_dark point2">
+      <div>
+        <div class="light ir">light</div>
+        <div class="ball ball_1 ir">ball</div>
+        <div class="ball ball_2 ir">ball</div>
+        <div class="ball ball_3 ir">ball</div>
+        <div class="ball ball_4 ir">ball</div>
+        <div class="ball ball_5 ir">ball</div>
+        <div class="ball ball_6 ir">ball</div>
+        <div class="ball ball_7 ir">ball</div>
+        <div class="ball ball_8 ir">ball</div>
+        <div class="ball ball_9 ir">ball</div>
+        <div class="ball ball_10 ir">ball</div>
+        <div class="ball ball_11 ir">ball</div>
+        <div class="ball ball_12 ir">ball</div>
+        <div class="ball ball_13 ir">ball</div>
+        <div class="ball ball_14 ir">ball</div>
+        <img
+          class="light_on_top"
+          src="src/assets/img/section5p5_light.svg"
+          alt=""
+        />
+        <img
+          class="lama_fur"
+          src="src/assets/img/section5p5_lama.svg"
+          alt="라마 털"
+        />
 
-    <!-- 사이트 및 PHP 소개 -->
+        <div>
+          <img
+            class="screenshot s5p5_1"
+            src="src/assets/img/section5p5_screenshot_01.jpg"
+            alt=""
+          />
+          <img
+            class="screenshot s5p5_2"
+            src="src/assets/img/section5p5_screenshot_02.jpg"
+            alt=""
+          />
+          <img
+            class="screenshot s5p5_3"
+            src="src/assets/img/section5p5_screenshot_03.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section> -->
+
+    <!-- 테스트 -->
     <section class="section custom_color_dark point2">
       <div>
         <div class="light ir">light</div>
@@ -818,30 +865,13 @@
           src="src/assets/img/section5p5_light.svg"
           alt=""
         />
-        <!-- <img
+        <img
           class="lama_fur"
           src="src/assets/img/section5p5_lama.svg"
           alt="라마 털"
-        /> -->
+        />
 
-        <div class="site_type">
-          <img
-            class="screenshot s5p5_1"
-            src="src/assets/img/section5p5_screenshot_01.jpg"
-            alt=""
-          />
-          <img
-            class="screenshot s5p5_2"
-            src="src/assets/img/section5p5_screenshot_02.jpg"
-            alt=""
-          />
-          <img
-            class="screenshot s5p5_3"
-            src="src/assets/img/section5p5_screenshot_03.jpg"
-            alt=""
-          />
-        </div>
-        <div class="site_type">
+        <div>
           <img
             class="screenshot s5p5_1"
             src="src/assets/img/section5p5_screenshot_01.jpg"
@@ -873,7 +903,7 @@
         <style type="text/css">
           .st0 {
             fill: none;
-            stroke: rgb(48, 12, 131);
+            stroke: red;
             stroke-width: 10;
             stroke-linecap: round;
             stroke-linejoin: round;
@@ -883,7 +913,7 @@
         <path
           id="motionPath"
           class="st0"
-          d="M155.395,383.31 C152.773,390.548 92.401,646.162 250.215,727.041 453.479,831.213 837.828,715.458 832.33,924.268 824.005,1240.395 26.085,944.451 30.123,1317.517 34.101,1685.45 819.93,1372.493 819.868,1686.506 819.796,2049.677 68.323,1628.195 71.284,1969.142 74.361,2323.553 817.573,1921.959 820.01,2277.148 822.275,2607.39 99.194,2534.908 99.194,2534.908 "
+          d="M155.395,383.31 C152.773,390.548 92.401,646.162 250.215,727.041 453.479,831.213 835.629,715.412 832.33,924.268 830.006,1071.385 20.339,1040.965 22.58,1206.204 24.517,1348.994 835.125,1320.378 832.275,1445.504 827.175,1669.362 57.235,1623.348 56.673,1760.63 55.674,2004.272 837.157,1936.609 837.205,2053.845 837.283,2246.807 137.92199,2252.96102 137.92199,2252.96102 "
         />
         <g id="motionSVG">
           <svg
@@ -1418,7 +1448,7 @@
         trigger: "#motionPath",
         start: "top 20%",
         // end: '+=5000px',
-        scrub: 3,
+        scrub: 1,
         markers: true,
         // onUpdate: (self) => {
         //   gsap.to("#tractor", {
@@ -1434,7 +1464,7 @@
         path: "#motionPath",
         align: "#motionPath",
         alignOrigin: [0.5, 0.5],
-        autoRotate: 210,
+        // autoRotate: 90,
       },
     });
   </script>
