@@ -486,7 +486,7 @@
           width: 11.5vw;
         }
       </style>
-      <img
+      <!-- <img
         src="src/assets/img/section5_lama.svg"
         alt="lama"
         class="lama_bottom"
@@ -495,7 +495,7 @@
         src="src/assets/img/section5_lama_rev.svg"
         alt="lama"
         class="lama_top"
-      />
+      /> -->
       <div class="section5_fixed">
         <h2>REFERENCE <em>BOOK</em></h2>
       </div>
@@ -659,12 +659,12 @@
         height: 100vh;
       } */
       .light {
-        width: 70%;
-        height: 20vw;
+        width: 100%;
+        height: 24vw;
         background: #715f9d;
         border-radius: 100%;
-        filter: blur(30px);
-        top: -126px;
+        filter: blur(66px);
+        top: 7vw;
         left: 50%;
         transform: translatex(-50%);
         position: absolute;
@@ -682,6 +682,7 @@
         box-shadow: 0px 0px 25px 5px rgba(255, 255, 255, 0.189);
         position: absolute;
         border-radius: 100%;
+        z-index: 1;
       }
       .ball_1 {
         top: 20vw;
@@ -755,12 +756,13 @@
         left: 20vw;
       }
       .ball_13 {
-        top: 82vw;
+        top: 78vw;
         left: 62vw;
-        width: 50px;
-        height: 50px;
+        width: 100px;
+        height: 100px;
         filter: blur(10px);
         opacity: 0.5;
+        z-index: 1;
       }
       .ball_14 {
         top: 92vw;
@@ -770,6 +772,19 @@
         position: absolute;
         top: 20vw;
         left: 80vw;
+      }
+      .point2::before,
+      .point2::after {
+        position: absolute;
+        content: "";
+      }
+      .point2::before {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 55vw;
+        background: linear-gradient(180deg, #15152d 40%, #fff0);
+        z-index: 1;
       }
 
       .screenshot {
@@ -790,6 +805,23 @@
       .s5p5_3 {
         top: 60vw;
         left: 50vw;
+        z-index: 0;
+        filter: blur(10px);
+      }
+      .s5p5_4 {
+        top: 80vw;
+        left: 10vw;
+        z-index: 2;
+      }
+      .s5p5_5 {
+        top: 102vw;
+        left: 29vw;
+        z-index: 1;
+        filter: blur(5px);
+      }
+      .s5p5_6 {
+        top: 113vw;
+        left: 4vw;
         z-index: 0;
         filter: blur(10px);
       }
@@ -843,17 +875,17 @@
         </div>
         <div class="site_type">
           <img
-            class="screenshot s5p5_1"
+            class="screenshot s5p5_4"
             src="src/assets/img/section5p5_screenshot_01.jpg"
             alt=""
           />
           <img
-            class="screenshot s5p5_2"
+            class="screenshot s5p5_5"
             src="src/assets/img/section5p5_screenshot_02.jpg"
             alt=""
           />
           <img
-            class="screenshot s5p5_3"
+            class="screenshot s5p5_6"
             src="src/assets/img/section5p5_screenshot_03.jpg"
             alt=""
           />
@@ -883,7 +915,7 @@
         <path
           id="motionPath"
           class="st0"
-          d="M155.395,383.31 C152.773,390.548 92.401,646.162 250.215,727.041 453.479,831.213 837.828,715.458 832.33,924.268 824.005,1240.395 26.085,944.451 30.123,1317.517 34.101,1685.45 819.93,1372.493 819.868,1686.506 819.796,2049.677 68.323,1628.195 71.284,1969.142 74.361,2323.553 817.573,1921.959 820.01,2277.148 822.275,2607.39 99.194,2534.908 99.194,2534.908 "
+          d="M167.225,-405.89099 C164.603,-398.65299 104.231,-143.03899 262.045,-62.15999 465.309,42.01201 849.658,-73.74299 844.16,135.06701 835.835,451.19401 37.915,155.25001 41.953,528.31601 45.931,896.24901 831.76,583.29201 831.698,897.30501 831.626,1260.47601 80.153,838.99401 83.114,1179.94101 86.191,1534.35201 829.403,1132.75801 831.84,1487.94701 834.105,1818.18901 111.024,1745.70701 111.024,1745.70701 "
         />
         <g id="motionSVG">
           <svg
