@@ -794,6 +794,36 @@
         top: 92vw;
         left: 28vw;
       }
+      .ball_15 {
+        top: 125vw;
+        left: 66vw;
+      }
+      .ball_16 {
+        top: 147vw;
+        left: 41vw;
+        width: 5px;
+        height: 5px;
+      }
+      .ball_17 {
+        top: 132vw;
+        left: 28vw;
+      }
+      .ball_18 {
+        top: 168vw;
+        left: 85vw;
+        width: 8px;
+        height: 8px;
+      }
+      .ball_19 {
+        top: 194vw;
+        left: 28vw;
+      }
+      .ball_20 {
+        top: 143vw;
+        left: 93vw;
+        width: 12px;
+        height: 12px;
+      }
       .lama_fur {
         position: absolute;
         top: 20vw;
@@ -821,6 +851,7 @@
         top: 20vw;
         left: 60vw;
         z-index: 2;
+        transform: skew(346deg, 354deg) rotate(340deg);
       }
       .s5p5_2 {
         top: 40vw;
@@ -838,6 +869,7 @@
         top: 80vw;
         left: 10vw;
         z-index: 2;
+        transform: skew(10deg, 2deg);
       }
       .s5p5_5 {
         top: 102vw;
@@ -851,37 +883,65 @@
         z-index: 0;
         filter: blur(10px);
       }
+      .s5p5_7 {
+        top: 161vw;
+        left: 37vw;
+        z-index: 2;
+        transform: skew(343deg, 354deg);
+      }
+      .s5p5_8 {
+        top: 177vw;
+        left: 29vw;
+        z-index: 1;
+        /* filter: blur(5px); */
+      }
+      .s5p5_9 {
+        top: 167vw;
+        left: 9vw;
+        z-index: 0;
+        /* filter: blur(10px); */
+        opacity: 0.5;
+      }
+      .site_type_01_desc h2,
+      .site_type_02_desc h2,
+      .site_type_03_desc h2 {
+        font-size: 42px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+      .site_type_01_desc {
+        position: absolute;
+        top: 53.2vw;
+        left: 16vw;
+      }
+      .site_type_02_desc {
+        position: absolute;
+        top: 128.2vw;
+        left: 62vw;
+      }
+      .site_type_03_desc {
+        position: absolute;
+        top: 169.2vw;
+        left: 62vw;
+      }
+      .ball_cont {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
     </style>
 
     <!-- 사이트 및 PHP 소개 -->
     <section class="section custom_color_dark point2">
       <div>
         <div class="light ir">light</div>
-        <div class="ball ball_1 ir">ball</div>
-        <div class="ball ball_2 ir">ball</div>
-        <div class="ball ball_3 ir">ball</div>
-        <div class="ball ball_4 ir">ball</div>
-        <div class="ball ball_5 ir">ball</div>
-        <div class="ball ball_6 ir">ball</div>
-        <div class="ball ball_7 ir">ball</div>
-        <div class="ball ball_8 ir">ball</div>
-        <div class="ball ball_9 ir">ball</div>
-        <div class="ball ball_10 ir">ball</div>
-        <div class="ball ball_11 ir">ball</div>
-        <div class="ball ball_12 ir">ball</div>
-        <div class="ball ball_13 ir">ball</div>
-        <div class="ball ball_14 ir">ball</div>
         <img
           class="light_on_top"
           src="src/assets/img/section5p5_light.svg"
           alt=""
         />
-        <!-- <img
-          class="lama_fur"
-          src="src/assets/img/section5p5_lama.svg"
-          alt="라마 털"
-        /> -->
-
         <div class="site_type">
           <img
             class="screenshot s5p5_1"
@@ -898,6 +958,10 @@
             src="src/assets/img/section5p5_screenshot_03.jpg"
             alt=""
           />
+          <div class="site_type_01_desc">
+            <h2>site type</h2>
+            <p>안녕하세요!</p>
+          </div>
         </div>
         <div class="site_type">
           <img
@@ -915,7 +979,54 @@
             src="src/assets/img/section5p5_screenshot_03.jpg"
             alt=""
           />
+          <div class="site_type_02_desc">
+            <h2>site type</h2>
+            <p>안녕하세요!</p>
+          </div>
         </div>
+        <div class="site_type">
+          <img
+            class="screenshot s5p5_7"
+            src="src/assets/img/section5p5_screenshot_01.jpg"
+            alt=""
+          />
+          <img
+            class="screenshot s5p5_8"
+            src="src/assets/img/section5p5_screenshot_02.jpg"
+            alt=""
+          />
+          <img
+            class="screenshot s5p5_9"
+            src="src/assets/img/section5p5_screenshot_03.jpg"
+            alt=""
+          />
+          <div class="site_type_03_desc">
+            <h2>site type</h2>
+            <p>안녕하세요!</p>
+          </div>
+        </div>
+      </div>
+      <div class="ball_cont">
+        <div class="ball ball_1 ir">ball</div>
+        <div class="ball ball_2 ir">ball</div>
+        <div class="ball ball_3 ir">ball</div>
+        <div class="ball ball_4 ir">ball</div>
+        <div class="ball ball_5 ir">ball</div>
+        <div class="ball ball_6 ir">ball</div>
+        <div class="ball ball_7 ir">ball</div>
+        <div class="ball ball_8 ir">ball</div>
+        <div class="ball ball_9 ir">ball</div>
+        <div class="ball ball_10 ir">ball</div>
+        <div class="ball ball_11 ir">ball</div>
+        <div class="ball ball_12 ir">ball</div>
+        <div class="ball ball_13 ir">ball</div>
+        <div class="ball ball_14 ir">ball</div>
+        <div class="ball ball_15 ir">ball</div>
+        <div class="ball ball_16 ir">ball</div>
+        <div class="ball ball_17 ir">ball</div>
+        <div class="ball ball_18 ir">ball</div>
+        <div class="ball ball_19 ir">ball</div>
+        <div class="ball ball_20 ir">ball</div>
       </div>
       <svg
         id="linesvg"
@@ -931,7 +1042,7 @@
         <style type="text/css">
           .st0 {
             fill: none;
-            stroke: rgb(48, 12, 131);
+            stroke: rgba(48, 12, 131, 0.093);
             stroke-width: 10;
             stroke-linecap: round;
             stroke-linejoin: round;
