@@ -53,256 +53,57 @@ gsap.to(sections2, {
   },
 });
 
-// ScrollTrigger.create({
-//   // 어디에 닿으면 반응할건지
-//   trigger: ".horizontal2",
-//   scrub: 1,
-//   // 어디다가 적용할건지
-//   animation: gsap.fromTo(
-//     ".section3_item_bottom",
-//     {
-//       transform: "translate(-50%,0) rotate(0deg)",
-//     },
-//     {
-//       transform: "translate(-60%,1020%) scale(3.0) rotate(200deg)",
-//       // filter: "blur(3px)",
-//     }
-//   ),
-// });
+// 상단바 : 색상 바꾸기
+ScrollTrigger.create({
+  // 어디에 닿으면 반응할건지
+  trigger: ".editorial_two",
+  scrub: 1,
+  // 어디다가 적용할건지
+  animation: gsap.fromTo(
+    "#header, #header a, .porfolio_desc_fixed p",
+    {
+      color: "#fff",
+      background: "linear-gradient(180deg, #5046ac, #5046ac00)",
+    },
+    {
+      color: "#000",
+      background: "linear-gradient(180deg, #ededf4, #ededf400)",
+    }
+  ),
+});
 
-//   상단바
+ScrollTrigger.create({
+  // 어디에 닿으면 반응할건지
+  trigger: ".custom_color_dark",
+  scrub: 1,
+  // 어디다가 적용할건지
+  animation: gsap.fromTo(
+    "#header, #header a, .porfolio_desc_fixed p",
+    {
+      color: "#000",
+      background: "linear-gradient(180deg, #ededf4, #ededf400)",
+    },
+    {
+      color: "#fff",
+      background: "linear-gradient(180deg, #15152d, #15152d00)",
+    }
+  ),
+});
 
-// 상단
-// ScrollTrigger.create({
-//   // 어디에 닿으면 반응할건지
-//   trigger: ".section",
-//   scrub: 1,
-//   // 어디다가 적용할건지
-//   animation: gsap.fromTo(
-//     "#header",
-//     {
-//       color: "#fff",
-//       background: "linear-gradient(180deg, #5046ac, #5046ac00)",
-//     },
-//     {
-//       color: "#fff",
-//       background: "linear-gradient(180deg, #5046ac, #5046ac00)",
-//     }
-//   ),
-// });
-
-// ScrollTrigger.create({
-//   // 어디에 닿으면 반응할건지
-//   trigger: ".editorial_two",
-//   scrub: 1,
-//   // 어디다가 적용할건지
-//   animation: gsap.fromTo(
-//     "#header a",
-//     {
-//       color: "#fff",
-//     },
-//     {
-//       color: "#fff",
-//     }
-//   ),
-// });
-
-// ScrollTrigger.create({
-//   // 어디에 닿으면 반응할건지
-//   trigger: ".editorial_two",
-//   scrub: 1,
-//   // 어디다가 적용할건지
-//   animation: gsap.fromTo(
-//     ".porfolio_desc_fixed p",
-//     {
-//       color: "#fff",
-//     },
-//     {
-//       color: "#fff",
-//     }
-//   ),
-// });
-
-// 중간
-// ScrollTrigger.create({
-//   // 어디에 닿으면 반응할건지
-//   trigger: ".editorial_two",
-//   scrub: 1,
-//   // 어디다가 적용할건지
-//   animation: gsap.fromTo(
-//     "#header",
-//     {
-//       color: "#000",
-//       background: "linear-gradient(180deg, #5046ac, #5046ac00)",
-//     },
-//     {
-//       color: "#000",
-//       background: "linear-gradient(180deg, #ededf4, #ededf400)",
-//     }
-//   ),
-// });
-
-// ScrollTrigger.create({
-//   // 어디에 닿으면 반응할건지
-//   trigger: ".editorial_two",
-//   scrub: 1,
-//   // 어디다가 적용할건지
-//   animation: gsap.fromTo(
-//     "#header a",
-//     {
-//       color: "#000",
-//     },
-//     {
-//       color: "#000",
-//     }
-//   ),
-// });
-
-// ScrollTrigger.create({
-//   // 어디에 닿으면 반응할건지
-//   trigger: ".editorial_two",
-//   scrub: 1,
-//   // 어디다가 적용할건지
-//   animation: gsap.fromTo(
-//     ".porfolio_desc_fixed p",
-//     {
-//       color: "#000",
-//     },
-//     {
-//       color: "#000",
-//     }
-//   ),
-// });
-// ScrollTrigger.create({
-//   // 어디에 닿으면 반응할건지
-//   trigger: ".editorial_two",
-//   scrub: 1,
-//   // 어디다가 적용할건지
-//   animation: gsap.fromTo(
-//     "#header",
-//     {
-//       color: "#fff",
-//       background: "linear-gradient(#5046ac, #5046ac00)",
-//     },
-//     {
-//       color: "#353541",
-//       background: "linear-gradient(#f6f6fb, #f6f6fb00)",
-//     }
-//   ),
-//   animation: gsap.fromTo(
-//     "#header a",
-//     {
-//       color: "#fff",
-//     },
-//     {
-//       color: "#353541",
-//     }
-//   ),
-//   animation: gsap.fromTo(
-//     ".porfolio_desc_fixed p",
-//     {
-//       color: "#fff",
-//     },
-//     {
-//       color: "#353541",
-//     }
-//   ),
-// });
-// ScrollTrigger.create({
-//   // 어디에 닿으면 반응할건지
-//   trigger: ".horizontal3",
-//   scrub: 1,
-//   // 어디다가 적용할건지
-//   animation: gsap.fromTo(
-//     "#header",
-//     {
-//       color: "#000",
-//       background: "linear-gradient(180deg, #f6f6fb, #f6f6fb00)",
-//     },
-//     {
-//       color: "#fff",
-//       background: "linear-gradient(180deg, #100f1c6b, #100f1c00)",
-//     }
-//   ),
-// });
-
-// ScrollTrigger.create({
-//   // 어디에 닿으면 반응할건지
-//   trigger: ".horizontal3",
-//   scrub: 1,
-//   // 어디다가 적용할건지
-//   animation: gsap.fromTo(
-//     "#header a",
-//     {
-//       color: "#000",
-//     },
-//     {
-//       color: "#fff",
-//     }
-//   ),
-// });
-
-// ScrollTrigger.create({
-//   // 어디에 닿으면 반응할건지
-//   trigger: ".horizontal3",
-//   scrub: 1,
-//   // 어디다가 적용할건지
-//   animation: gsap.fromTo(
-//     ".porfolio_desc_fixed p",
-//     {
-//       color: "#000",
-//     },
-//     {
-//       color: "#fff",
-//     }
-//   ),
-// });
-
-// ScrollTrigger.create({
-//   // 어디에 닿으면 반응할건지
-//   trigger: ".section15_flex_cont",
-//   scrub: 1,
-//   // 어디다가 적용할건지
-//   animation: gsap.fromTo(
-//     "#header",
-//     {
-//       background: "linear-gradient(180deg, #100f1c6b, #100f1c00)",
-//       color: "#fff",
-//     },
-//     {
-//       background: "linear-gradient(180deg, #f6f6fb, #f6f6fb00)",
-//       color: "#000",
-//     }
-//   ),
-// });
-
-// ScrollTrigger.create({
-//   // 어디에 닿으면 반응할건지
-//   trigger: ".section15_flex_cont",
-//   scrub: 1,
-//   // 어디다가 적용할건지
-//   animation: gsap.fromTo(
-//     "#header a",
-//     {
-//       color: "#ffffff8c",
-//     },
-//     {
-//       color: "#000",
-//     }
-//   ),
-// });
-// ScrollTrigger.create({
-//   // 어디에 닿으면 반응할건지
-//   trigger: ".section15_flex_cont",
-//   scrub: 1,
-//   // 어디다가 적용할건지
-//   animation: gsap.fromTo(
-//     ".porfolio_desc_fixed p",
-//     {
-//       color: "#fff",
-//     },
-//     {
-//       color: "#000",
-//     }
-//   ),
-// });
+ScrollTrigger.create({
+  // 어디에 닿으면 반응할건지
+  trigger: ".section15_flex_cont",
+  scrub: 1,
+  // 어디다가 적용할건지
+  animation: gsap.fromTo(
+    "#header, #header a, .porfolio_desc_fixed p",
+    {
+      color: "#fff",
+      background: "linear-gradient(180deg, #15152d, #15152d00)",
+    },
+    {
+      color: "#000",
+      background: "linear-gradient(180deg, #ededf4, #ededf400)",
+    }
+  ),
+});

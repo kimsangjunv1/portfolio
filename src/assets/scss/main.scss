@@ -89,6 +89,7 @@ body {
 }
 .porfolio_desc_fixed p {
   transform: rotate(90deg);
+  background: transparent !important;
 }
 .point {
   position: relative !important;
@@ -124,6 +125,7 @@ body {
   margin-right: 0.8vw;
   padding-right: 0.8vw;
   color: #ffffff86;
+  background: transparent !important;
   font-size: 1vw;
   transition: 0.25s;
   cursor: pointer;
