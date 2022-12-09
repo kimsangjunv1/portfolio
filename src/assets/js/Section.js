@@ -463,12 +463,14 @@ ScrollTrigger.create({
   // trigger: ".section5_fixed",
   scrub: 1,
   animation: gsap.from(".s5p5_1", {
-    transform: "translatey(2350%) skew(346deg, 354deg) rotate(340deg)",
-    // transform: "translatey(2350%) rotate(-200deg)",
+    transform: "skew(346deg, 354deg) rotate(340deg)",
+    yPercent: "550",
+    // transform: "translatey(2350%) skew(346deg, 354deg) rotate(340deg)",
   }),
   animation: gsap.to(".s5p5_1", {
-    transform: "translatey(-300%) skew(336deg, 334deg) rotate(20deg)",
-    // transform: "translatey(-300%) rotate(180deg)",
+    transform: "skew(336deg, 334deg) rotate(20deg)",
+    yPercent: "-11300",
+    // transform: "translatey(-300%) skew(336deg, 334deg) rotate(20deg)",
   }),
 });
 
@@ -477,10 +479,30 @@ ScrollTrigger.create({
   // trigger: ".section5_fixed",
   scrub: 1,
   animation: gsap.from(".s5p5_4", {
-    transform: "translatey(2550%) skew(10deg, 2deg)",
+    transform: "skew(6deg, 2deg)",
+    yPercent: "550",
+    // transform: "translatey(2550%) skew(10deg, 2deg)",
   }),
   animation: gsap.to(".s5p5_4", {
-    transform: "translatey(-200%) skew(4deg, 11deg)",
+    transform: "skew(10deg, 11deg)",
+    yPercent: "-11300",
+    // transform: "translatey(-200%) skew(4deg, 11deg)",
+  }),
+});
+
+// 사이트 타입 3
+ScrollTrigger.create({
+  // trigger: ".section5_fixed",
+  scrub: 1,
+  animation: gsap.from(".s5p5_7", {
+    transform: "skew(346deg, 354deg) rotate(340deg)",
+    yPercent: "150",
+    // transform: "translatey(2350%) skew(346deg, 354deg) rotate(340deg)",
+  }),
+  animation: gsap.to(".s5p5_7", {
+    transform: "skew(336deg, 334deg) rotate(20deg)",
+    yPercent: "-111300",
+    // transform: "translatey(-300%) skew(336deg, 334deg) rotate(20deg)",
   }),
 });
 
@@ -912,3 +934,46 @@ function init() {
 window.onload = () => {
   init();
 };
+
+let contLeft = gsap.utils.toArray(".cont-ani-left");
+let imac = gsap.utils.toArray(".cont-ani-y");
+let imacAni = gsap.utils.toArray(".imac_ani");
+
+contLeft.forEach((left) => {
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: left,
+        start: "-=400",
+        end: "+=350",
+        scrub: true,
+        markers: true,
+      },
+    })
+
+    .from(left, {
+      opacity: 0,
+      xPercent: -200,
+      duration: 3,
+      ease: "expo",
+    });
+});
+
+imac.forEach((top) => {
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: top,
+        end: "-=500",
+        scrub: true,
+        markers: true,
+      },
+    })
+
+    .from(top, {
+      autoAlpha: 0,
+      yPercent: 50,
+      duration: 3,
+      ease: "expo",
+    });
+});

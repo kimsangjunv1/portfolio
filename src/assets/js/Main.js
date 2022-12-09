@@ -74,7 +74,7 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
   // 어디에 닿으면 반응할건지
-  trigger: ".custom_color_dark",
+  trigger: ".pin2",
   scrub: 1,
   // 어디다가 적용할건지
   animation: gsap.fromTo(
