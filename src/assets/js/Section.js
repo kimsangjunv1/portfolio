@@ -669,8 +669,8 @@ ScrollTrigger.create({
   animation: gsap.fromTo(
     ".sec8_logo",
     {
-      x: "-40%",
-      y: "-40%",
+      x: "-100%",
+      y: "-100%",
       scale: 0.8,
     },
     {
