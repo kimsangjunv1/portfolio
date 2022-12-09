@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1"
+    />
     <title>PORTFOLIO</title>
     <link rel="shortcut icon" href="#" alt="아이콘" />
     <link rel="stylesheet" href="src/assets/scss/assets/css/style.min.css" />
@@ -307,8 +310,10 @@
         }
         .section7_main_title_cont {
           display: flex;
-          align-items: flex-start;
+          align-items: center;
           margin-bottom: 12vw;
+          flex-direction: column-reverse;
+          gap: 20px;
         }
         .section7_main_title_cont h2 {
           font-size: 22vw;
@@ -328,8 +333,10 @@
         }
         .section8_main_title_cont {
           display: flex;
-          align-items: flex-start;
+          align-items: center;
           margin-bottom: 12vw;
+          flex-direction: column-reverse;
+          gap: 20px;
         }
         .section8_main_title_cont h2 {
           font-size: 22vw;
@@ -340,6 +347,11 @@
         .section8_blog_desc {
           width: 90%;
           text-align: center;
+        }
+
+        .section9_desc_cont {
+          width: 100%;
+          z-index: 2;
         }
       }
     </style>

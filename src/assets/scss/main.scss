@@ -1,7 +1,11 @@
+body,
+html {
+  overflow-x: hidden;
+}
 body {
   background-color: #5046ac;
   /* min-height: 100vh; */
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 .custom_01 {
   width: 100vw;
