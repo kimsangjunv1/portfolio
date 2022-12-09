@@ -157,9 +157,9 @@
         }
 
         /* 섹션 1 */
-        /* .section1_desc h2{
-          font-size: 35vw !important;
-        } */
+        .section1_desc h2 {
+          font-size: 27vw !important;
+        }
       }
 
       /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
@@ -176,7 +176,7 @@
       }
 
       /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
-      @media (max-width: 767px) {
+      @media (max-width: 468px) {
         #header {
           padding: 3vw;
         }
@@ -186,6 +186,101 @@
         #header h2 {
           font-size: 2.5vw;
         }
+        /* 섹션 2 */
+        .section2_cont {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .section2_desc {
+          width: auto;
+          text-align: center;
+        }
+        .first_name {
+          text-align: center;
+          font-size: 37vw;
+        }
+        .second_name,
+        .fifth_name {
+          font-size: 13.4vw;
+        }
+        .porfolio_desc {
+          font-size: 4vw;
+        }
+
+        /* 섹션 3 */
+        .section3_fixed h2 {
+          font-size: 9vw;
+        }
+        .section3_item_bottom {
+          width: 1000%;
+        }
+
+        /* 섹션 4 */
+        .section4_fixed {
+          flex-direction: column;
+        }
+        .section4_fixed .title {
+          font-size: 11vw;
+          /* flex-direction: column; */
+        }
+        .section4_fixed .desc_cont {
+          flex-direction: column;
+        }
+        .section4_fixed .desc_cont .desc {
+          font-size: 4vw;
+          text-align: center;
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+        .section4_button_cont {
+          flex-direction: row;
+        }
+        .section4_button_cont button {
+          width: 14vw;
+          height: 8vw;
+          font-size: 4vw;
+          margin-right: 5px;
+        }
+        .section4_button_cont button:last-child {
+          margin-right: 0;
+        }
+
+        .section4_item {
+          width: 90vw;
+          height: 50vw;
+        }
+        .section4_item h2 {
+          font-size: 11vw;
+        }
+        .section4_item_desc h4 {
+          font-size: 5.5vw;
+        }
+        .section4_item_desc p {
+          font-size: 2vw;
+        }
+
+        .section4_rev_item {
+          width: 90vw;
+          height: 50vw;
+        }
+        .section4_rev_item h2 {
+          font-size: 11vw;
+        }
+        .section4_rev_item_desc h4 {
+          font-size: 5.5vw;
+        }
+        .section4_rev_item_desc p {
+          font-size: 2vw;
+        }
+        .point {
+          height: 400vw !important;
+        }
+
+        /* 섹션 5 */
+        .section5_fixed h2 {
+          font-size: 11vw;
+        }
       }
     </style>
   </head>
@@ -194,12 +289,14 @@
     <header id="header">
       <!-- <div class="header_inner"> -->
       <h2>KIMSANGJUN</h2>
-      <a href="#">Javascript</a>
-      <a href="#">Game</a>
-      <a href="#">Reference</a>
-      <a href="#">Site</a>
-      <a href="#">PHP</a>
-      <a href="#">VUE/REACT</a>
+      <div class="menu_cont">
+        <a href="#">Javascript</a>
+        <a href="#">Game</a>
+        <a href="#">Reference</a>
+        <a href="#">Site</a>
+        <a href="#">PHP</a>
+        <a href="#">VUE/REACT</a>
+      </div>
       <!-- </div> -->
     </header>
     <!-- <img class="close" src="src/assets/img/main_close.svg" alt="닫기" /> -->
@@ -1666,7 +1763,7 @@
   <script type="text/javascript" src="src/assets/js/Section.js"></script>
 
   <script>
-    gsap.registerPlugin(MotionPathPlugin, ScrollTrigger, MorphSVGPlugin);
+    gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
   </script>
 
   <!-- 모션패스 -->
@@ -1707,6 +1804,7 @@
       // 어디에 닿으면 반응할건지
       trigger: ".ball_cont",
       scrub: 1,
+      top: "+=500",
       // 어디다가 적용할건지
       animation: gsap.fromTo(
         ".lama_fur2",
@@ -1714,7 +1812,7 @@
           xPercent: -50,
           yPercent: -1120,
           transform: "rotate(-100deg)",
-          filter: "blur(10px)",
+          filter: "blur(20px)",
         },
         {
           xPercent: 300,
@@ -1725,5 +1823,17 @@
         }
       ),
     });
+    // {
+    //   tl = gsap.timeline({
+    //     target: ".lama_fur2",
+    //     scrollTrigger: {
+    //       trigger: ".ball_cont",
+    //       scrub: 1,
+    //       end: "200%",
+    //       pin: true,
+    //     },
+    //   });
+    //   tl.to(target, { scale: 2, rotation: 360 }).to(target, { scale: 1 });
+    // }
   </script>
 </html>
