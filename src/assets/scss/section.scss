@@ -502,7 +502,7 @@
   color: #fff;
   font-family: "BebasNeue";
   clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
-  background-image: url("../../../src/assets/img/section4_screenshot_01.jpg");
+  background-image: url("../../../img/section4_screenshot_01.jpg");
   background-size: auto;
   margin: 0 auto;
   margin-bottom: 14vw;
@@ -518,7 +518,7 @@
   }
   &::before {
     content: "";
-    background-image: url("../../../src/assets/img/section4_icon_music.svg");
+    background-image: url("../../../img/section4_icon_music.svg");
     position: absolute;
     top: 50%;
     right: 0;
@@ -557,7 +557,7 @@
   color: #fff;
   font-family: "BebasNeue";
   clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
-  background-image: url("../../../src/assets/img/section4_screenshot_01.jpg");
+  background-image: url("../../../img/section4_screenshot_01.jpg");
   background-size: auto;
   margin: 0 auto;
   margin-bottom: 14vw;
@@ -573,7 +573,7 @@
   }
   &::before {
     content: "";
-    background-image: url("../../../src/assets/img/section4_icon_music.svg");
+    background-image: url("../../../img/section4_icon_music.svg");
     position: absolute;
     top: 50%;
     right: 0;
@@ -935,7 +935,7 @@ h1 {
   justify-content: space-evenly;
   align-items: center;
   height: 100vh;
-  background-image: url("src/assets/img/section7_screenshot_01.jpg");
+  background-image: url("../../../img/section7_screenshot_01.jpg");
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -991,7 +991,7 @@ h1 {
   justify-content: space-evenly;
   align-items: center;
   height: 100vh;
-  background-image: url("src/assets/img/section7_screenshot_02.jpg");
+  background-image: url("../../../img/section7_screenshot_02.jpg");
   background-position: center;
   background-size: cover;
   color: #fff;
