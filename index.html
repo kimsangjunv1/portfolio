@@ -686,6 +686,44 @@
 
     <!-- 게임 이펙트와 도큐먼트 사이의 과정 -->
     <section class="section custom_color pin2">
+      <style>
+        .pin2 {
+          position: relative;
+          height: 100vh;
+        }
+        .pin2::before,
+        .pin2::after {
+          position: absolute;
+          content: "";
+        }
+        /* .pin2::after {
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 315px;
+          background: linear-gradient(180deg, #ededf4 50%, #ffffff00 100%);
+        } */
+        .pin2::before {
+          bottom: 0px;
+          left: 0px;
+          width: 100%;
+          height: 385px;
+          background: linear-gradient(0deg, #ededf4 50%, #ffffff00 100%);
+          z-index: 1;
+        }
+        .pin2 img {
+          position: sticky;
+          top: 20%;
+          left: 50%;
+          rotate: 209deg;
+          transform: rotateY(188deg);
+        }
+      </style>
+      <img
+        class="lama_fur2"
+        src="src/assets/img/section5p5_lama_fur2.svg"
+        alt=""
+      />
       <!-- <div class="section5p5_fixed">
         <h2>SITE <em>TYPE</em></h2>
       </div> -->
@@ -778,6 +816,7 @@
         left: 95vw;
         width: 4px;
         height: 4px;
+        opacity: 0.5;
       }
       .ball_5 {
         top: 29vw;
@@ -808,6 +847,7 @@
         left: 47vw;
         width: 4px;
         height: 4px;
+        opacity: 0.5;
       }
       .ball_10 {
         top: 27vw;
@@ -821,13 +861,14 @@
         left: 94vw;
         width: 8px;
         height: 8px;
+        opacity: 0.5;
       }
       .ball_12 {
         top: 73vw;
         left: 20vw;
       }
       .ball_13 {
-        top: 78vw;
+        top: 66vw;
         left: 62vw;
         width: 100px;
         height: 100px;
@@ -842,6 +883,7 @@
       .ball_15 {
         top: 125vw;
         left: 66vw;
+        opacity: 0.5;
       }
       .ball_16 {
         top: 147vw;
@@ -852,6 +894,7 @@
       .ball_17 {
         top: 132vw;
         left: 28vw;
+        opacity: 0.5;
       }
       .ball_18 {
         top: 168vw;
@@ -868,6 +911,7 @@
         left: 93vw;
         width: 12px;
         height: 12px;
+        opacity: 0.5;
       }
       .lama_fur {
         position: absolute;
@@ -1621,6 +1665,10 @@
   <script type="text/javascript" src="src/assets/js/Main.js"></script>
   <script type="text/javascript" src="src/assets/js/Section.js"></script>
 
+  <script>
+    gsap.registerPlugin(MotionPathPlugin, ScrollTrigger, MorphSVGPlugin);
+  </script>
+
   <!-- 모션패스 -->
   <script>
     var animation;
@@ -1653,6 +1701,29 @@
         alignOrigin: [0.5, 0.5],
         autoRotate: 210,
       },
+    });
+
+    ScrollTrigger.create({
+      // 어디에 닿으면 반응할건지
+      trigger: ".ball_cont",
+      scrub: 1,
+      // 어디다가 적용할건지
+      animation: gsap.fromTo(
+        ".lama_fur2",
+        {
+          xPercent: -50,
+          yPercent: -1120,
+          transform: "rotate(-100deg)",
+          filter: "blur(10px)",
+        },
+        {
+          xPercent: 300,
+          yPercent: 0,
+          color: "#000",
+          transform: "scale(2.0) rotate(100deg)",
+          filter: "blur(0px)",
+        }
+      ),
     });
   </script>
 </html>

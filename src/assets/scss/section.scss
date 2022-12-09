@@ -538,7 +538,7 @@
 }
 .section4_icon_layout {
   position: relative;
-  filter: drop-shadow(0px 59px 40px #82869c70);
+  // filter: drop-shadow(0px 59px 40px #82869c70);
   color: #82869c70;
 }
 .section4 {
@@ -593,7 +593,7 @@
 }
 .section4_rev_icon_layout {
   position: relative;
-  filter: drop-shadow(0px 59px 40px #82869c70);
+  // filter: drop-shadow(0px 59px 40px #82869c70);
   color: #82869c70;
 }
 .lamas {
@@ -627,7 +627,7 @@
   height: 20vh !important;
 }
 .pin2 {
-  height: 20vh !important;
+  // height: 50vh !important;
 }
 .section4_left {
   width: 50%;
@@ -811,6 +811,7 @@
   height: 10em;
   max-height: 100vh;
   margin: 0;
+  z-index: 1;
 }
 .content {
   font-family: "Lato", sans-serif;
