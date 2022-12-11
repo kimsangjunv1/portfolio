@@ -429,6 +429,53 @@
     top: 42vw;
     left: 337vw;
   }
+  .vr7 {
+    height: auto;
+  }
+  .section15_list_cont {
+    ul {
+      flex-direction: column !important;
+      li {
+        &:nth-child(1) {
+          width: 100% !important;
+        }
+        &:nth-child(2) {
+          width: 100% !important;
+          text-align: center !important;
+        }
+        &:nth-child(3) {
+          width: 100% !important;
+          text-align: center;
+        }
+        &:nth-child(4) {
+          width: 100% !important;
+          display: flex;
+          gap: 5px;
+          justify-content: center;
+        }
+      }
+      &:nth-child(6) {
+        li {
+          &:nth-child(4) {
+            p {
+              display: flex;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  .section16_item_cont {
+    padding: 0 20px !important;
+    flex-direction: column;
+    .contact_cont {
+      width: 100% !important;
+    }
+    img {
+      display: none !important;
+    }
+  }
 }
 
 // 섹션 4
