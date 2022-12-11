@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1"
+    />
     <title>PORTFOLIO</title>
+    <link rel="shortcut icon" href="#" alt="아이콘" />
     <link rel="stylesheet" href="src/assets/scss/assets/css/style.min.css" />
+
+    <!-- SEO -->
+    <meta name="author" content="김상준" />
+    <meta name="description" content="포트폴리오" />
+    <meta name="keyword" content="portfolio, 포트폴리오, 김상준" />
+    <meta name="robots" content="all" />
+
+    <!-- <div id="skip">
+      <a href="#thumbnail">메인</a>
+      <a href="#about">자기 소개</a>
+      <a href="#webStart">웹 시작점</a>
+      <a href="#webStandard">웹 기본</a>
+      <a href="#responsive">웹 반응형</a>
+      <a href="#javascriptStart">자바스크립트 시작점</a>
+      <a href="#javascriptBasic">자바스크립트 기본</a>
+      <a href="#gameMouseTum">게임, 마우스 시작점</a>
+      <a href="#gameTum">게임 시작점</a>
+      <a href="#gameList">게임 리스트</a>
+      <a href="#mouse">마우스</a>
+      <a href="#searchSliderTum">서치, 슬라이드 시작점</a>
+      <a href="#search">서치</a>
+      <a href="#quizParallax">퀴즈, 페럴랙스</a>
+      <a href="#front">프론트앤드 과정</a>
+      <a href="#php">피에이치피 과정</a>
+      <a href="#contactMe">컨텍미</a>
+    </div> -->
 
     <style>
       .bglinear {
@@ -116,6 +146,360 @@
         height: 100%;
         background: rgba(255, 0, 0, 0.515);
       } */
+      /* PC (해상도 1024px)*/
+      @media (max-width: 1024px) {
+        /* 헤더 */
+        #header {
+          padding: 2vw;
+        }
+        #header a {
+          font-size: 1.5vw;
+        }
+        #header h2 {
+          font-size: 1.5vw;
+        }
+
+        /* 섹션 1 */
+        .section1_desc h2 {
+          /* font-size: 27vw !important; */
+        }
+      }
+
+      /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+      @media (max-width: 768px) {
+        #header {
+          padding: 2.5vw;
+        }
+        #header a {
+          font-size: 2vw;
+        }
+        #header h2 {
+          font-size: 2vw;
+        }
+      }
+
+      /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+      @media (max-width: 468px) {
+        #header {
+          padding: 3vw;
+        }
+        #header a {
+          font-size: 2.5vw;
+        }
+        #header h2 {
+          font-size: 2.5vw;
+        }
+        .menu_cont {
+          display: flex;
+          align-items: center;
+        }
+        .section1_desc h2 {
+          font-size: 25vw;
+          height: 52vw !important;
+        }
+        .section1_img img:nth-child(1) {
+          width: 35vw;
+        }
+        .section1_img img:nth-child(2) {
+          left: 30%;
+          width: 35vw;
+        }
+        .section1_img img:nth-child(3) {
+          right: 10%;
+          width: 25vw;
+        }
+        .section1_img img:nth-child(5) {
+          left: 10%;
+          width: 5vw;
+          bottom: 34vw;
+        }
+        .section1_img img:nth-child(7) {
+          width: 190vw;
+        }
+        .section1_img img:nth-child(8) {
+          width: 120vw;
+        }
+        .section1_img img:nth-child(10) {
+          width: 7vw;
+        }
+        .section1_img img:nth-child(11) {
+          width: 10vw;
+        }
+        /* 섹션 2 */
+        .section2_cont {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .section2_desc {
+          width: auto;
+          text-align: center;
+        }
+        .first_name {
+          text-align: center;
+          font-size: 37vw;
+        }
+        .second_name,
+        .fifth_name {
+          font-size: 13.4vw;
+        }
+        .porfolio_desc {
+          font-size: 4vw;
+        }
+
+        /* 섹션 3 */
+        .section3_fixed h2 {
+          font-size: 9vw;
+        }
+        .section3_item_bottom {
+          width: 1000%;
+        }
+        .section3_item img {
+          width: 80vw;
+        }
+        .section3_item .item_desc {
+          padding: 3vw;
+        }
+        .section3_item h2 {
+          font-size: 6.2vw;
+        }
+        .section3_item p {
+          width: 64vw;
+          font-size: 3vw;
+          margin-bottom: 5.2vw;
+        }
+        .section3_item button {
+          width: 14vw;
+          height: 8vw;
+          font-size: 4vw;
+        }
+
+        /* 섹션 4 */
+        .section4_fixed {
+          flex-direction: column;
+        }
+        .section4_fixed .title {
+          font-size: 11vw;
+          /* flex-direction: column; */
+        }
+        .section4_fixed .desc_cont {
+          flex-direction: column;
+        }
+        .section4_fixed .desc_cont .desc {
+          font-size: 4vw;
+          text-align: center;
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+        .section4_button_cont {
+          flex-direction: row;
+        }
+        .section4_button_cont button {
+          width: 14vw;
+          height: 8vw;
+          font-size: 4vw;
+          margin-right: 5px;
+        }
+        .section4_button_cont button:last-child {
+          margin-right: 0;
+        }
+
+        .section4_item {
+          width: 90vw;
+          height: 50vw;
+        }
+        .section4_item h2 {
+          font-size: 11vw;
+        }
+        .section4_item_desc h4 {
+          font-size: 5.5vw;
+        }
+        .section4_item_desc p {
+          font-size: 2vw;
+        }
+
+        .section4_rev_item {
+          width: 90vw;
+          height: 50vw;
+        }
+        .section4_rev_item h2 {
+          font-size: 11vw;
+        }
+        .section4_rev_item_desc h4 {
+          font-size: 5.5vw;
+        }
+        .section4_rev_item_desc p {
+          font-size: 2vw;
+        }
+        .point {
+          height: 400vw !important;
+        }
+
+        /* 섹션 5 */
+        .custom_color {
+          gap: 50px;
+        }
+        .section5_fixed h2 {
+          font-size: 11vw;
+        }
+        .section5_screenshot_cont img {
+          width: 60vw;
+        }
+        .section5_item > h2 {
+          font-size: 15vw;
+        }
+        .section5_item p {
+          margin-bottom: 20px;
+          font-size: 4vw;
+        }
+        .section5_button_cont {
+          gap: 5px;
+        }
+        .section5_item a {
+          width: 14vw;
+          height: 8vw;
+          font-size: 4vw;
+        }
+
+        /* 섹션 5p5 */
+        .screenshot,
+        .ball {
+          filter: none !important;
+        }
+        .ball_cont {
+          top: -50%;
+          transform: translatey(50%) !important;
+        }
+        .ball_13 {
+          filter: none !important;
+          display: none !important;
+        }
+
+        .site_type_01_desc h2,
+        .site_type_02_desc h2,
+        .site_type_03_desc h2 {
+          font-size: 6.2vw !important;
+        }
+        .site_type_01_desc p,
+        .site_type_02_desc p,
+        .site_type_03_desc p {
+          font-size: 4.2vw;
+        }
+
+        /* 섹션 7 */
+        .section7_flex_cont {
+          flex-direction: column;
+          align-items: center;
+        }
+        .section7_main_title_cont {
+          display: flex;
+          align-items: center;
+          margin-bottom: 12vw;
+          flex-direction: column-reverse;
+          gap: 20px;
+        }
+        .section7_main_title_cont h2 {
+          font-size: 22vw;
+        }
+        .section7_main_title_cont p {
+          margin: 0;
+        }
+        .section7_blog_desc {
+          width: 90%;
+          text-align: center;
+        }
+
+        /* 섹션 8 */
+        .section8_flex_cont {
+          flex-direction: column-reverse;
+          align-items: center;
+        }
+        .section8_main_title_cont {
+          display: flex;
+          align-items: center;
+          margin-bottom: 12vw;
+          flex-direction: column-reverse;
+          gap: 20px;
+        }
+        .section8_main_title_cont h2 {
+          font-size: 22vw;
+        }
+        .section8_main_title_cont p {
+          margin: 0;
+        }
+        .section8_blog_desc {
+          width: 90%;
+          text-align: center;
+        }
+
+        .sub_ttitle {
+          margin: 0;
+          margin-bottom: 20px;
+        }
+
+        .section9_logo_cont,
+        .section10_logo_cont,
+        .section11_logo_cont,
+        .section12_logo_cont,
+        .section13_logo_cont,
+        .section14_logo_cont {
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+
+        .section9_all_cont,
+        .section10_all_cont,
+        .section11_all_cont,
+        .section12_all_cont,
+        .section13_all_cont,
+        .section14_all_cont {
+          padding: 0;
+          justify-content: center;
+        }
+
+        .sec8_bg,
+        .sec9_bg,
+        .sec10_bg,
+        .sec11_bg,
+        .sec12_bg,
+        .sec13_bg,
+        .sec14_bg {
+          display: none;
+        }
+
+        .sec8_logo,
+        .sec9_logo,
+        .sec10_logo,
+        .sec11_logo,
+        .sec12_logo,
+        .sec13_logo,
+        .sec14_logo {
+          opacity: 0.5;
+        }
+
+        .section14_desc_cont,
+        .section13_desc_cont,
+        .section12_desc_cont,
+        .section11_desc_cont,
+        .section10_desc_cont,
+        .section9_desc_cont {
+          justify-content: center;
+          text-align: center;
+          width: 75%;
+          z-index: 2;
+        }
+        .title_wrap {
+          flex-direction: column-reverse;
+          text-align: center;
+        }
+        .section_rv_button_cont {
+          justify-content: center !important;
+        }
+      }
     </style>
   </head>
 
@@ -123,12 +507,14 @@
     <header id="header">
       <!-- <div class="header_inner"> -->
       <h2>KIMSANGJUN</h2>
-      <a href="#">Javascript</a>
-      <a href="#">Game</a>
-      <a href="#">Reference</a>
-      <a href="#">Site</a>
-      <a href="#">PHP</a>
-      <a href="#">VUE/REACT</a>
+      <div class="menu_cont">
+        <a href="#">Javascript</a>
+        <a href="#">Game</a>
+        <a href="#">Reference</a>
+        <a href="#">Site</a>
+        <a href="#">PHP</a>
+        <a href="#">VUE/REACT</a>
+      </div>
       <!-- </div> -->
     </header>
     <!-- <img class="close" src="src/assets/img/main_close.svg" alt="닫기" /> -->
@@ -469,7 +855,7 @@
     <!-- DOCS -->
     <div class="horizontal2 custom_color">
       <style>
-        .lama_top,
+        /* .lama_top,
         .lama_bottom {
           position: absolute;
           width: 5.5vw;
@@ -484,9 +870,9 @@
           bottom: 0;
           left: 40%;
           width: 11.5vw;
-        }
+        } */
       </style>
-      <img
+      <!-- <img
         src="src/assets/img/section5_lama.svg"
         alt="lama"
         class="lama_bottom"
@@ -495,7 +881,7 @@
         src="src/assets/img/section5_lama_rev.svg"
         alt="lama"
         class="lama_top"
-      />
+      /> -->
       <div class="section5_fixed">
         <h2>REFERENCE <em>BOOK</em></h2>
       </div>
@@ -615,6 +1001,44 @@
 
     <!-- 게임 이펙트와 도큐먼트 사이의 과정 -->
     <section class="section custom_color pin2">
+      <style>
+        .pin2 {
+          position: relative;
+          height: 100vh;
+        }
+        .pin2::before,
+        .pin2::after {
+          position: absolute;
+          content: "";
+        }
+        /* .pin2::after {
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 315px;
+          background: linear-gradient(180deg, #ededf4 50%, #ffffff00 100%);
+        } */
+        .pin2::before {
+          bottom: 0px;
+          left: 0px;
+          width: 100%;
+          height: 385px;
+          background: linear-gradient(0deg, #ededf4 50%, #ffffff00 100%);
+          z-index: 1;
+        }
+        .pin2 img {
+          position: sticky;
+          top: 20%;
+          left: 50%;
+          rotate: 209deg;
+          transform: rotateY(188deg);
+        }
+      </style>
+      <img
+        class="lama_fur2"
+        src="src/assets/img/section5p5_lama_fur2.svg"
+        alt=""
+      />
       <!-- <div class="section5p5_fixed">
         <h2>SITE <em>TYPE</em></h2>
       </div> -->
@@ -637,9 +1061,9 @@
           />
         </defs>
         <g class="parallax">
-          <use xlink:href="#gentle-wave" x="50" y="0" fill="#100f1c" />
-          <use xlink:href="#gentle-wave" x="50" y="3" fill="#100f1ccf" />
-          <use xlink:href="#gentle-wave" x="50" y="6" fill="#100f1cad" />
+          <use xlink:href="#gentle-wave" x="50" y="0" fill="#15152d" />
+          <use xlink:href="#gentle-wave" x="50" y="3" fill="#15152dcf" />
+          <use xlink:href="#gentle-wave" x="50" y="6" fill="#15152dad" />
         </g>
       </svg>
 
@@ -650,41 +1074,585 @@
     </section>
 
     <!-- 각종 도큐먼트 -->
-    <div class="horizontal3 custom_color_dark">
-      <!-- 라마있어야 하는곳 -->
-      <img class="ir lama" src="src/assets/img/section6_lama.svg" alt="" />
-      <div class="section6_fixed">
-        <h2 class="title">사이트 유형</h2>
-        <div class="section6_button_cont">
-          <button>CODE</button>
-          <button>VIEW</button>
+    <style>
+      /* .ball_sticky {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+      } */
+      .light {
+        width: 100%;
+        height: 24vw;
+        background: #715f9d;
+        border-radius: 100%;
+        filter: blur(66px);
+        top: 7vw;
+        left: 50%;
+        transform: translatex(-50%);
+        position: absolute;
+      }
+      .light_on_top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+      .ball {
+        width: 2px;
+        height: 2px;
+        background: #fff;
+        box-shadow: 0px 0px 25px 5px rgba(255, 255, 255, 0.189);
+        position: absolute;
+        border-radius: 100%;
+        z-index: 1;
+      }
+      .ball_1 {
+        top: 20vw;
+        left: 20vw;
+        width: 6px;
+        height: 6px;
+      }
+      .ball_2 {
+        top: 40vw;
+        left: 64vw;
+        width: 5px;
+        height: 5px;
+      }
+      .ball_3 {
+        top: 36vw;
+        left: 43vw;
+        width: 10px;
+        height: 10px;
+      }
+      .ball_4 {
+        top: 49vw;
+        left: 95vw;
+        width: 4px;
+        height: 4px;
+        opacity: 0.5;
+      }
+      .ball_5 {
+        top: 29vw;
+        left: 57vw;
+        width: 7px;
+        height: 7px;
+      }
+      .ball_6 {
+        top: 39vw;
+        left: 26vw;
+        width: 12px;
+        height: 12px;
+      }
+      .ball_7 {
+        top: 18vw;
+        left: 28vw;
+        width: 9px;
+        height: 9px;
+      }
+      .ball_8 {
+        top: 2vw;
+        left: 87vw;
+        width: 14px;
+        height: 14px;
+      }
+      .ball_9 {
+        top: 59vw;
+        left: 47vw;
+        width: 4px;
+        height: 4px;
+        opacity: 0.5;
+      }
+      .ball_10 {
+        top: 27vw;
+        left: 74vw;
+        width: 16px;
+        height: 16px;
+        filter: blur(5px);
+      }
+      .ball_11 {
+        top: 10vw;
+        left: 94vw;
+        width: 8px;
+        height: 8px;
+        opacity: 0.5;
+      }
+      .ball_12 {
+        top: 73vw;
+        left: 20vw;
+      }
+      .ball_13 {
+        top: 66vw;
+        left: 62vw;
+        width: 100px;
+        height: 100px;
+        filter: blur(10px);
+        opacity: 0.5;
+        z-index: 1;
+      }
+      .ball_14 {
+        top: 92vw;
+        left: 28vw;
+      }
+      .ball_15 {
+        top: 125vw;
+        left: 66vw;
+        opacity: 0.5;
+      }
+      .ball_16 {
+        top: 147vw;
+        left: 41vw;
+        width: 5px;
+        height: 5px;
+      }
+      .ball_17 {
+        top: 132vw;
+        left: 28vw;
+        opacity: 0.5;
+      }
+      .ball_18 {
+        top: 168vw;
+        left: 85vw;
+        width: 8px;
+        height: 8px;
+      }
+      .ball_19 {
+        top: 194vw;
+        left: 28vw;
+      }
+      .ball_20 {
+        top: 143vw;
+        left: 93vw;
+        width: 12px;
+        height: 12px;
+        opacity: 0.5;
+      }
+      .lama_fur {
+        position: absolute;
+        top: 20vw;
+        left: 80vw;
+      }
+      .point2::before,
+      .point2::after {
+        position: absolute;
+        content: "";
+      }
+      .point2::before {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 55vw;
+        background: linear-gradient(180deg, #15152d 10%, #fff0);
+        z-index: 1;
+      }
+
+      .screenshot {
+        position: absolute;
+        width: 22vw;
+      }
+      .s5p5_1 {
+        top: 20vw;
+        left: 60vw;
+        z-index: 2;
+        transform: skew(346deg, 354deg) rotate(340deg);
+      }
+      .s5p5_2 {
+        top: 40vw;
+        left: 70vw;
+        z-index: 1;
+        filter: blur(5px);
+      }
+      .s5p5_3 {
+        top: 60vw;
+        left: 50vw;
+        z-index: 0;
+        filter: blur(10px);
+      }
+      .s5p5_4 {
+        top: 80vw;
+        left: 10vw;
+        z-index: 2;
+        transform: skew(10deg, 2deg);
+      }
+      .s5p5_5 {
+        top: 102vw;
+        left: 29vw;
+        z-index: 1;
+        filter: blur(5px);
+      }
+      .s5p5_6 {
+        top: 113vw;
+        left: 4vw;
+        z-index: 0;
+        filter: blur(10px);
+      }
+      .s5p5_7 {
+        top: 161vw;
+        left: 37vw;
+        z-index: 2;
+        transform: skew(343deg, 354deg);
+      }
+      .s5p5_8 {
+        top: 177vw;
+        left: 29vw;
+        z-index: 1;
+        /* filter: blur(5px); */
+      }
+      .s5p5_9 {
+        top: 167vw;
+        left: 9vw;
+        z-index: 0;
+        /* filter: blur(10px); */
+        opacity: 0.5;
+      }
+      .site_type_01_desc h2,
+      .site_type_02_desc h2,
+      .site_type_03_desc h2 {
+        font-size: 42px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+      .site_type_01_desc {
+        position: absolute;
+        top: 53.2vw;
+        left: 16vw;
+      }
+      .site_type_02_desc {
+        position: absolute;
+        top: 128.2vw;
+        left: 62vw;
+      }
+      .site_type_03_desc {
+        position: absolute;
+        top: 169.2vw;
+        left: 62vw;
+      }
+      .ball_cont {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+    </style>
+
+    <!-- 사이트 및 PHP 소개 -->
+    <section class="section custom_color_dark point2">
+      <div>
+        <div class="light ir">light</div>
+        <img
+          class="light_on_top"
+          src="src/assets/img/section5p5_light.svg"
+          alt=""
+        />
+        <div class="site_type">
+          <img
+            class="screenshot s5p5_1"
+            src="src/assets/img/section5p5_screenshot_01.jpg"
+            alt=""
+          />
+          <img
+            class="screenshot s5p5_2"
+            src="src/assets/img/section5p5_screenshot_02.jpg"
+            alt=""
+          />
+          <img
+            class="screenshot s5p5_3"
+            src="src/assets/img/section5p5_screenshot_03.jpg"
+            alt=""
+          />
+          <div class="site_type_01_desc">
+            <h2>site type</h2>
+            <p>안녕하세요!</p>
+          </div>
+        </div>
+        <div class="site_type">
+          <img
+            class="screenshot s5p5_4"
+            src="src/assets/img/section5p5_screenshot_01.jpg"
+            alt=""
+          />
+          <img
+            class="screenshot s5p5_5"
+            src="src/assets/img/section5p5_screenshot_02.jpg"
+            alt=""
+          />
+          <img
+            class="screenshot s5p5_6"
+            src="src/assets/img/section5p5_screenshot_03.jpg"
+            alt=""
+          />
+          <div class="site_type_02_desc">
+            <h2>site type</h2>
+            <p>안녕하세요!</p>
+          </div>
+        </div>
+        <div class="site_type">
+          <img
+            class="screenshot s5p5_7"
+            src="src/assets/img/section5p5_screenshot_01.jpg"
+            alt=""
+          />
+          <img
+            class="screenshot s5p5_8"
+            src="src/assets/img/section5p5_screenshot_02.jpg"
+            alt=""
+          />
+          <img
+            class="screenshot s5p5_9"
+            src="src/assets/img/section5p5_screenshot_03.jpg"
+            alt=""
+          />
+          <div class="site_type_03_desc">
+            <h2>site type</h2>
+            <p>안녕하세요!</p>
+          </div>
         </div>
       </div>
-      <section class="panel3 custom_02 custom_flex">
-        <div class="section6_item">
-          <div class="section6_item_desc">
-            <h4>눈<br />오는<br />날</h4>
-            <p>KIMSANGJUN</p>
-          </div>
-          <img src="src/assets/img/section8_screenshot_01.png" alt="" />
-        </div>
-        <div class="section6_item">
-          <div class="section6_item_desc">
-            <h4>눈<br />오는<br />날</h4>
-            <p>KIMSANGJUN</p>
-          </div>
-          <img src="src/assets/img/section8_screenshot_01.png" alt="" />
-        </div>
-        <div class="section6_item">
-          <div class="section6_item_desc">
-            <h4>눈<br />오는<br />날</h4>
-            <p>KIMSANGJUN</p>
-          </div>
-          <img src="src/assets/img/section8_screenshot_01.png" alt="" />
-        </div>
-      </section>
-      <!-- <section style="background: #100f1c" class="panel3"></section> -->
-    </div>
+      <div class="ball_cont">
+        <div class="ball ball_1 ir">ball</div>
+        <div class="ball ball_2 ir">ball</div>
+        <div class="ball ball_3 ir">ball</div>
+        <div class="ball ball_4 ir">ball</div>
+        <div class="ball ball_5 ir">ball</div>
+        <div class="ball ball_6 ir">ball</div>
+        <div class="ball ball_7 ir">ball</div>
+        <div class="ball ball_8 ir">ball</div>
+        <div class="ball ball_9 ir">ball</div>
+        <div class="ball ball_10 ir">ball</div>
+        <div class="ball ball_11 ir">ball</div>
+        <div class="ball ball_12 ir">ball</div>
+        <div class="ball ball_13 ir">ball</div>
+        <div class="ball ball_14 ir">ball</div>
+        <div class="ball ball_15 ir">ball</div>
+        <div class="ball ball_16 ir">ball</div>
+        <div class="ball ball_17 ir">ball</div>
+        <div class="ball ball_18 ir">ball</div>
+        <div class="ball ball_19 ir">ball</div>
+        <div class="ball ball_20 ir">ball</div>
+      </div>
+      <svg
+        id="linesvg"
+        version="1.1"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 869 3002"
+        xml:space="preserve"
+      >
+        <style type="text/css">
+          .st0 {
+            fill: none;
+            stroke: rgba(48, 12, 131, 0.093);
+            stroke-width: 10;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-miterlimit: 10;
+          }
+        </style>
+        <path
+          id="motionPath"
+          class="st0"
+          d="M167.225,-405.89099 C164.603,-398.65299 104.231,-143.03899 262.045,-62.15999 465.309,42.01201 849.658,-73.74299 844.16,135.06701 835.835,451.19401 37.915,155.25001 41.953,528.31601 45.931,896.24901 831.76,583.29201 831.698,897.30501 831.626,1260.47601 80.153,838.99401 83.114,1179.94101 86.191,1534.35201 829.403,1132.75801 831.84,1487.94701 834.105,1818.18901 111.024,1745.70701 111.024,1745.70701 "
+        />
+        <g id="motionSVG">
+          <svg
+            id="tractor"
+            width="132"
+            height="146"
+            viewBox="0 0 132 146"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M98.5439 49.7915C112.374 32.5878 113.47 32.364 109.597 29.0471"
+              stroke="#68677A"
+              stroke-width="7"
+              stroke-linecap="round"
+            />
+            <path
+              d="M71.1814 5.39111C81.8539 3.77989 48.5392 29.2659 59.5379 35.7102"
+              stroke="#68677A"
+              stroke-width="7"
+              stroke-linecap="round"
+            />
+            <path
+              d="M102.539 91.9551C124.382 88.7743 125.337 89.3563 124.76 84.2901"
+              stroke="#68677A"
+              stroke-width="7"
+              stroke-linecap="round"
+            />
+            <rect
+              width="105"
+              height="92"
+              rx="46"
+              transform="matrix(-0.0837961 0.996483 0.996483 0.0837961 13.5615 28.2759)"
+              fill="#F4F4F4"
+              stroke="#F4F4F4"
+              stroke-width="17"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-dasharray="1 15"
+            />
+            <rect
+              width="97.3032"
+              height="92"
+              rx="46"
+              transform="matrix(-0.0837961 0.996483 0.996483 0.0837961 13.5625 35.8911)"
+              fill="white"
+              stroke="white"
+              stroke-width="17"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-dasharray="1 15"
+            />
+            <path
+              d="M67.3047 67.9517C68.9651 67.5547 68.718 64.5234 67.2136 64.5498"
+              stroke="#202033"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+            <path
+              d="M65.0459 57.7563C66.2927 55.7993 65.7927 52.2993 64.5413 51.358"
+              stroke="#202033"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+            <path
+              d="M63.0459 78.7563C64.2927 76.7993 63.7927 73.2993 62.5413 72.358"
+              stroke="#202033"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+            <path
+              d="M92.0818 89.5073C82.5818 106.507 78.0818 98.5073 70.6826 113.725"
+              stroke="#202033"
+              stroke-width="7"
+              stroke-linecap="round"
+            />
+          </svg>
+        </g>
+      </svg>
+    </section>
+
+    <!-- 자바스크립트 이펙트와 게임 이펙트 사이 공간 -->
+    <style>
+      .animation02 {
+        display: inline-block;
+        transform: translateX(0);
+        animation: scrolling 6s linear infinite;
+      }
+
+      @keyframes scrolling {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      .site-scroll {
+        animation: scroll-B 6s infinite ease-in-out;
+      }
+
+      @keyframes scroll-B {
+        0% {
+          transform: translateY(0px);
+        }
+        10% {
+          transform: translateY(0px);
+        }
+        30% {
+          transform: translateY(-20%);
+        }
+        50% {
+          transform: translateY(-40%);
+        }
+        80% {
+          transform: translateY(-65%);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      .site-scroll02 {
+        animation: scroll-V 6s infinite ease-in-out;
+      }
+
+      @keyframes scroll-V {
+        0% {
+          transform: translateY(0px);
+        }
+        10% {
+          transform: translateY(0px);
+        }
+        30% {
+          transform: translateY(-20%);
+        }
+        50% {
+          transform: translateY(-40%);
+        }
+        80% {
+          transform: translateY(-60%);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      .text-X {
+        animation: text-X 1s cubic-bezier(0.37, 0.15, 0.52, 1.08);
+      }
+
+      @keyframes text-X {
+        0% {
+          transform: translateX(-90%);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+      }
+      .bg_change {
+        background: #15152d !important;
+        /* height: 20vh !important; */
+      }
+    </style>
+    <section class="section pin bg_change">
+      <svg
+        class="editorial editorial_two"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+      >
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    v44h-352z"
+          />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="50" y="0" fill="#ededf4" />
+          <use xlink:href="#gentle-wave" x="50" y="3" fill="#ededf4d1" />
+          <use xlink:href="#gentle-wave" x="50" y="6" fill="#ededf4a3" />
+        </g>
+      </svg>
+
+      <link
+        href="https://fonts.googleapis.com/css?family=Lato:100"
+        rel="stylesheet"
+      />
+    </section>
 
     <!-- PHP 블로그 -->
     <section class="section">
@@ -715,6 +1683,11 @@
             </div>
           </div>
         </div>
+        <img
+          src="src/assets/img/section7_screenshot_01_test.gif"
+          alt=""
+          class="test"
+        />
       </div>
     </section>
 
@@ -753,7 +1726,7 @@
       .section_rv_button_cont {
         display: flex;
         justify-content: start;
-        gap: 20px;
+        gap: 5px;
         margin-top: 20px;
       }
       .section_rv_button_cont a {
@@ -761,6 +1734,8 @@
         border: 1px solid #fff;
         cursor: pointer;
         transition: 0.25s;
+        width: 70px;
+        text-align: center;
       }
       .section_rv_button_cont a:hover {
         background: #fff;
@@ -1120,8 +2095,112 @@
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/MotionPathPlugin.min.js"></script>
 
   <script type="text/javascript" src="src/assets/js/Animation.js"></script>
   <script type="text/javascript" src="src/assets/js/Main.js"></script>
   <script type="text/javascript" src="src/assets/js/Section.js"></script>
+
+  <script>
+    gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
+  </script>
+
+  <!-- 모션패스 -->
+  <script>
+    var animation;
+
+    gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
+
+    gsap.set("#motionSVG", { scale: 0.7, autoAlpha: 1 });
+    gsap.set("#tractor", { transformOrigin: "50% 50%" });
+
+    animation = gsap.to("#motionSVG", {
+      scrollTrigger: {
+        trigger: "#motionPath",
+        start: "top 50%",
+        // end: '+=5000px',
+        scrub: 3,
+        markers: true,
+        // onUpdate: (self) => {
+        //   gsap.to("#tractor", {
+        //     rotation: () => (self.direction === 1 ? 0 : -180),
+        //     overwrite: "auto",
+        //   });
+        // },
+      },
+      duration: 10,
+      ease: "none",
+      immediateRender: true,
+      motionPath: {
+        path: "#motionPath",
+        align: "#motionPath",
+        alignOrigin: [0.5, 0.5],
+        autoRotate: 210,
+      },
+    });
+
+    ScrollTrigger.create({
+      // 어디에 닿으면 반응할건지
+      trigger: ".ball_cont",
+      scrub: 1,
+      // top: "+=500",
+      // 어디다가 적용할건지
+      animation: gsap.fromTo(
+        ".lama_fur2",
+        {
+          // xPercent: -50,
+          // yPercent: -1120,
+          // transform: "rotate(-100deg)",
+          // filter: "blur(20px)",
+          rotate: "+=500",
+        },
+        {
+          // xPercent: 300,
+          // yPercent: 0,
+          // color: "#000",
+          // transform: "scale(2.0) rotate(100deg)",
+          // filter: "blur(0px)",
+          rotate: "+=500",
+        }
+      ),
+    });
+    // {
+    //   tl = gsap.timeline({
+    //     target: ".lama_fur2",
+    //     scrollTrigger: {
+    //       trigger: ".ball_cont",
+    //       scrub: 1,
+    //       end: "200%",
+    //       pin: true,
+    //     },
+    //   });
+    //   tl.to(target, { scale: 2, rotation: 360 }).to(target, { scale: 1 });
+    // }
+  </script>
+  <script>
+    gsap.to(".bglinear", {
+      scrollTrigger: {
+        trigger: ".page2",
+        scrub: "true",
+        //markers: true,
+        start: "10% bottom",
+        end: "80% 80%",
+      },
+      backgroundImage: "linear-gradient(270deg,#000 50%,#fff 0%)",
+      duration: 3,
+    });
+    gsap.to(".bglinear", {
+      scrollTrigger: {
+        trigger: ".page2",
+        scrub: "true",
+        //markers: true,
+        start: "10% 80%",
+        end: "80% 80%",
+      },
+
+      //scale: 5.5,
+      letterSpacing: "10px",
+      duration: 3,
+    });
+  </script>
 </html>

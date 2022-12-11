@@ -53,6 +53,20 @@ gsap.to(sections2, {
   },
 });
 
+// 게임 이펙트
+// let sections3 = gsap.utils.toArray(".section6p5_item");
+// gsap.to(sections3, {
+//   xPercent: -100 * (sections3.length - 1),
+//   ease: "none",
+//   scrollTrigger: {
+//     trigger: ".horizontal3",
+//     markers: true,
+//     pin: true,
+//     scrub: true,
+//     end: "+=5000",
+//   },
+// });
+
 // 상단바 : 색상 바꾸기
 ScrollTrigger.create({
   // 어디에 닿으면 반응할건지

@@ -383,7 +383,7 @@
         .site_type_01_desc p,
         .site_type_02_desc p,
         .site_type_03_desc p {
-          font-size: 4.2vw;
+          font-size: 4.2vw !important;
         }
 
         /* 섹션 7 */
@@ -1032,6 +1032,7 @@
           left: 50%;
           rotate: 209deg;
           transform: rotateY(188deg);
+          scale: 1.2 !important;
         }
       </style>
       <img
@@ -1246,6 +1247,14 @@
         background: linear-gradient(180deg, #15152d 10%, #fff0);
         z-index: 1;
       }
+      .point2::after {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 55vw;
+        background: linear-gradient(0deg, #15152d 10%, #fff0);
+        z-index: 1;
+      }
 
       .screenshot {
         position: absolute;
@@ -1309,24 +1318,54 @@
       .site_type_01_desc h2,
       .site_type_02_desc h2,
       .site_type_03_desc h2 {
-        font-size: 42px;
+        font-size: 4.2vw;
         font-weight: 900;
         text-transform: uppercase;
       }
       .site_type_01_desc {
         position: absolute;
-        top: 53.2vw;
-        left: 16vw;
+        top: 59.2vw;
+        left: 10vw;
+        transform: skew(3deg, 3deg);
+        /* z-index: 1; */
+      }
+      .site_type_01_desc,
+      .site_type_02_desc,
+      .site_type_03_desc,
+      .site_type_04_desc,
+      .site_type_05_desc,
+      .site_type_06_desc {
+        z-index: 1000;
+      }
+      .site_type_01_desc p,
+      .site_type_02_desc p,
+      .site_type_03_desc p,
+      .site_type_04_desc p,
+      .site_type_05_desc p,
+      .site_type_06_desc p {
+        font-size: 1.2vw;
+      }
+      .section6p5_button_cont {
+        display: flex;
+        justify-content: start;
+        gap: 5px;
+        margin-top: 20px;
+      }
+      .section6p5_button_cont a {
+        border: 1px solid #fff;
+        padding: 10px;
       }
       .site_type_02_desc {
         position: absolute;
-        top: 128.2vw;
+        top: 126.19999999999999vw;
         left: 62vw;
+        transform: skew(356deg, 358deg);
       }
       .site_type_03_desc {
         position: absolute;
         top: 169.2vw;
         left: 62vw;
+        transform: skew(3deg, 3deg);
       }
       .ball_cont {
         position: absolute;
@@ -1456,7 +1495,7 @@
         <path
           id="motionPath"
           class="st0"
-          d="M167.225,-405.89099 C164.603,-398.65299 104.231,-143.03899 262.045,-62.15999 465.309,42.01201 849.658,-73.74299 844.16,135.06701 835.835,451.19401 37.915,155.25001 41.953,528.31601 45.931,896.24901 831.76,583.29201 831.698,897.30501 831.626,1260.47601 80.153,838.99401 83.114,1179.94101 86.191,1534.35201 829.403,1132.75801 831.84,1487.94701 834.105,1818.18901 111.024,1745.70701 111.024,1745.70701 "
+          d="M167.225,-405.89099 C164.603,-398.65299 104.231,-143.03899 262.045,-62.15999 465.309,42.01201 849.658,-73.74299 844.16,135.06701 835.835,451.19401 37.915,155.25001 41.953,528.31601 45.931,896.24901 831.76,583.29201 831.698,897.30501 831.626,1260.47601 80.153,838.99401 83.114,1179.94101 86.191,1534.35201 829.403,1132.75801 831.84,1487.94701 833.08575,1669.58011 614.981,1730.18 418.3078,1746.43668 116.077,1771.418 150.31,1991.163 150.31,1991.163 "
         />
         <g id="motionSVG">
           <svg
@@ -1538,69 +1577,456 @@
       </svg>
     </section>
 
-    <!-- PHP 블로그 -->
-    <section class="section">
-      <div class="section7_item">
-        <div class="section7_flex_cont">
-          <div class="section7_main_title_cont">
-            <h2>BLOG</h2>
-            <p>PHP</p>
+    <!-- 자바스크립트 이펙트와 게임 이펙트 사이 공간 -->
+    <style>
+      .animation02 {
+        display: inline-block;
+        transform: translateX(0);
+        animation: scrolling 6s linear infinite;
+      }
+
+      @keyframes scrolling {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      .site-scroll {
+        animation: scroll-B 6s infinite ease-in-out;
+      }
+
+      @keyframes scroll-B {
+        0% {
+          transform: translateY(0px);
+        }
+        10% {
+          transform: translateY(0px);
+        }
+        30% {
+          transform: translateY(-20%);
+        }
+        50% {
+          transform: translateY(-40%);
+        }
+        80% {
+          transform: translateY(-65%);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      .site-scroll02 {
+        animation: scroll-V 6s infinite ease-in-out;
+      }
+
+      @keyframes scroll-V {
+        0% {
+          transform: translateY(0px);
+        }
+        10% {
+          transform: translateY(0px);
+        }
+        30% {
+          transform: translateY(-20%);
+        }
+        50% {
+          transform: translateY(-40%);
+        }
+        80% {
+          transform: translateY(-60%);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      .text-X {
+        animation: text-X 1s cubic-bezier(0.37, 0.15, 0.52, 1.08);
+      }
+
+      @keyframes text-X {
+        0% {
+          transform: translateX(-90%);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+      }
+      .bg_change {
+        background: #15152d !important;
+        /* height: 20vh !important; */
+      }
+      .point3 {
+        position: relative !important;
+        height: 210vw !important;
+        overflow: hidden;
+      }
+      .point3::before,
+      .point3::after {
+        position: absolute;
+        content: "";
+      }
+      .point3::before {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 48vw;
+        background: linear-gradient(180deg, #6259b4 0%, transparent);
+        z-index: 1;
+      }
+      .point3::after {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 55vw;
+        background: linear-gradient(0deg, #6259b4 10%, transparent);
+        z-index: 1;
+      }
+      .s6p5_1 {
+        top: 43vw;
+        left: 62vw;
+        z-index: 2;
+        /* filter: blur(5px); */
+        transform: skew(7deg, 355deg) scale(2.1);
+        border: 5px solid #322784;
+      }
+
+      .s6p5_2 {
+        top: 53vw;
+        left: 70vw;
+        z-index: 2;
+        /* filter: blur(5px); */
+        transform: skew(341deg, 11deg) scale(0.8);
+        border: 10px solid #322784;
+      }
+      .s6p5_3 {
+        top: 60vw;
+        left: 50vw;
+        z-index: 0;
+        filter: blur(10px);
+      }
+      .s6p5_4 {
+        top: 117vw;
+        left: 12vw;
+        z-index: 2;
+        transform: skew(8deg, 2deg) scale(1.7);
+        border: 5px solid #322784;
+      }
+      .s6p5_5 {
+        top: 102vw;
+        left: 29vw;
+        z-index: 1;
+        filter: blur(5px);
+      }
+      .s6p5_6 {
+        top: 113vw;
+        left: 4vw;
+        z-index: 0;
+        filter: blur(10px);
+      }
+      .s6p5_7 {
+        top: 177vw;
+        left: 26vw;
+        z-index: 2;
+        transform: skew(353deg, 351deg) scale(1.8);
+        border: 5px solid #322784;
+      }
+      .s6p5_8 {
+        top: 177vw;
+        left: 29vw;
+        z-index: 1;
+        /* filter: blur(5px); */
+      }
+      .s6p5_9 {
+        top: 167vw;
+        left: 9vw;
+        z-index: 0;
+        /* filter: blur(10px); */
+        opacity: 0.5;
+      }
+    </style>
+    <section class="section pin bg_change">
+      <svg
+        class="editorial editorial_two"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+      >
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    v44h-352z"
+          />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="50" y="0" fill="#6259B4" />
+          <use xlink:href="#gentle-wave" x="50" y="3" fill="#6259B4d1" />
+          <use xlink:href="#gentle-wave" x="50" y="6" fill="#6259B4a3" />
+        </g>
+      </svg>
+
+      <link
+        href="https://fonts.googleapis.com/css?family=Lato:100"
+        rel="stylesheet"
+      />
+    </section>
+
+    <style>
+      .bg_change_purple {
+        background: #6259b5;
+      }
+      #motionSVG2 {
+        /* -webkit-animation: rotate1 1.1s alternate 0s infinite;
+        animation: rotate1 1.3s alternate 0s infinite;
+        animation-timing-function: ease-in-out; */
+      }
+    </style>
+    <!-- 자바스크립트 이펙트 -->
+    <section class="section bg_change_purple point3">
+      <div>
+        <div class="light ir">light</div>
+        <!-- <img
+          class="light_on_top"
+          src="src/assets/img/section5p5_light.svg"
+          alt=""
+        /> -->
+        <div class="site_type">
+          <div class="screenshot_cont">
+            <img
+              class="screenshot s6p5_1"
+              src="src/assets/img/section7_screenshot_01_test.gif"
+              alt=""
+            />
           </div>
-          <div class="section7_blog_desc">
+          <img
+            class="screenshot s6p5_2"
+            src="src/assets/img/section6p5_screenshot_02.gif"
+            alt=""
+          />
+          <!-- <img
+            class="screenshot s6p5_3"
+            src="src/assets/img/section5p5_screenshot_03.jpg"
+            alt=""
+          /> -->
+          <div class="site_type_01_desc">
+            <h2>YOUTUBE</h2>
             <p>
-              PHP에 대한 이해도를 높이기 위한 목적으로 만들어본 사이트입니다.<br /><br />
-
-              회원가입 / 글쓰기 / 수정 / 삭제 / 댓글<br />
-              위와 같은 활동이 가능하며<br />
-              프로필 사진을 넣을 수 있도록 작업하였습니다.<br />
-
-              처음 PHP를 접하게 되면서 만든 블로그 컨셉의 사이트입니다.<br />
-              자바스크립트 이후 MYSQL를 배우게 되었는데처음으로 배운
-              데이터베이스였으며 데이터를 외부에 저장하고<br /><br />
-
-              그 데이터를 브라우저에 출력하여 최종적으로 웹을 만들게 되는 일련의
-              과정을 조금이나마 알게 되었습니다<br />
+              REACT를 사용하여 RAPID API를 이용해 유튜브를 다시 디자인해
+              구현하였습니다<br />좌측에 좋아하는 유튜버들과 우측에 해당 영상
+              유튜버 영상 목록을 띄워주었고<br />댓글/영상/채널정보/조회수/좋아요
+              수 등등을 불러옵니다.
             </p>
-            <div class="section7_button_cont">
-              <button>CODE</button>
-              <button>VIEW</button>
+            <div class="section6p5_button_cont">
+              <a href="www.naver.com">CODE</a>
+              <a href="www.naver.com">VIEW</a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- PHP 꾸다 : section8 -->
-    <section class="section">
-      <div class="section8_item">
-        <div class="section8_flex_cont">
-          <div class="section8_blog_desc">
-            <p>
-              PHP에 대한 이해도를 높이기 위한 목적으로 만들어본 사이트입니다.<br /><br />
-
-              회원가입 / 글쓰기 / 수정 / 삭제 / 댓글<br />
-              위와 같은 활동이 가능하며<br />
-              프로필 사진을 넣을 수 있도록 작업하였습니다.<br />
-
-              처음 PHP를 접하게 되면서 만든 블로그 컨셉의 사이트입니다.<br />
-              자바스크립트 이후 MYSQL를 배우게 되었는데처음으로 배운
-              데이터베이스였으며 데이터를 외부에 저장하고<br /><br />
-
-              그 데이터를 브라우저에 출력하여 최종적으로 웹을 만들게 되는 일련의
-              과정을 조금이나마 알게 되었습니다<br />
-            </p>
-            <div class="section8_button_cont">
-              <button>CODE</button>
-              <button>VIEW</button>
-            </div>
-          </div>
-          <div class="section8_main_title_cont">
+        <div class="site_type">
+          <img
+            class="screenshot s6p5_4"
+            src="src/assets/img/section6p5_screenshot_04.gif"
+            alt=""
+          />
+          <!-- <img
+            class="screenshot s6p5_5"
+            src="src/assets/img/section6p5_screenshot_01.jpg"
+            alt=""
+          /> -->
+          <!-- <img
+            class="screenshot s6p5_6"
+            src="src/assets/img/section5p5_screenshot_03.jpg"
+            alt=""
+          /> -->
+          <div class="site_type_02_desc">
             <h2>GGUDA</h2>
-            <p>PHP TEAM PROJECT</p>
+            <p>
+              PHP로 만든 사이트 입니다.<br />GET/POST 방식을 적절히 섞어
+              로그인/회원가입 등을 구현하였으며,<br />SESSION에 있는 데이터를
+              이용해 사용자가 등록한 프로필 이미지/다이어리 색상 등을 가져올 수
+              있도록 하였습니다
+            </p>
+            <div class="section6p5_button_cont">
+              <a href="www.naver.com">CODE</a>
+              <a href="www.naver.com">VIEW</a>
+            </div>
+          </div>
+        </div>
+        <div class="site_type">
+          <img
+            class="screenshot s6p5_7"
+            src="src/assets/img/section6p5_screenshot_07.gif"
+            alt=""
+          />
+          <!-- <img
+            class="screenshot s6p5_8"
+            src="src/assets/img/section5p5_screenshot_02.jpg"
+            alt=""
+          />
+          <img
+            class="screenshot s6p5_9"
+            src="src/assets/img/section5p5_screenshot_03.jpg"
+            alt=""
+          /> -->
+          <div class="site_type_03_desc">
+            <h2>site type</h2>
+            <p>안녕하세요!</p>
+            <div class="section6p5_button_cont">
+              <a href="www.naver.com">CODE</a>
+              <a href="www.naver.com">VIEW</a>
+            </div>
           </div>
         </div>
       </div>
+      <div class="ball_cont">
+        <div class="ball ball_1 ir">ball</div>
+        <div class="ball ball_2 ir">ball</div>
+        <div class="ball ball_3 ir">ball</div>
+        <div class="ball ball_4 ir">ball</div>
+        <div class="ball ball_5 ir">ball</div>
+        <div class="ball ball_6 ir">ball</div>
+        <div class="ball ball_7 ir">ball</div>
+        <div class="ball ball_8 ir">ball</div>
+        <div class="ball ball_9 ir">ball</div>
+        <div class="ball ball_10 ir">ball</div>
+        <div class="ball ball_11 ir">ball</div>
+        <div class="ball ball_12 ir">ball</div>
+        <div class="ball ball_13 ir">ball</div>
+        <div class="ball ball_14 ir">ball</div>
+        <div class="ball ball_15 ir">ball</div>
+        <div class="ball ball_16 ir">ball</div>
+        <div class="ball ball_17 ir">ball</div>
+        <div class="ball ball_18 ir">ball</div>
+        <div class="ball ball_19 ir">ball</div>
+        <div class="ball ball_20 ir">ball</div>
+      </div>
+      <svg
+        id="linesvg2"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 869 3002"
+        xml:space="preserve"
+      >
+        <style type="text/css">
+          .st0 {
+            fill: none;
+            stroke: rgba(48, 12, 131, 0.093);
+            stroke-width: 10;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-miterlimit: 10;
+          }
+        </style>
+        <path
+          id="motionPath2"
+          class="st0"
+          d="M167.225,-405.89099 C164.603,-398.65299 119.822,-262.149 276.208,27.441 727.733,863.563 454.402,853.025 436.65,771.429 420.073,695.233 614.305,651.489 479.873,964.223 411.195,1123.989 564.092,1028.942 570.986,1262.29 575.489,1414.738 363.699,1428.252 446.979,1619.886 533.006,1817.842 433.451,1995.104 433.451,1995.104 "
+        />
+        <g id="motionSVG2">
+          <svg
+            id="tractor2"
+            width="148"
+            height="163"
+            viewBox="0 0 148 163"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M56.7845 37.6048C58.9426 24.2784 69.8392 16.4193 73.5859 8.92187"
+              stroke="#202033"
+              stroke-width="7"
+              stroke-linecap="round"
+            />
+            <path
+              d="M143.113 46.1199C137.162 54.1095 124.419 50.9721 116.508 62.2266"
+              stroke="#202033"
+              stroke-width="7"
+              stroke-linecap="round"
+            />
+            <rect
+              width="105"
+              height="92"
+              rx="46"
+              transform="matrix(-0.987139 -0.159865 -0.159865 0.987139 128.711 44.1855)"
+              fill="#F4F4F4"
+              stroke="#F4F4F4"
+              stroke-width="17"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-dasharray="1 15"
+            />
+            <rect
+              width="80"
+              height="68"
+              rx="34"
+              transform="matrix(-0.987139 -0.159865 -0.159865 0.987139 116.867 42.2671)"
+              fill="white"
+              stroke="white"
+              stroke-width="17"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-dasharray="1 15"
+            />
+            <rect
+              x="66.2637"
+              y="51.8433"
+              width="6"
+              height="6"
+              rx="3"
+              transform="rotate(-113.328 66.2637 51.8433)"
+              fill="#343440"
+            />
+            <rect
+              x="86.6035"
+              y="57.4346"
+              width="6"
+              height="6"
+              rx="3"
+              transform="rotate(-113.328 86.6035 57.4346)"
+              fill="#343440"
+            />
+            <path
+              d="M71.9551 53.7363C74.1736 54.7762 78.6322 55.7939 81.0192 56.6873"
+              stroke="#202033"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+            <path
+              d="M81.2648 58.7908C80.437 57.6435 81.2522 55.7496 82.8123 55.4962"
+              stroke="#202033"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+            <path
+              d="M22.125 109.292C7.65096 116.15 8.29386 130.946 3.67837 128.17"
+              stroke="#202033"
+              stroke-width="7"
+              stroke-linecap="round"
+            />
+            <path
+              d="M65.2677 126.107C50.7937 132.966 57.6089 153.431 52.9934 150.655"
+              stroke="#202033"
+              stroke-width="7"
+              stroke-linecap="round"
+            />
+          </svg>
+        </g>
+      </svg>
     </section>
+
     <style>
       .section_rv_button_cont {
         display: flex;
@@ -1996,16 +2422,9 @@
     animation = gsap.to("#motionSVG", {
       scrollTrigger: {
         trigger: "#motionPath",
-        start: "top 50%",
-        // end: '+=5000px',
+        start: "top 80%",
         scrub: 3,
         markers: true,
-        // onUpdate: (self) => {
-        //   gsap.to("#tractor", {
-        //     rotation: () => (self.direction === 1 ? 0 : -180),
-        //     overwrite: "auto",
-        //   });
-        // },
       },
       duration: 10,
       ease: "none",
@@ -2022,36 +2441,51 @@
       // 어디에 닿으면 반응할건지
       trigger: ".ball_cont",
       scrub: 1,
-      top: "+=500",
       // 어디다가 적용할건지
       animation: gsap.fromTo(
         ".lama_fur2",
         {
-          xPercent: -50,
-          yPercent: -1120,
-          transform: "rotate(-100deg)",
-          filter: "blur(20px)",
+          rotate: "+=500",
         },
         {
-          xPercent: 300,
-          yPercent: 0,
-          color: "#000",
-          transform: "scale(2.0) rotate(100deg)",
-          filter: "blur(0px)",
+          rotate: "+=500",
         }
       ),
     });
-    // {
-    //   tl = gsap.timeline({
-    //     target: ".lama_fur2",
-    //     scrollTrigger: {
-    //       trigger: ".ball_cont",
-    //       scrub: 1,
-    //       end: "200%",
-    //       pin: true,
-    //     },
-    //   });
-    //   tl.to(target, { scale: 2, rotation: 360 }).to(target, { scale: 1 });
-    // }
+  </script>
+  <script>
+    var animation2;
+
+    gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
+
+    gsap.set("#motionSVG2", { scale: 0.7, autoAlpha: 1 });
+    gsap.set("#tractor2", { transformOrigin: "50% 50%" });
+
+    animation2 = gsap.to("#motionSVG2", {
+      scrollTrigger: {
+        trigger: "#motionPath2",
+        start: "top 100%",
+        scrub: 2,
+        markers: true,
+      },
+      animation: gsap.fromTo(
+        "#motionSVG2",
+        {
+          rotate: "+=500",
+        },
+        {
+          rotate: "+=500",
+        }
+      ),
+      duration: 10,
+      ease: "none",
+      immediateRender: true,
+      motionPath: {
+        path: "#motionPath2",
+        align: "#motionPath2",
+        alignOrigin: [0.5, 0.5],
+        autoRotate: 270,
+      },
+    });
   </script>
 </html>

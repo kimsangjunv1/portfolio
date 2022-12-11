@@ -522,6 +522,29 @@ ScrollTrigger.create({
   }),
 });
 
+// section6p5
+
+// // 섹션 6.5_bottom
+// ScrollTrigger.create({
+//   scrub: 1,
+//   animation: gsap.from(".section6p5_item_bottom", {
+//     transform: "translatex(30%)",
+//   }),
+//   animation: gsap.to(".section6p5_item_bottom", {
+//     transform: "translatex(-70%)",
+//   }),
+// });
+// // 섹션 6.5_bottom
+// ScrollTrigger.create({
+//   scrub: 1,
+//   animation: gsap.from(".section6p5_item_bottom2", {
+//     transform: "translatex(0%) scalex(-1)",
+//   }),
+//   animation: gsap.to(".section6p5_item_bottom2", {
+//     transform: "translatex(-30%) scalex(-1)",
+//   }),
+// });
+
 // 섹션 3_i001 ~ i006
 ScrollTrigger.create({
   scrub: 1,
