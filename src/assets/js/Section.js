@@ -461,7 +461,7 @@ ScrollTrigger.create({
 // 섹션 5.5
 // 사이트 타입
 let mm2 = gsap.matchMedia();
-mm2.add("(min-width: 468px)", () => {
+mm2.add("(max-width: 468px)", () => {
   ScrollTrigger.create({
     trigger: ".custom_color_dark",
     scrub: 1,
