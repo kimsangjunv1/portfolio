@@ -459,19 +459,38 @@ ScrollTrigger.create({
 });
 // 섹션 5.5
 // 사이트 타입 1
+
 ScrollTrigger.create({
-  // trigger: ".section5_fixed",
+  trigger: ".custom_color_dark",
   scrub: 1,
-  animation: gsap.from(".s5p5_1", {
-    transform: "skew(346deg, 354deg) rotate(340deg)",
-    yPercent: "550",
-    // transform: "translatey(2350%) skew(346deg, 354deg) rotate(340deg)",
-  }),
-  animation: gsap.to(".s5p5_1", {
-    transform: "skew(336deg, 334deg) rotate(20deg)",
-    yPercent: "-11300",
-    // transform: "translatey(-300%) skew(336deg, 334deg) rotate(20deg)",
-  }),
+
+  animation: gsap.fromTo(
+    ".s5p5_1",
+    {
+      transform: "skew(346deg, 354deg) rotate(340deg)",
+      yPercent: "50",
+    },
+    {
+      transform: "skew(336deg, 334deg) rotate(20deg)",
+      yPercent: "0",
+    }
+  ),
+});
+ScrollTrigger.create({
+  trigger: ".custom_color_dark",
+  scrub: 1,
+
+  animation: gsap.fromTo(
+    ".site_type_01_desc",
+    {
+      transform: "skew(0deg, 0deg) rotate(340deg)",
+      yPercent: "100",
+    },
+    {
+      transform: "skew(3deg, 3deg) rotate(10deg)",
+      yPercent: "0",
+    }
+  ),
 });
 
 // 사이트 타입 2
@@ -521,29 +540,6 @@ ScrollTrigger.create({
     // y: 3000,
   }),
 });
-
-// section6p5
-
-// // 섹션 6.5_bottom
-// ScrollTrigger.create({
-//   scrub: 1,
-//   animation: gsap.from(".section6p5_item_bottom", {
-//     transform: "translatex(30%)",
-//   }),
-//   animation: gsap.to(".section6p5_item_bottom", {
-//     transform: "translatex(-70%)",
-//   }),
-// });
-// // 섹션 6.5_bottom
-// ScrollTrigger.create({
-//   scrub: 1,
-//   animation: gsap.from(".section6p5_item_bottom2", {
-//     transform: "translatex(0%) scalex(-1)",
-//   }),
-//   animation: gsap.to(".section6p5_item_bottom2", {
-//     transform: "translatex(-30%) scalex(-1)",
-//   }),
-// });
 
 // 섹션 3_i001 ~ i006
 ScrollTrigger.create({

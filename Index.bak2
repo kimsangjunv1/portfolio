@@ -382,6 +382,14 @@
           transform: translatex(-50%) scale(4.3);
           border: 2px solid #322784;
         }
+        .site_type_01_desc {
+          position: absolute;
+          top: 59.2vw;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 80%;
+          /* z-index: 1; */
+        }
 
         .site_type_01_desc h2,
         .site_type_02_desc h2,
@@ -884,7 +892,16 @@
           width: 11.5vw;
         } */
       </style>
-
+      <!-- <img
+        src="src/assets/img/section5_lama.svg"
+        alt="lama"
+        class="lama_bottom"
+      />
+      <img
+        src="src/assets/img/section5_lama_rev.svg"
+        alt="lama"
+        class="lama_top"
+      /> -->
       <div class="section5_fixed">
         <h2>REFERENCE <em>BOOK</em></h2>
       </div>
@@ -1030,7 +1047,7 @@
           z-index: 1;
         }
         .pin2 img {
-          /* position: sticky; */
+          position: sticky;
           top: 20%;
           left: 50%;
           rotate: 209deg;
@@ -1318,19 +1335,19 @@
         /* filter: blur(10px); */
         opacity: 0.5;
       }
-      .site_type_01_desc {
-        position: absolute;
-        top: 49.2vw;
-        left: 21vw;
-        transform: skew(3deg, 3deg);
-      }
-
       .site_type_01_desc h2,
       .site_type_02_desc h2,
       .site_type_03_desc h2 {
         font-size: 4.2vw;
         font-weight: 900;
         text-transform: uppercase;
+      }
+      .site_type_01_desc {
+        position: absolute;
+        top: 59.2vw;
+        left: 10vw;
+        transform: skew(3deg, 3deg);
+        /* z-index: 1; */
       }
       .site_type_01_desc,
       .site_type_02_desc,
@@ -1415,10 +1432,6 @@
           <div class="site_type_01_desc">
             <h2>site type</h2>
             <p>안녕하세요!</p>
-            <div class="section6p5_button_cont">
-              <a href="www.naver.com">CODE</a>
-              <a href="www.naver.com">VIEW</a>
-            </div>
           </div>
         </div>
         <div class="site_type">
@@ -1440,10 +1453,6 @@
           <div class="site_type_02_desc">
             <h2>site type</h2>
             <p>안녕하세요!</p>
-            <div class="section6p5_button_cont">
-              <a href="www.naver.com">CODE</a>
-              <a href="www.naver.com">VIEW</a>
-            </div>
           </div>
         </div>
         <div class="site_type">
@@ -1465,10 +1474,6 @@
           <div class="site_type_03_desc">
             <h2>site type</h2>
             <p>안녕하세요!</p>
-            <div class="section6p5_button_cont">
-              <a href="www.naver.com">CODE</a>
-              <a href="www.naver.com">VIEW</a>
-            </div>
           </div>
         </div>
       </div>
@@ -2533,18 +2538,20 @@
     });
 
     ScrollTrigger.create({
-      trigger: ".pin2",
+      // 어디에 닿으면 반응할건지
+      // top:
+      trigger: ".ball_cont",
       scrub: 1,
+      pin: true,
 
+      // 어디다가 적용할건지
       animation: gsap.fromTo(
         ".lama_fur2",
         {
-          transform: "rotate(0deg)",
-          yPercent: "100",
+          rotate: "+=500",
         },
         {
-          transform: "rotate(70deg)",
-          yPercent: "0",
+          rotate: "+=500",
         }
       ),
     });
