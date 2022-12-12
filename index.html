@@ -2612,26 +2612,28 @@
     var animation;
 
     gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
+    let mm = gsap.matchMedia();
+    mm.add("(min-width: 468px)", () => {
+      gsap.set("#motionSVG", { scale: 0.7, autoAlpha: 1 });
+      gsap.set("#tractor", { transformOrigin: "50% 50%" });
 
-    gsap.set("#motionSVG", { scale: 0.7, autoAlpha: 1 });
-    gsap.set("#tractor", { transformOrigin: "50% 50%" });
-
-    animation = gsap.to("#motionSVG", {
-      scrollTrigger: {
-        trigger: "#motionPath",
-        start: "top 80%",
-        scrub: 3,
-        markers: true,
-      },
-      duration: 10,
-      ease: "none",
-      immediateRender: true,
-      motionPath: {
-        path: "#motionPath",
-        align: "#motionPath",
-        alignOrigin: [0.5, 0.5],
-        autoRotate: 210,
-      },
+      animation = gsap.to("#motionSVG", {
+        scrollTrigger: {
+          trigger: "#motionPath",
+          start: "top 80%",
+          scrub: 3,
+          markers: true,
+        },
+        duration: 10,
+        ease: "none",
+        immediateRender: true,
+        motionPath: {
+          path: "#motionPath",
+          align: "#motionPath",
+          alignOrigin: [0.5, 0.5],
+          autoRotate: 210,
+        },
+      });
     });
 
     ScrollTrigger.create({
@@ -2655,26 +2657,28 @@
     var animation2;
 
     gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
+    let mm2 = gsap.matchMedia();
+    mm2.add("(min-width: 468px)", () => {
+      gsap.set("#motionSVG2", { scale: 0.7, autoAlpha: 1 });
+      gsap.set("#tractor2", { transformOrigin: "50% 50%" });
 
-    gsap.set("#motionSVG2", { scale: 0.7, autoAlpha: 1 });
-    gsap.set("#tractor2", { transformOrigin: "50% 50%" });
-
-    animation2 = gsap.to("#motionSVG2", {
-      scrollTrigger: {
-        trigger: "#motionPath2",
-        start: "top 130%",
-        scrub: 1,
-        markers: true,
-      },
-      duration: 10,
-      ease: "none",
-      immediateRender: true,
-      motionPath: {
-        path: "#motionPath2",
-        align: "#motionPath2",
-        alignOrigin: [0.5, 0.5],
-        // autoRotate: 270,
-      },
+      animation2 = gsap.to("#motionSVG2", {
+        scrollTrigger: {
+          trigger: "#motionPath2",
+          start: "top 130%",
+          scrub: 1,
+          markers: true,
+        },
+        duration: 10,
+        ease: "none",
+        immediateRender: true,
+        motionPath: {
+          path: "#motionPath2",
+          align: "#motionPath2",
+          alignOrigin: [0.5, 0.5],
+          // autoRotate: 270,
+        },
+      });
     });
 
     ScrollTrigger.create({
