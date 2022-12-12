@@ -471,6 +471,14 @@
     flex-direction: column;
     .contact_cont {
       width: 100% !important;
+      text-align: center;
+      h2 {
+        font-size: 11.2vw;
+      }
+      p {
+        font-size: 4.3vw;
+        border-left: 0;
+      }
     }
     img {
       display: none !important;
@@ -1600,8 +1608,23 @@ h1 {
   }
   h2 {
     font-weight: 900;
-    font-size: 50px;
-    color: #5856d4;
+    font-size: 5.2vw;
+    color: #5046ac;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 1.3vw;
+    border-left: 3px solid #343440;
+    margin-bottom: 15px;
+    // padding-bottom: 15px;
+    padding-left: 5px;
+    &:last-child {
+      border-bottom: 1px solid #343440;
+    }
+  }
+  .sns_cont {
+    border-top: 1px solid #00000012;
+    padding-top: 10px;
   }
 }
 .parallax > use {

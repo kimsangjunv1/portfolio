@@ -2394,13 +2394,68 @@
     </section>
 
     <!-- VUE UNSPLASH : section16-->
+    <style>
+      .vr8 {
+        position: relative;
+      }
+      .vr8 .section16_item_cont .contact_cont {
+        color: #343440;
+      }
+      .vr8 .section16_item_cont .contact_cont .sns_cont a {
+        display: inline-flex;
+        align-items: center;
+        color: #343440;
+        padding-right: 10px;
+        margin-right: 5px;
+        /* border-right: 1px solid #34344025; */
+        transition: 0.25s;
+      }
+      .vr8 .section16_item_cont .contact_cont .sns_cont a:last-child {
+        margin-right: 0;
+        padding-right: 0;
+        /* border-right: 0; */
+      }
+      .vr8 .section16_item_cont .contact_cont .sns_cont a:hover {
+        transform: scale(1.1);
+      }
+      .vr8 .section16_item_cont .contact_cont .sns_cont a:not(:hover) {
+        transition: 0.25s;
+      }
+      .vr8 .section16_item_cont .section16_lama {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+      }
+      .vr8 .section16_item_cont .contact_cont .sns_cont a img {
+        width: 2vw;
+        margin-right: 10px;
+      }
+    </style>
     <section style="background: #f6f6fb" class="section vr8">
       <div class="section16_item_cont">
         <div class="contact_cont">
           <h2>CONTACT_ME</h2>
-          <div class="input_cont">
+          <p>새싹을 틔울 수 있는 씨앗이 되겠습니다.</p>
+          <p>to_before@naver.com</p>
+          <p>010-0000-0000</p>
+          <div class="sns_cont">
+            <a href="#">
+              <img src="src/assets/img/section16_sns_01.svg" alt="깃허브" />
+              GITHUB
+            </a>
+            <a href="#">
+              <img src="src/assets/img/section16_sns_02.svg" alt="네이버" />
+              NAVER BLOG
+            </a>
+            <a href="#">
+              <img src="src/assets/img/section16_sns_03.svg" alt="티스토리" />
+              TISTORY
+            </a>
+          </div>
+
+          <!-- <div class="input_cont">
             <input type="email" alt="이메일" placeholder="E-MAIL" required />
-            <!-- <input type="contents" alt="내용" placeholder="E-MAIL" required /> -->
             <textarea
               name=""
               id=""
@@ -2410,9 +2465,13 @@
               required
             ></textarea>
             <button class="submit" alt="제출">SUBMIT</button>
-          </div>
+          </div> -->
         </div>
-        <img src="src/assets/img/section16_lama.svg" alt="" />
+        <img
+          class="section16_lama"
+          src="src/assets/img/section16_lama.svg"
+          alt=""
+        />
       </div>
     </section>
   </body>
