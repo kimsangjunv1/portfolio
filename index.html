@@ -1729,7 +1729,7 @@
         z-index: 2;
         /* filter: blur(5px); */
         transform: skew(341deg, 11deg) scale(0.8);
-        border: 10px solid #322784;
+        border: 10px solid #1e1659;
       }
       .s6p5_3 {
         top: 60vw;
@@ -1742,7 +1742,7 @@
         left: 12vw;
         z-index: 2;
         transform: skew(8deg, 2deg) scale(1.7);
-        border: 5px solid #322784;
+        border: 5px solid #1e1659;
       }
       .s6p5_5 {
         top: 102vw;
@@ -1761,7 +1761,7 @@
         left: 26vw;
         z-index: 2;
         transform: skew(353deg, 351deg) scale(1.8);
-        border: 5px solid #322784;
+        border: 5px solid #1e1659;
       }
       .s6p5_8 {
         top: 177vw;
@@ -1811,7 +1811,7 @@
 
     <style>
       .bg_change_purple {
-        background: #6259b5;
+        background: linear-gradient(45deg, #0000008a, transparent);
       }
       #motionSVG2 {
         /* -webkit-animation: rotate1 1.1s alternate 0s infinite;
@@ -2539,8 +2539,11 @@
 
     ScrollTrigger.create({
       // 어디에 닿으면 반응할건지
+      // top:
       trigger: ".ball_cont",
       scrub: 1,
+      pin: true,
+
       // 어디다가 적용할건지
       animation: gsap.fromTo(
         ".lama_fur2",

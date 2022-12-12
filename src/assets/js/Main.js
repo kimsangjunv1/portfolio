@@ -48,6 +48,7 @@ gsap.to(sections2, {
     markers: true,
     pin: true,
     scrub: 1,
+    top: "+=1100",
     // snap: 1 / (sections2.length - 1),
     end: "+=11000",
   },
@@ -99,6 +100,24 @@ ScrollTrigger.create({
     },
     {
       color: "#fff",
+      background: "linear-gradient(180deg, #15152d, #15152d00)",
+    }
+  ),
+});
+
+ScrollTrigger.create({
+  // 어디에 닿으면 반응할건지
+  trigger: ".bg_change_purple",
+  scrub: 1,
+  // 어디다가 적용할건지
+  animation: gsap.fromTo(
+    "#header, #header a, .porfolio_desc_fixed p",
+    {
+      // color: "#000",
+      background: "linear-gradient(180deg, #15152d, #15152d00)",
+    },
+    {
+      // color: "#fff",
       background: "linear-gradient(180deg, #15152d, #15152d00)",
     }
   ),
