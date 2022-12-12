@@ -899,6 +899,146 @@ ScrollTrigger.create({
   }),
 });
 
+ScrollTrigger.create({
+  scrub: 1,
+  animation: gsap.fromTo(
+    ".lama_fur_test",
+    {
+      rotate: "-100",
+      x: "-4000",
+      y: "2500",
+    },
+    {
+      rotate: "+=150",
+      x: "3000",
+      y: "-1000",
+    }
+  ),
+});
+
+ScrollTrigger.create({
+  scrub: 0.1,
+  animation: gsap.fromTo(
+    ".lama_fur_top",
+    {
+      // rotate: "-100",
+      // x: "4000",
+      y: "-800",
+    },
+    {
+      // rotate: "+=150",
+      // x: "-3000",
+      y: "100",
+    }
+  ),
+});
+
+ScrollTrigger.create({
+  scrub: 0.1,
+  animation: gsap.fromTo(
+    ".section9_lama",
+    {
+      rotate: "+=1000",
+      // x: "4000",
+      y: "-12800",
+    },
+    {
+      rotate: "+=6000",
+      // x: "-3000",
+      y: "-100",
+    }
+  ),
+});
+
+ScrollTrigger.create({
+  scrub: 0.1,
+  animation: gsap.fromTo(
+    ".section10_lama",
+    {
+      rotate: "+=1000",
+      // x: "4000",
+      y: "-22800",
+    },
+    {
+      rotate: "+=6000",
+      // x: "-3000",
+      y: "-100",
+    }
+  ),
+});
+ScrollTrigger.create({
+  scrub: 0.1,
+  animation: gsap.fromTo(
+    ".section11_lama",
+    {
+      rotate: "+=1000",
+
+      // x: "4000",
+      y: "-32800",
+    },
+    {
+      rotate: "+=16000",
+
+      // x: "-3000",
+      y: "-100",
+    }
+  ),
+});
+ScrollTrigger.create({
+  scrub: 0.1,
+  animation: gsap.fromTo(
+    ".section12_lama",
+    {
+      rotate: "+=1000",
+
+      // x: "4000",
+      y: "-52800",
+    },
+    {
+      rotate: "+=16000",
+
+      // x: "-3000",
+      y: "-100",
+    }
+  ),
+});
+ScrollTrigger.create({
+  scrub: 0.1,
+  animation: gsap.fromTo(
+    ".section13_lama",
+    {
+      rotate: "+=1000",
+
+      // x: "4000",
+      y: "-82800",
+    },
+    {
+      rotate: "+=16000",
+
+      // x: "-3000",
+      y: "-100",
+    }
+  ),
+});
+ScrollTrigger.create({
+  scrub: 0.1,
+  animation: gsap.fromTo(
+    ".section14_lama",
+    {
+      rotate: "+=1000",
+
+      // x: "4000",
+      y: "-102800",
+    },
+    {
+      rotate: "+=16000",
+
+      // x: "-3000",
+      y: "-100",
+    }
+  ),
+});
+
 // 1 / 1
 // VUE_API MOVIE
 ScrollTrigger.create({

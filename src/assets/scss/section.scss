@@ -18,7 +18,7 @@
       left: 50%;
       transform: translate(-50%, 150%);
       // transform: translate(-50%, 0%);
-      width: 10vw;
+      width: 11vw;
     }
     &:nth-child(2) {
       left: 40%;
@@ -33,18 +33,21 @@
       width: 9vw;
     }
     &:nth-child(4) {
-      right: 10%;
+      bottom: 20vw;
+      right: 20%;
       transform: translate(-950%, 120%) rotate(230deg);
       // transform: translate(70%, 0);
       width: 4vw;
     }
     &:nth-child(5) {
       left: 10%;
+      bottom: 5.5vw;
       transform: translate(780%, 110%) rotate(230deg);
       // transform: translate(70%, 0);
       width: 5vw;
     }
     &:nth-child(6) {
+      bottom: 20vw;
       left: 5%;
       transform: translate(1500%, 120%) rotate(230deg);
       // transform: translate(70%, 0);

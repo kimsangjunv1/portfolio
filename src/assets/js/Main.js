@@ -48,7 +48,7 @@ gsap.to(sections2, {
     markers: true,
     pin: true,
     scrub: 1,
-    top: "+=1100",
+    // top: "+=1100",
     // snap: 1 / (sections2.length - 1),
     end: "+=11000",
   },

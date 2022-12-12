@@ -665,7 +665,7 @@
         />
         <img
           class="ir dust_07"
-          src="src/assets/img/main_dust_05.svg"
+          src="src/assets/img/main_dust_04.svg"
           alt="먼지 4"
         />
         <img
@@ -943,7 +943,7 @@
     </section>
 
     <!-- DOCS -->
-    <div class="horizontal2 custom_color pin4">
+    <div class="horizontal2 custom_color">
       <style>
         /* .lama_top,
         .lama_bottom {
@@ -966,37 +966,6 @@
       <div class="section5_fixed">
         <h2>REFERENCE <em>BOOK</em></h2>
       </div>
-      <style>
-        .lama_fur_test2,
-        .lama_fur_test3,
-        .lama_fur_test {
-          width: 250px;
-        }
-        .lama_fur_top,
-        .lama_fur_bottom {
-          width: 200px;
-        }
-        .lama_fur_top {
-          position: absolute;
-          top: 0;
-          right: 50%;
-          transform: translateX(-50%);
-        }
-
-        .pin4 {
-          overflow: hidden;
-        }
-      </style>
-      <img
-        class="lama_fur_test"
-        src="src/assets/img/section5_lama_fly.svg"
-        alt=""
-      />
-      <img
-        class="lama_fur_top"
-        src="src/assets/img/section5_lama_top.svg"
-        alt=""
-      />
       <section style="opacity: 0" class="panel2 custom_flex">
         <div class="section5_item s5_1">
           <div class="section5_screenshot_cont">
@@ -2279,26 +2248,11 @@
       .section_rv_button_cont a:not(:hover) {
         transition: 0.25s;
       }
-      .section14_lama,
-      .section13_lama,
-      .section12_lama,
-      .section11_lama,
-      .section10_lama,
-      .section9_lama {
-        position: absolute;
-        bottom: 0;
-        left: 150px;
-        z-index: 1;
-      }
     </style>
     <!-- VUE MOVIE : section9 -->
     <section style="background: #00244dd4" class="section vr1 t_vr">
+      <!-- <img src="#" alt="" /> -->
       <div class="section9_all_cont">
-        <img
-          class="section9_lama"
-          src="src/assets/img/section9_lama.svg"
-          alt=""
-        />
         <div class="section9_desc_cont">
           <div class="title_wrap">
             <p class="title">REACT API<br /><em>MOVIE</em></p>
@@ -2336,12 +2290,8 @@
 
     <!-- VUE UNSPLASH : section10-->
     <section style="background: #d93860d6" class="section vr2 t_vr">
+      <!-- <img src="#" alt="" /> -->
       <div class="section10_all_cont">
-        <img
-          class="section10_lama"
-          src="src/assets/img/section10_lama.svg"
-          alt=""
-        />
         <div class="section10_desc_cont">
           <div class="title_wrap">
             <p class="title">REACT API<br /><em>PICTURE</em></p>
@@ -2382,11 +2332,6 @@
     <section style="background: #31826ed3" class="section vr3 t_vr">
       <!-- <img src="#" alt="" /> -->
       <div class="section11_all_cont">
-        <img
-          class="section11_lama"
-          src="src/assets/img/section11_lama.svg"
-          alt=""
-        />
         <div class="section11_desc_cont">
           <div class="title_wrap">
             <p class="title">REACT API<br /><em>SITE TYPE</em></p>
@@ -2428,11 +2373,6 @@
     <section style="background: #31826ed3" class="section vr4 t_vr">
       <!-- <img src="#" alt="" /> -->
       <div class="section12_all_cont">
-        <img
-          class="section12_lama"
-          src="src/assets/img/section12_lama.svg"
-          alt=""
-        />
         <div class="section12_desc_cont">
           <div class="title_wrap">
             <p class="title">VUE API<br /><em>PICTURE</em></p>
@@ -2470,11 +2410,6 @@
     <section style="background: #3ec4d0cd" class="section vr5 t_vr">
       <!-- <img src="#" alt="" /> -->
       <div class="section13_all_cont">
-        <img
-          class="section13_lama"
-          src="src/assets/img/section13_lama.svg"
-          alt=""
-        />
         <div class="section13_desc_cont">
           <div class="title_wrap">
             <p class="title">VUE API<br /><em>MOVIE</em></p>
@@ -2512,11 +2447,6 @@
     <section style="background: #4d38d9dc" class="section vr6 t_vr">
       <!-- <img src="#" alt="" /> -->
       <div class="section14_all_cont">
-        <img
-          class="section14_lama"
-          src="src/assets/img/section14_lama.svg"
-          alt=""
-        />
         <div class="section14_desc_cont">
           <div class="title_wrap">
             <p class="title">VUE API<br /><em>MOVIE</em></p>
