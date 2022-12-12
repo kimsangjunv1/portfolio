@@ -2616,7 +2616,7 @@
 
     gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
     let mm = gsap.matchMedia();
-    mm.add("(min-width: 468px)", () => {
+    mm.add("(min-width: 700px)", () => {
       gsap.set("#motionSVG", { scale: 0.7, autoAlpha: 1 });
       gsap.set("#tractor", { transformOrigin: "50% 50%" });
 
@@ -2637,23 +2637,23 @@
           autoRotate: 210,
         },
       });
-    });
 
-    ScrollTrigger.create({
-      trigger: ".pin2",
-      scrub: 1,
+      ScrollTrigger.create({
+        trigger: ".pin2",
+        scrub: 1,
 
-      animation: gsap.fromTo(
-        ".lama_fur2",
-        {
-          transform: "rotate(0deg)",
-          yPercent: "100",
-        },
-        {
-          transform: "rotate(70deg)",
-          yPercent: "0",
-        }
-      ),
+        animation: gsap.fromTo(
+          ".lama_fur2",
+          {
+            transform: "rotate(0deg)",
+            yPercent: "100",
+          },
+          {
+            transform: "rotate(70deg)",
+            yPercent: "0",
+          }
+        ),
+      });
     });
   </script>
   <script>
@@ -2661,7 +2661,7 @@
 
     gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
     let mm2 = gsap.matchMedia();
-    mm2.add("(min-width: 468px)", () => {
+    mm2.add("(min-width: 700px)", () => {
       gsap.set("#motionSVG2", { scale: 0.7, autoAlpha: 1 });
       gsap.set("#tractor2", { transformOrigin: "50% 50%" });
 
@@ -2682,24 +2682,24 @@
           // autoRotate: 270,
         },
       });
-    });
 
-    ScrollTrigger.create({
-      trigger: "#motionPath2",
-      // start: "bottom 100%",
-      // end: "top 100%",
-      // markers: true,
-      scrub: 1,
+      ScrollTrigger.create({
+        trigger: "#motionPath2",
+        // start: "bottom 100%",
+        // end: "top 100%",
+        // markers: true,
+        scrub: 1,
 
-      animation: gsap.fromTo(
-        "#motionSVG2",
-        {
-          rotate: "+=3000",
-        },
-        {
-          rotate: "+=3000",
-        }
-      ),
+        animation: gsap.fromTo(
+          "#motionSVG2",
+          {
+            rotate: "+=3000",
+          },
+          {
+            rotate: "+=3000",
+          }
+        ),
+      });
     });
   </script>
 </html>
