@@ -457,9 +457,9 @@ ScrollTrigger.create({
     transform: "translatex(-50%)",
   }),
 });
-// 섹션 5.5
-// 사이트 타입 1
 
+// 섹션 5.5
+// 사이트 타입
 ScrollTrigger.create({
   trigger: ".custom_color_dark",
   scrub: 1,
@@ -495,34 +495,70 @@ ScrollTrigger.create({
 
 // 사이트 타입 2
 ScrollTrigger.create({
-  // trigger: ".section5_fixed",
+  trigger: ".custom_color_dark",
   scrub: 1,
-  animation: gsap.from(".s5p5_4", {
-    transform: "skew(6deg, 2deg)",
-    yPercent: "550",
-    // transform: "translatey(2550%) skew(10deg, 2deg)",
-  }),
-  animation: gsap.to(".s5p5_4", {
-    transform: "skew(10deg, 11deg)",
-    yPercent: "-11300",
-    // transform: "translatey(-200%) skew(4deg, 11deg)",
-  }),
+
+  animation: gsap.fromTo(
+    ".s5p5_4",
+    {
+      transform: "skew(346deg, 354deg) rotate(340deg)",
+      yPercent: "50",
+    },
+    {
+      transform: "skew(336deg, 334deg) rotate(20deg)",
+      yPercent: "0",
+    }
+  ),
+});
+ScrollTrigger.create({
+  trigger: ".custom_color_dark",
+  scrub: 1,
+
+  animation: gsap.fromTo(
+    ".site_type_02_desc",
+    {
+      transform: "skew(0deg, 0deg) rotate(340deg)",
+      yPercent: "100",
+    },
+    {
+      transform: "skew(3deg, 3deg) rotate(10deg)",
+      yPercent: "0",
+    }
+  ),
 });
 
 // 사이트 타입 3
 ScrollTrigger.create({
-  // trigger: ".section5_fixed",
+  trigger: ".custom_color_dark",
   scrub: 1,
-  animation: gsap.from(".s5p5_7", {
-    transform: "skew(346deg, 354deg) rotate(340deg)",
-    yPercent: "150",
-    // transform: "translatey(2350%) skew(346deg, 354deg) rotate(340deg)",
-  }),
-  animation: gsap.to(".s5p5_7", {
-    transform: "skew(336deg, 334deg) rotate(20deg)",
-    yPercent: "-111300",
-    // transform: "translatey(-300%) skew(336deg, 334deg) rotate(20deg)",
-  }),
+
+  animation: gsap.fromTo(
+    ".s5p5_7",
+    {
+      transform: "skew(346deg, 354deg) rotate(340deg)",
+      yPercent: "50",
+    },
+    {
+      transform: "skew(336deg, 334deg) rotate(20deg)",
+      yPercent: "0",
+    }
+  ),
+});
+ScrollTrigger.create({
+  trigger: ".custom_color_dark",
+  scrub: 1,
+
+  animation: gsap.fromTo(
+    ".site_type_03_desc",
+    {
+      transform: "skew(0deg, 0deg) rotate(340deg)",
+      yPercent: "100",
+    },
+    {
+      transform: "skew(3deg, 3deg) rotate(10deg)",
+      yPercent: "0",
+    }
+  ),
 });
 
 // 파티클
