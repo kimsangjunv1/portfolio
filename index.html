@@ -514,6 +514,52 @@
         .section_rv_button_cont {
           justify-content: center !important;
         }
+        .s5p5_1 {
+          top: 10vw !important;
+          left: 10vw !important;
+          transform: none;
+        }
+        .s5p5_4 {
+          top: 106vw !important;
+          transform: none;
+        }
+        .s5p5_7 {
+          width: 10vw;
+          transform: none;
+        }
+        .site_type_01_desc {
+          top: 8vw;
+          left: 37vw;
+          transform: none;
+        }
+        .site_type_02_desc {
+          top: 104vw;
+          left: 37vw;
+        }
+        .site_type_03_desc {
+          top: 159vw;
+          left: 37vw;
+          transform: none;
+        }
+        /* 두번째 */
+        .site_type_04_desc {
+          top: 37vw;
+          left: 10vw;
+          transform: none;
+        }
+        .site_type_05_desc {
+          left: 45vw;
+          transform: none;
+        }
+        .site_type_06_desc {
+          transform: none;
+          left: 46vw;
+        }
+        .site_type_07_desc {
+          top: 235vw;
+          left: 10vw;
+          transform: none;
+        }
       }
     </style>
   </head>
@@ -2660,8 +2706,8 @@
     var animation2;
 
     gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
-    let mm2 = gsap.matchMedia();
-    mm2.add("(min-width: 700px)", () => {
+    let mm3 = gsap.matchMedia();
+    mm3.add("(min-width: 700px)", () => {
       gsap.set("#motionSVG2", { scale: 0.7, autoAlpha: 1 });
       gsap.set("#tractor2", { transformOrigin: "50% 50%" });
 
