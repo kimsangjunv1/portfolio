@@ -432,12 +432,20 @@
   .vr7 {
     height: auto;
   }
+  .section15_main_title {
+    margin: 40px 0;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+  }
   .section15_list_cont {
     ul {
       flex-direction: column !important;
       li {
         &:nth-child(1) {
           width: 100% !important;
+          border: none;
+          color: #fff;
+          background: #000c;
         }
         &:nth-child(2) {
           width: 100% !important;
