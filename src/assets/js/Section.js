@@ -501,11 +501,11 @@ ScrollTrigger.create({
   animation: gsap.fromTo(
     ".s5p5_4",
     {
-      transform: "skew(346deg, 354deg) rotate(340deg)",
+      transform: "skew(19deg, 10deg) rotate(340deg)",
       yPercent: "50",
     },
     {
-      transform: "skew(336deg, 334deg) rotate(20deg)",
+      transform: "skew(10deg, 29deg) rotate(20deg)",
       yPercent: "0",
     }
   ),
@@ -517,11 +517,11 @@ ScrollTrigger.create({
   animation: gsap.fromTo(
     ".site_type_02_desc",
     {
-      transform: "skew(0deg, 0deg) rotate(340deg)",
+      transform: "skew(340deg, 360deg) rotate(340deg)",
       yPercent: "100",
     },
     {
-      transform: "skew(3deg, 3deg) rotate(10deg)",
+      transform: "skew(360deg, 340deg) rotate(20deg)",
       yPercent: "0",
     }
   ),
