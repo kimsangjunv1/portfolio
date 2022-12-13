@@ -703,11 +703,11 @@ mm2.add("(min-width: 700px)", () => {
     animation: gsap.fromTo(
       ".site_type_06_desc",
       {
-        transform: "skew(0deg, 0deg) rotate(340deg)",
+        transform: "skew(340deg, 340deg) rotate(340deg)",
         yPercent: "100",
       },
       {
-        transform: "skew(3deg, 3deg) rotate(10deg)",
+        transform: "skew(0deg, 0deg) rotate(10deg)",
         yPercent: "0",
       }
     ),

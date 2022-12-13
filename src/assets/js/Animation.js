@@ -59,30 +59,8 @@ gsap.to(".dust_11", {
   // scale: 1,
   duration: 1.6,
 });
-// gsap.to(".section1_desc h2", {
-//   scrollTrigger: ".section1_desc h2",
-//   //   transform: "translate(-50%, -50%) skewY(0deg)",
-//   //   skewY: 0,
-//   height: "27.2vw",
-//   duration: 1.0,
-// });
-if (window.matchMedia("(max-width: 860px)").matches) {
-  gsap.to(".section1_desc h2", {
-    height: "71vw",
-  });
-}
-// 섹션 3_bottom
-// let sections2 = gsap.utils.toArray(".panel2");
-// gsap.to(sections2, {
-//   xPercent: -100 * (sections2.length - 1),
-//   ease: "none",
-//   // duration: 122.5,
-//   scrollTrigger: {
-//     trigger: ".horizontal2",
-//     markers: true,
-//     pin: true,
-//     scrub: 1,
-//     // snap: 1 / (sections2.length - 1),
-//     end: "+=11000",
-//   },
-// });
+// if (window.matchMedia("(max-width: 860px)").matches) {
+//   gsap.to(".section1_desc h2", {
+//     height: "71vw",
+//   });
+// }
