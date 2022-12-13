@@ -309,34 +309,38 @@ body {
         height: 52vw !important;
       }
     }
-  }
-  .section1_img img:nth-child(1) {
-    width: 35vw;
-  }
-  .section1_img img:nth-child(2) {
-    left: 30%;
-    width: 35vw;
-  }
-  .section1_img img:nth-child(3) {
-    right: 10%;
-    width: 25vw;
-  }
-  .section1_img img:nth-child(5) {
-    left: 10%;
-    width: 5vw;
-    bottom: 34vw;
-  }
-  .section1_img img:nth-child(7) {
-    width: 190vw;
-  }
-  .section1_img img:nth-child(8) {
-    width: 120vw;
-  }
-  .section1_img img:nth-child(10) {
-    width: 7vw;
-  }
-  .section1_img img:nth-child(11) {
-    width: 10vw;
+    .section1_img {
+      img {
+        &:nth-child(1) {
+          width: 35vw;
+        }
+        &:nth-child(2) {
+          left: 30%;
+          width: 35vw;
+        }
+        &:nth-child(3) {
+          right: 10%;
+          width: 25vw;
+        }
+        &:nth-child(5) {
+          left: 10%;
+          width: 5vw;
+          bottom: 34vw;
+        }
+        &:nth-child(7) {
+          width: 190vw;
+        }
+        &:nth-child(8) {
+          width: 120vw;
+        }
+        &:nth-child(10) {
+          width: 7vw;
+        }
+        &:nth-child(11) {
+          width: 10vw;
+        }
+      }
+    }
   }
   /* 섹션 2 */
   .section {
@@ -363,30 +367,37 @@ body {
   }
 
   /* 섹션 3 */
-  .section3_fixed h2 {
-    font-size: 9vw;
+  .section3_fixed {
+    h2 {
+      font-size: 9vw !important;
+    }
   }
-  .section3_item_bottom {
-    width: 1000%;
-  }
-  .section3_item img {
-    width: 80vw;
-  }
-  .section3_item .item_desc {
-    padding: 3vw;
-  }
-  .section3_item h2 {
-    font-size: 6.2vw;
-  }
-  .section3_item p {
-    width: 64vw;
-    font-size: 3vw;
-    margin-bottom: 5.2vw;
-  }
-  .section3_item button {
-    width: 14vw;
-    height: 8vw;
-    font-size: 4vw;
+  .panel {
+    .section3_item_bottom2,
+    .section3_item_bottom {
+      width: 1000%;
+    }
+    .section3_item {
+      img {
+        width: 80vw;
+      }
+      .item_desc {
+        padding: 3vw;
+        h2 {
+          font-size: 6.2vw;
+        }
+        p {
+          width: 64vw;
+          font-size: 3vw;
+          margin-bottom: 5.2vw;
+        }
+        a {
+          width: 14vw;
+          height: 8vw;
+          font-size: 4vw;
+        }
+      }
+    }
   }
 
   /* 섹션 4 */
@@ -418,35 +429,48 @@ body {
         }
       }
     }
+    .section4_cont {
+      .section4_icon_layout {
+        .section4_item {
+          width: 90vw;
+          height: 50vw;
+          .section4_right {
+            h2 {
+              font-size: 11vw;
+            }
+            .section4_item_desc {
+              h4 {
+                font-size: 5.5vw;
+              }
+              p {
+                font-size: 2vw;
+              }
+            }
+          }
+        }
+      }
+      .section4_rev_icon_layout {
+        .section4_rev_item {
+          width: 90vw;
+          height: 50vw;
+          .section4_rev_right {
+            h2 {
+              font-size: 11vw;
+            }
+            .section4_rev_item_desc {
+              h4 {
+                font-size: 5.5vw;
+              }
+              p {
+                font-size: 2vw;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
-  .section4_item {
-    width: 90vw;
-    height: 50vw;
-  }
-  .section4_item h2 {
-    font-size: 11vw;
-  }
-  .section4_item_desc h4 {
-    font-size: 5.5vw;
-  }
-  .section4_item_desc p {
-    font-size: 2vw;
-  }
-
-  .section4_rev_item {
-    width: 90vw;
-    height: 50vw;
-  }
-  .section4_rev_item h2 {
-    font-size: 11vw;
-  }
-  .section4_rev_item_desc h4 {
-    font-size: 5.5vw;
-  }
-  .section4_rev_item_desc p {
-    font-size: 2vw;
-  }
   .point {
     height: 300vw !important;
   }
@@ -593,8 +617,14 @@ body {
   .section12_all_cont,
   .section13_all_cont,
   .section14_all_cont {
-    padding: 0;
-    justify-content: center;
+    padding: 0 !important;
+    justify-content: center !important;
+  }
+  .section11_lama,
+  .section12_lama,
+  .section13_lama,
+  .section14_lama {
+    display: none;
   }
 
   .sec8_bg,
@@ -623,10 +653,10 @@ body {
   .section11_desc_cont,
   .section10_desc_cont,
   .section9_desc_cont {
-    justify-content: center;
+    justify-content: center !important;
     text-align: center;
-    width: 75%;
-    z-index: 2;
+    width: 75% !important;
+    z-index: 2 !important;
   }
   .title_wrap {
     flex-direction: column-reverse;
