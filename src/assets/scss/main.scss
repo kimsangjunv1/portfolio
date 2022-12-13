@@ -246,7 +246,32 @@ body {
     }
   }
 }
+/* PC (해상도 1024px)*/
+// @media (max-width: 1024px) {
+//   /* 헤더 */
+//   #header {
+//     padding: 2vw;
+//     a {
+//       font-size: 1.5vw;
+//     }
+//     h2 {
+//       font-size: 1.5vw;
+//     }
+//   }
+// }
 
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+// @media (max-width: 768px) {
+//   #header {
+//     padding: 2.5vw;
+//     a {
+//       font-size: 2vw;
+//     }
+//     h2 {
+//       font-size: 2vw;
+//     }
+//   }
+// }
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
 @media (max-width: 468px) {
   html,
@@ -264,23 +289,26 @@ body {
   }
   #header {
     padding: 3vw;
-  }
-  #header a {
-    font-size: 2.5vw;
-  }
-  #header h2 {
-    font-size: 2.5vw;
-  }
-  .editorial {
-    /* display: none; */
+    > a {
+      font-size: 2.5vw;
+    }
+    .menu_cont {
+      a {
+        font-size: 2.5vw;
+      }
+    }
   }
   .menu_cont {
     display: flex;
     align-items: center;
   }
-  .section1_desc h2 {
-    font-size: 25vw;
-    height: 52vw !important;
+  .section {
+    .section1_desc {
+      h2 {
+        font-size: 25vw !important;
+        height: 52vw !important;
+      }
+    }
   }
   .section1_img img:nth-child(1) {
     width: 35vw;
@@ -311,25 +339,27 @@ body {
     width: 10vw;
   }
   /* 섹션 2 */
-  .section2_cont {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .section2_desc {
-    width: auto;
-    text-align: center;
-  }
-  .first_name {
-    text-align: center;
-    font-size: 37vw;
-  }
-  .second_name,
-  .fifth_name {
-    font-size: 13.4vw;
-  }
-  .porfolio_desc {
-    font-size: 4vw;
+  .section {
+    .section2_cont {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .section2_desc {
+        width: auto;
+        text-align: center;
+        .first_name {
+          text-align: center;
+          font-size: 37vw;
+        }
+        .second_name,
+        .fifth_name {
+          font-size: 13.4vw;
+        }
+        .porfolio_desc {
+          font-size: 4vw;
+        }
+      }
+    }
   }
 
   /* 섹션 3 */
