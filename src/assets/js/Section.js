@@ -716,9 +716,6 @@ mm2.add("(min-width: 700px)", () => {
   // 사이트 타입 7
   ScrollTrigger.create({
     trigger: ".s6p5_10",
-    // start: "bottom 100%",
-    // end: "top 100%",
-    // markers: true,
     scrub: 1,
 
     animation: gsap.fromTo(
@@ -737,9 +734,6 @@ mm2.add("(min-width: 700px)", () => {
   });
   ScrollTrigger.create({
     trigger: ".s6p5_10",
-    // start: "bottom 100%",
-    // end: "top 100%",
-    // markers: true,
     scrub: 1,
 
     animation: gsap.fromTo(
@@ -1357,7 +1351,7 @@ contLeft.forEach((left) => {
         start: "-=400",
         end: "+=350",
         scrub: true,
-        markers: true,
+        // markers: true,
       },
     })
 
@@ -1376,7 +1370,7 @@ imac.forEach((top) => {
         trigger: top,
         end: "-=500",
         scrub: true,
-        markers: true,
+        // markers: true,
       },
     })
 

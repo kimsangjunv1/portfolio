@@ -28,12 +28,10 @@ gsap.to(sections, {
   ease: "none",
   scrollTrigger: {
     trigger: ".horizontal",
-    markers: true,
+    // markers: true,
     pin: true,
     scrub: true,
-    // snap: 1 / (sections.length - 1),
     end: "+=5000",
-    // end: () => "+=" + document.querySelector(".horizontal"),
   },
 });
 
@@ -45,28 +43,12 @@ gsap.to(sections2, {
   // duration: 122.5,
   scrollTrigger: {
     trigger: ".horizontal2",
-    markers: true,
+    // markers: true,
     pin: true,
     scrub: 1,
-    // top: "+=1100",
-    // snap: 1 / (sections2.length - 1),
     end: "+=11000",
   },
 });
-
-// 게임 이펙트
-// let sections3 = gsap.utils.toArray(".section6p5_item");
-// gsap.to(sections3, {
-//   xPercent: -100 * (sections3.length - 1),
-//   ease: "none",
-//   scrollTrigger: {
-//     trigger: ".horizontal3",
-//     markers: true,
-//     pin: true,
-//     scrub: true,
-//     end: "+=5000",
-//   },
-// });
 
 // 상단바 : 색상 바꾸기
 ScrollTrigger.create({
