@@ -579,15 +579,16 @@
 .section4_button_cont {
   display: flex;
   flex-direction: column;
-  button {
+  gap: 2px;
+  a {
     border: 1px solid #000;
     width: 4vw;
     height: 2.3vw;
     font-size: 1vw;
     transition: 0.25s;
-    cursor: pointer;
     color: #353541;
-    margin-bottom: 2px;
+    text-align: center;
+    line-height: 2.1;
     &:hover {
       background: #343440;
       color: #fff;
