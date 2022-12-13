@@ -390,33 +390,34 @@ body {
   }
 
   /* 섹션 4 */
-  .section4_fixed {
-    flex-direction: column;
-  }
-  .section4_fixed .title {
-    font-size: 11vw;
-    /* flex-direction: column; */
-  }
-  .section4_fixed .desc_cont {
-    flex-direction: column;
-  }
-  .section4_fixed .desc_cont .desc {
-    font-size: 4vw;
-    text-align: center;
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-  .section4_button_cont {
-    flex-direction: row;
-  }
-  .section4_button_cont button {
-    width: 14vw;
-    height: 8vw;
-    font-size: 4vw;
-    margin-right: 5px;
-  }
-  .section4_button_cont button:last-child {
-    margin-right: 0;
+  .section {
+    .section4_fixed {
+      flex-direction: column;
+      .title {
+        font-size: 11vw;
+      }
+      .desc_cont {
+        flex-direction: column;
+        .desc {
+          font-size: 4vw;
+          text-align: center;
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+        .section4_button_cont {
+          flex-direction: row;
+          a {
+            width: 14vw;
+            height: 8vw;
+            font-size: 4vw;
+            margin-right: 5px;
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
   }
 
   .section4_item {
@@ -447,7 +448,7 @@ body {
     font-size: 2vw;
   }
   .point {
-    height: 400vw !important;
+    height: 300vw !important;
   }
 
   /* 섹션 5 */
