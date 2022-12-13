@@ -79,7 +79,7 @@
       <!-- loading 화면 HTML Start -->
       <div id="progress">
         <h2>loading</h2>
-        <p class="progress-text">0%</p>
+        <p class="progress-text">0</p>
         <!-- <div class="gage"></div> -->
       </div>
       <!-- loading 화면 HTML End -->
@@ -1603,7 +1603,7 @@
         var target = (imgLoaded / imgTotal) * 100;
 
         current += (target - current) * 0.1;
-        $progressText.text(Math.floor(current) + "%");
+        $progressText.text(Math.floor(current));
       }
       if (current >= 100) {
         clearInterval(progressTimer);
