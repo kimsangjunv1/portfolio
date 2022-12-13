@@ -762,8 +762,36 @@
     color: #000;
   }
   em {
+    color: rgba(0, 0, 0, 0);
     font-weight: 900;
-    color: #6236fe;
+    background: linear-gradient(45deg, #ff9a4b 26%, #ff4ac8 76%, #8349ff 100%);
+    -webkit-background-clip: text;
+  }
+}
+.panel2 {
+  .s5_3 em {
+    color: #fd4e89 !important;
+    &::before {
+      background: #fd4e89 !important;
+    }
+  }
+  .s5_4 em {
+    color: #ff604e !important;
+    &::before {
+      background: #ff604e !important;
+    }
+  }
+  .s5_5 em {
+    color: #ffbf0f !important;
+    &::before {
+      background: #ffbf0f !important;
+    }
+  }
+  .s5_6 em {
+    color: #10c06b !important;
+    &::before {
+      background: #10c06b !important;
+    }
   }
 }
 .section5_item {
