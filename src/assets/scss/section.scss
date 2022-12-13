@@ -93,10 +93,6 @@
   }
 }
 .splitText {
-  // position: absolute;
-  // top: 40%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
   background: linear-gradient(360deg, rgba(255, 255, 255, 0) 25%, #fff 60%);
   color: rgba(0, 0, 0, 0);
   -webkit-background-clip: text;
@@ -127,7 +123,6 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    // transform: translate(-50%, -50%);
     background: linear-gradient(360deg, rgba(255, 255, 255, 0) 25%, #fff 60%);
     color: rgba(0, 0, 0, 0);
     -webkit-background-clip: text;
@@ -702,7 +697,6 @@
 }
 .section4_rev_icon_layout {
   position: relative;
-  // filter: drop-shadow(0px 59px 40px #82869c70);
   color: #82869c70;
 }
 .lamas {
