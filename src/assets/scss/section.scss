@@ -421,6 +421,32 @@
     left: 100%;
   }
 }
+/* PC (해상도 1024px)*/
+@media (max-width: 1024px) {
+  /* 헤더 */
+  #header {
+    padding: 2vw;
+    a {
+      font-size: 1.5vw;
+    }
+    h2 {
+      font-size: 1.5vw;
+    }
+  }
+}
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media (max-width: 768px) {
+  #header {
+    padding: 2.5vw;
+    a {
+      font-size: 2vw;
+    }
+    h2 {
+      font-size: 2vw;
+    }
+  }
+}
 @media (max-width: 468px) {
   .section3_item.i002 {
     position: absolute;

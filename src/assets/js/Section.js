@@ -463,6 +463,38 @@ ScrollTrigger.create({
 let mm2 = gsap.matchMedia();
 mm2.add("(min-width: 700px)", () => {
   ScrollTrigger.create({
+    trigger: ".bg_change_purple",
+    scrub: 1,
+
+    animation: gsap.fromTo(
+      ".section6p7_title",
+      {
+        transform: "skew(5deg,5deg) rotate(360deg)",
+        yPercent: "150",
+      },
+      {
+        transform: "skew(37deg, 349deg) rotate(40deg)",
+        yPercent: "-3000",
+      }
+    ),
+  });
+  ScrollTrigger.create({
+    trigger: ".custom_color_dark",
+    scrub: 1,
+
+    animation: gsap.fromTo(
+      ".section6p5_title",
+      {
+        transform: "skew(5deg,5deg) rotate(360deg)",
+        yPercent: "50",
+      },
+      {
+        transform: "skew(37deg, 349deg) rotate(60deg)",
+        yPercent: "500",
+      }
+    ),
+  });
+  ScrollTrigger.create({
     trigger: ".custom_color_dark",
     scrub: 1,
 
