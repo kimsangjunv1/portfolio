@@ -190,10 +190,10 @@ body {
   padding: 7.2vw 0;
   font-weight: 900;
   font-size: 0.7vw;
-}
-.porfolio_desc_fixed p {
-  transform: rotate(90deg);
-  background: transparent !important;
+  p {
+    transform: rotate(90deg);
+    background: transparent !important;
+  }
 }
 .point {
   position: relative !important;
@@ -218,30 +218,32 @@ body {
   background: linear-gradient(#5046ac, #5046ac00);
   padding: 1vw;
   align-items: center;
-}
-#header h2 {
-  margin-right: 2.2vw;
-  font-size: 1vw;
-  font-weight: 900;
-}
-#header a {
-  border-right: 1px solid #3434402f;
-  margin-right: 0.8vw;
-  padding-right: 0.8vw;
-  color: #ffffff86;
-  background: transparent !important;
-  font-size: 1vw;
-  transition: 0.25s;
-  cursor: pointer;
-  &:hover {
-    color: #fe3672 !important;
+  h2 {
+    margin-right: 2.2vw;
+    font-size: 1vw;
+    font-weight: 900;
   }
-  &:not(:hover) {
-    transition: 0.25s;
-  }
-  &:last-child {
-    margin-right: 0;
-    border-right: none;
+  .menu_cont {
+    a {
+      border-right: 1px solid #3434402f;
+      margin-right: 0.8vw;
+      padding-right: 0.8vw;
+      color: #ffffff86;
+      background: transparent !important;
+      font-size: 1vw;
+      transition: 0.25s;
+      cursor: pointer;
+      &:hover {
+        color: #fe3672 !important;
+      }
+      &:not(:hover) {
+        transition: 0.25s;
+      }
+      &:last-child {
+        margin-right: 0;
+        border-right: none;
+      }
+    }
   }
 }
 
