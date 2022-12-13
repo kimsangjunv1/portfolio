@@ -43,13 +43,9 @@
     <main id="main">
       <!-- loading 화면 HTML Start -->
       <div id="progress">
-        <div class="progress-text">0</div>
+        <p class="progress-text">0</p>
       </div>
-      <!-- <div id="loadDiv">
-        <img src="src/assets/img/Rhombus.gif" />
-      </div> -->
       <!-- loading 화면 HTML End -->
-
       <div class="porfolio_desc_fixed">
         <p>Portfolio</p>
         <p>Sangjun</p>
@@ -1571,7 +1567,6 @@
 
         current += (target - current) * 0.1;
         $progressText.text(Math.floor(current));
-        // $progressText.css("letter-spacing", 1000 - current * 10 + "px");
       }
       if (current >= 100) {
         clearInterval(progressTimer);
@@ -1579,8 +1574,10 @@
         $container.css("display", "none");
       }
       // if (current > 99.9) {
-      if (current > 99.9) {
-        current = 100;
+      if ((current = 99)) {
+        // current = 100;
+        $progressText.text(100);
+
         $container.fadeOut("slow");
       }
     }
