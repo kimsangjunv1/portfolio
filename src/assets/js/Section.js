@@ -444,7 +444,8 @@ ScrollTrigger.create({
       scale: 1,
       opacity: 1,
       transformOrigin: "50% 0%",
-      transform: "translate(-50%, -50%) translate3d(0,-25px,0)",
+      translate3d: "0,-25px,0",
+      transform: "translate(-50%, -50%)",
     }
   ),
 });
