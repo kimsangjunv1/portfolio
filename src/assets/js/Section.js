@@ -1335,9 +1335,9 @@ function init() {
   initParallax();
 }
 
-window.onload = () => {
-  init();
-};
+// window.onload = () => {
+//   init();
+// };
 
 let contLeft = gsap.utils.toArray(".cont-ani-left");
 let imac = gsap.utils.toArray(".cont-ani-y");

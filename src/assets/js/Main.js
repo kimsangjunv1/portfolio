@@ -6,10 +6,6 @@ const lenis = new Lenis({
   direction: "vertical", // vertical, horizontal
   gestureDirection: "vertical", // vertical, horizontal, both
   smooth: true,
-  // mouseMultiplier: 1,
-  // smoothTouch: false,
-  // touchMultiplier: 2,
-  // infinite: false,
 });
 
 function raf(time) {
