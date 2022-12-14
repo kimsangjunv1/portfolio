@@ -450,11 +450,28 @@
   .none {
     display: block;
   }
+  .section4_rev_item {
+    width: 90vw;
+    height: 50vw;
+    h2 {
+      font-size: 11vw;
+    }
+    .section4_rev_item_desc {
+      h4 {
+        font-size: 5.5vw;
+      }
+      p {
+        font-size: 2vw;
+      }
+    }
+  }
+
   .section15_main_title {
     margin: 40px 0;
     padding-bottom: 40px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.116);
   }
+
   .section15_list_cont {
     ul {
       flex-direction: column !important;
