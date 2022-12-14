@@ -684,6 +684,30 @@
     display: flex;
   }
 }
+.section4_cont {
+  div {
+    &:nth-child(1) {
+      .section4_item {
+        background-image: url("../../../img/section4_screenshot_01.jpg");
+      }
+    }
+    &:nth-child(2) {
+      .section4_rev_item {
+        background-image: url("../../../img/section4_screenshot_02.jpg");
+      }
+    }
+    &:nth-child(3) {
+      .section4_item {
+        background-image: url("../../../img/section4_screenshot_03.jpg");
+      }
+    }
+    &:nth-child(4) {
+      .section4_rev_item {
+        background-image: url("../../../img/section4_screenshot_04.jpg");
+      }
+    }
+  }
+}
 .section4_rev_item {
   width: 76.3vw;
   height: 35.3vw;
@@ -695,7 +719,7 @@
   color: #fff;
   font-family: "BebasNeue";
   clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
-  background-image: url("../../../img/section4_screenshot_01.jpg");
+  background-image: url("../../../img/section4_screenshot_02.jpg");
   background-size: auto;
   margin: 0 auto;
   margin-bottom: 14vw;
