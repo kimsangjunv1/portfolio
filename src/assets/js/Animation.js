@@ -1,7 +1,7 @@
 // 섹션 1 : 오프닝 애니메이션
-// 글씨
 
 // 먼지&캐릭터
+// function animation() {
 gsap.to(".dust_01", {
   scrollTrigger: ".dust_01",
   transform: "translate(-50%,0%)",
@@ -59,6 +59,7 @@ gsap.to(".dust_11", {
   // scale: 1,
   duration: 1.6,
 });
+
 // if (window.matchMedia("(max-width: 860px)").matches) {
 //   gsap.to(".section1_desc h2", {
 //     height: "71vw",
