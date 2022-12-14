@@ -571,12 +571,12 @@ body {
     margin-bottom: 20px;
   }
 
-  .section9_logo_cont,
-  .section10_logo_cont,
-  .section11_logo_cont,
-  .section12_logo_cont,
-  .section13_logo_cont,
-  .section14_logo_cont {
+  .section .section9_all_cont .section9_logo_cont,
+  .section .section10_all_cont .section10_logo_cont,
+  .section .section11_all_cont .section11_logo_cont,
+  .section .section12_all_cont .section12_logo_cont,
+  .section .section13_all_cont .section13_logo_cont,
+  .section .section14_all_cont .section14_logo_cont {
     position: absolute;
     z-index: 1;
     top: 0;
