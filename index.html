@@ -1610,16 +1610,15 @@
         $container.animate({ opacity: "0" }, 500, "easeInOutQuint");
         $container.css("display", "none");
       }
-      // if (current > 99.9) {
       if ((current = 99)) {
-        // current = 100;
         $progressText.text(100);
 
         $container.fadeOut("slow");
       }
     }
-
-    imagesProgress();
+    window.onload = function () {
+      imagesProgress();
+    };
 
     //     $(window).on("load", function () {
     //       setTimeout(function () {
