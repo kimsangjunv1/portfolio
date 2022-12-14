@@ -298,6 +298,16 @@ body {
       }
     }
   }
+  #main {
+    #progress {
+      h2 {
+        font-size: 7.3vw;
+      }
+      .progress-text {
+        font-size: 20vw;
+      }
+    }
+  }
   .menu_cont {
     display: flex;
     align-items: center;
