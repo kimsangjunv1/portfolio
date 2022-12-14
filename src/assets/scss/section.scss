@@ -419,6 +419,31 @@
     top: 42vw;
     left: 337vw;
   }
+  #reference {
+    .section5_fixed {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      h2 {
+        font-weight: 100;
+        font-size: 9vw !important;
+        white-space: nowrap;
+        color: #000;
+      }
+      em {
+        color: rgba(0, 0, 0, 0);
+        font-weight: 900;
+        background: linear-gradient(
+          45deg,
+          #ff9a4b 26%,
+          #ff4ac8 76%,
+          #8349ff 100%
+        );
+        -webkit-background-clip: text;
+      }
+    }
+  }
   .vr7 {
     height: auto;
   }
