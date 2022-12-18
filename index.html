@@ -29,41 +29,6 @@
   </head>
 
   <body>
-    <style>
-      #progress {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100%;
-        background: black;
-        z-index: 100000;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        user-select: none;
-      }
-      #progress h2 {
-        font-size: 3.3vw;
-        font-family: "NexonLv1GothicLow";
-        font-weight: 100;
-        line-height: 0.7;
-      }
-      .progress-text {
-        font-size: 5.5vw;
-        font-weight: 900;
-        font-family: "GmarketSans";
-        color: rgba(0, 0, 0, 0);
-        background: linear-gradient(
-          45deg,
-          #ff9a4b 26%,
-          #ff4ac8 76%,
-          #8349ff 100%
-        );
-        -webkit-background-clip: text;
-      }
-    </style>
     <header id="header">
       <a href="#main">KIMSANGJUN</a>
       <div class="menu_cont">
@@ -78,9 +43,40 @@
     <main id="main">
       <!-- loading 화면 HTML Start -->
       <div id="progress">
+        <div class="icon_cont">
+          <img
+            class="lama_icon_01"
+            src="src/assets/img/loading_particle_01.svg"
+            alt=""
+          />
+          <img
+            class="lama_icon_02"
+            src="src/assets/img/loading_particle_02.svg"
+            alt=""
+          />
+          <img
+            class="lama_icon_03"
+            src="src/assets/img/loading_particle_03.svg"
+            alt=""
+          />
+          <img
+            class="lama_icon_04"
+            src="src/assets/img/loading_particle_04.svg"
+            alt=""
+          />
+          <img
+            class="lama_icon_05"
+            src="src/assets/img/loading_particle_05.svg"
+            alt=""
+          />
+        </div>
+        <img
+          class="lama_loading"
+          src="src/assets/img/section_loading.svg"
+          alt=""
+        />
         <h2>loading</h2>
         <div class="progress-text">0%</div>
-        <!-- <div class="gage"></div> -->
       </div>
       <!-- loading 화면 HTML End -->
       <div class="porfolio_desc_fixed">

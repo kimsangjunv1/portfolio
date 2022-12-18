@@ -1337,6 +1337,58 @@ function init() {
   initParallax();
 }
 
+let rotate_que = Math.floor(Math.random() * 101);
+let size_que = Math.floor(Math.random() * 5) + 1;
+// const allList = document.querySelectorAll(".cover-thumbnail-3 ul li");
+
+document.querySelector("#progress").addEventListener("mousemove", (e) => {
+  //마우스 좌표 값
+  let mousePageX = e.pageX;
+  let mousePageY = e.pageY;
+
+  // 전체 가로
+  let centerPageX = window.innerWidth / 2 - mousePageX;
+  let centerPageY = window.innerHeight / 2 - mousePageY;
+
+  //이미지 움직이기
+  // for(let i=1; i<=6; i++){
+  for (let q = 1; q <= 4; q++) {
+    const imgMove = document.querySelector(
+      ".icon_cont>img:nth-child(" + q + ")"
+    );
+    imgMove.style.transform =
+      "translate(" +
+      -centerPageX / (q * 5) +
+      "px, " +
+      -centerPageY / (q * 5) +
+      "px) rotate(" +
+      rotate_que * (q * 5) +
+      "deg)";
+  }
+  // }
+
+  //이미지 크기 조정
+  // for(let i=1; i<=6; i++){
+  for (let q = 1; q <= 5; q++) {
+    for (let size_rand = 1; size_rand <= 2; size_rand++) {
+      const imgMove = document.querySelector(
+        ".icon_cont>img:nth-child(" + q + ")"
+      );
+      imgMove.style.transform =
+        "translate(" +
+        -centerPageX / (q * 5) +
+        "px, " +
+        -centerPageY / (q * 5) +
+        "px) rotate(" +
+        rotate_que * (q * 5) +
+        "deg) scale(" +
+        size_rand * size_que * 0.1 +
+        ")";
+    }
+  }
+  // }
+});
+
 // window.onload = () => {
 //   init();
 // };
