@@ -1,4 +1,3 @@
-/*prevent many large-by-comparison ripples by shrinking the height*/
 .section1 {
   display: flex;
   flex-direction: column;
@@ -644,8 +643,7 @@
   color: #fff;
   font-family: "BebasNeue";
   clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
-  background-image: url("./../../assets/img/section4_screenshot_01.png");
-  // background-image: url("./../../assets/img/section4_screenshot_01.jpg");
+  background-image: url("../../../img/section4_screenshot_01.jpg");
   background-size: auto;
   margin: 0 auto;
   margin-bottom: 14vw;
@@ -661,8 +659,7 @@
   }
   &::before {
     content: "";
-    // background-image: url("/public/img/section4_icon_music.svg");
-    background-image: url("./../../assets/img/section4_icon_music.svg");
+    background-image: url("../../../img/section4_icon_music.svg");
     position: absolute;
     top: 50%;
     right: 0;
@@ -694,41 +691,33 @@
   div {
     &:nth-child(1) {
       .section4_item {
-        background-image: url("./../../assets/img/section4_screenshot_01.jpg");
-        // background-image: url("/public/img/section4_screenshot_01.jpg");
+        background-image: url("../../../img/section4_screenshot_01.jpg");
         &::before {
-          background-image: url("./../../assets/img/section4_icon_lama.svg");
-          // background-image: url("/public/img/section4_icon_lama.svg");
+          background-image: url("../../../img/section4_icon_lama.svg");
         }
       }
     }
     &:nth-child(2) {
       .section4_rev_item {
-        background-image: url("./../../assets/img/section4_screenshot_02.jpg");
-        // background-image: url("/public/img/section4_screenshot_02.jpg");
+        background-image: url("../../../img/section4_screenshot_02.jpg");
         &::before {
-          background-image: url("./../../assets/img/section4_icon_card.svg");
-          // background-image: url("/public/img/section4_icon_card.svg");
+          background-image: url("../../../img/section4_icon_card.svg");
         }
       }
     }
     &:nth-child(3) {
       .section4_item {
-        background-image: url("./../../assets/img/section4_screenshot_03.jpg");
-        // background-image: url("/public/img/section4_screenshot_03.jpg");
+        background-image: url("../../../img/section4_screenshot_03.jpg");
         &::before {
-          background-image: url("./../../assets/img/section4_icon_timer.svg");
-          // background-image: url("/public/img/section4_icon_timer.svg");
+          background-image: url("../../../img/section4_icon_timer.svg");
         }
       }
     }
     &:nth-child(4) {
       .section4_rev_item {
-        background-image: url("./../../assets/img/section4_screenshot_04.jpg");
-        // background-image: url("/public/img/section4_screenshot_04.jpg");
+        background-image: url("../../../img/section4_screenshot_04.jpg");
         &::before {
-          background-image: url("./../../assets/img/section4_icon_music.svg");
-          // background-image: url("/public/img/section4_icon_music.svg");
+          background-image: url("../../../img/section4_icon_music.svg");
         }
       }
     }
@@ -745,7 +734,7 @@
   color: #fff;
   font-family: "BebasNeue";
   clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
-  background-image: url("./../../assets/img/section4_screenshot_02.jpg");
+  background-image: url("../../../img/section4_screenshot_02.jpg");
   background-size: auto;
   margin: 0 auto;
   margin-bottom: 14vw;
@@ -761,7 +750,7 @@
   }
   &::before {
     content: "";
-    background-image: url("./../../assets/img/section4_icon_music.svg");
+    background-image: url("../../../img/section4_icon_music.svg");
     position: absolute;
     top: 50%;
     right: 0;
