@@ -1,3 +1,4 @@
+gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
 // 메인 먼지
 ScrollTrigger.create({
   // 어디에 닿으면 반응할건지
